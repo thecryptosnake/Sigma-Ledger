@@ -1,0 +1,8 @@
+# The sealed envelopes hold the full forecast leaves (engine-free, but not yet
+# revealed). They are kept PRIVATE until each forecast is graded/revealed, so
+# the public repo shows only the Merkle commitments until then.
+seals_private/
+
+__pycache__/
+*.pyc
+.venv/

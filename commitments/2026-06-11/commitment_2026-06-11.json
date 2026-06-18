@@ -1,0 +1,40 @@
+{
+ "anchor": {
+  "calendars_submitted": [
+   "https://b.pool.opentimestamps.org",
+   "https://ots.btc.catallaxy.com"
+  ],
+  "method": "opentimestamps-bitcoin",
+  "note": "PENDING Bitcoin confirmation. 'calendars_submitted' are the SUBMISSION endpoints that accepted the digest; the authoritative upgrade/attestation URIs are embedded inside COMMITMENT.txt.ots (they differ by design) and are what a verifier checks. Upgrade + verify with any OTS verifier (opentimestamps.org, or 'ots verify' on a working CLI). 2 of 4 default calendars responded; the other 2 had expired TLS certs server-side.",
+  "ots_file": "COMMITMENT.txt.ots",
+  "stamped_at_utc": "2026-06-18T11:47:46.229728+00:00",
+  "status": "pending"
+ },
+ "asof": "2026-06-11",
+ "chain_index": 0,
+ "disclosure": {
+  "first_cohort": true,
+  "proof_date_utc": "2026-06-18",
+  "asof_is_the_proof_date": false,
+  "note": "GENESIS cohort. It was sealed and Bitcoin-anchored on 2026-06-18, 7 days after its asof label (the public-ledger infrastructure was built that day). The cryptographic proof-of-existence date is the ANCHOR date (2026-06-18), NOT asof (2026-06-11). For these 7 days the realized outcomes were already observable, so this first cohort carries an information-leakage window and MUST be given near-zero calibration weight. Every subsequent cohort is sealed within ~1 day of its asof (sealed_anchor_gap_days about 0), so its proof is tight. See README 'Trust model'."
+ },
+ "header": {
+  "horizons": [
+   "1m",
+   "3m",
+   "6m",
+   "1y",
+   "2y"
+  ],
+  "universe_size": 80,
+  "universe_version": "ai_v1",
+  "vix_at_generation": 22.22
+ },
+ "merkle_root": "93ef29975b1b3d6273cc8cfb8c60caa9fe8fc7dc2e29b59018b9e6f2d46423e8",
+ "n_leaves": 400,
+ "n_skipped": 0,
+ "prev_commitment": null,
+ "schema": "sigma-public-commitment-1",
+ "sealed_anchor_gap_days": 7,
+ "sealed_at_utc": "2026-06-18T11:39:48.371768+00:00"
+}

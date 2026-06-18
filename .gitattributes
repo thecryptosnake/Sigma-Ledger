@@ -1,0 +1,6 @@
+# This ledger lives and dies by byte-reproducible hashing: the .ots proof binds
+# the EXACT bytes of COMMITMENT.txt, and any clone must reproduce those bytes to
+# verify the Bitcoin anchor. Disable ALL automatic line-ending conversion so the
+# working tree == the stored blob == every checkout, on every platform.
+* -text
+*.ots binary
