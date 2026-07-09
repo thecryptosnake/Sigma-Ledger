@@ -1,14 +1,25 @@
 {
  "anchor": {
+  "bitcoin_attestations": [
+   {
+    "block_height": 954234,
+    "block_time_utc": "2026-06-18T12:05:12Z"
+   },
+   {
+    "block_height": 954302,
+    "block_time_utc": "2026-06-18T20:10:25Z"
+   }
+  ],
   "calendars_submitted": [
    "https://b.pool.opentimestamps.org",
    "https://ots.btc.catallaxy.com"
   ],
   "method": "opentimestamps-bitcoin",
-  "note": "PENDING Bitcoin confirmation. 'calendars_submitted' are the SUBMISSION endpoints that accepted the digest; the authoritative upgrade/attestation URIs are embedded inside COMMITMENT.txt.ots (they differ by design) and are what a verifier checks. Upgrade + verify with any OTS verifier (opentimestamps.org, or 'ots verify' on a working CLI). 2 of 4 default calendars responded; the other 2 had expired TLS certs server-side.",
+  "note": "CONFIRMED in Bitcoin. COMMITMENT.txt.ots was upgraded on 2026-07-09 from the calendar servers to two completed BitcoinBlockHeaderAttestations (block heights above); attested merkle paths cross-checked against a public block explorer. Verify offline with any OTS verifier (opentimestamps.org, or 'ots verify') against Bitcoin block headers — no trust in the calendars needed. 'calendars_submitted' are the original SUBMISSION endpoints; the attestation URIs embedded in the .ots differ by design. The pre-upgrade pending .ots (475 bytes) is preserved in git history.",
   "ots_file": "COMMITMENT.txt.ots",
   "stamped_at_utc": "2026-06-18T11:47:46.229728+00:00",
-  "status": "pending"
+  "status": "confirmed",
+  "upgraded_at_utc": "2026-07-09T00:27:00+00:00"
  },
  "asof": "2026-06-11",
  "chain_index": 0,
