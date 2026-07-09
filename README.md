@@ -114,12 +114,24 @@ ots verify commitments/<asof>/COMMITMENT.txt.ots    # root existed at block T
   Read `prob_positive` for direction and the P5–P95 band for risk; treat P50 as
   a conservative anchor, not a point prediction.
 
+## Pre-registered calibration policy
+
+How (and whether) the engine's calibration may change in response to ledger
+outcomes is itself pre-registered and Bitcoin-anchored **before any such
+decision has been made**: see [`CALIBRATION_PROTOCOL.md`](CALIBRATION_PROTOCOL.md)
+(+ its `.ots` proof). Rules are mechanical (metric → threshold → number of
+cohorts → which knob unlocks), changes are prospective-only, and sealed
+cohorts are always graded under the parameters they sealed. A protocol that
+exists before the first knob is turned is the counterpart of forecasts that
+exist before the outcome.
+
 ## Layout
 
 ```
 ledger_core.py          commitment primitives (project → hash → Merkle)
 seal.py                 seal one snapshot → commitment (public) + envelope (private)
 verify.py               independent verifier + self-test
+CALIBRATION_PROTOCOL.md pre-registered calibration rules (anchored, amend-prospectively)
 commitments/<asof>/     PUBLIC: COMMITMENT.txt (anchor this) + commitment_<asof>.json
 seals_private/<asof>/   PRIVATE (gitignored): the sealed leaves, until revealed
 ```
