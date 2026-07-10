@@ -1,14 +1,23 @@
 {
  "anchor": {
+  "bitcoin_attestations": [
+   {
+    "block_height": 957385
+   },
+   {
+    "block_height": 957407
+   }
+  ],
   "calendars": [
    "https://b.pool.opentimestamps.org",
    "https://ots.btc.catallaxy.com"
   ],
   "method": "opentimestamps-bitcoin",
-  "note": "pending Bitcoin confirmation; upgrade+verify with any OTS verifier",
+  "note": "CONFIRMED in Bitcoin. COMMITMENT.txt.ots upgraded 2026-07-10 to two completed BitcoinBlockHeaderAttestations (heights above). Verify offline with any OTS verifier against Bitcoin block headers. Pre-upgrade pending .ots preserved in git history.",
   "ots_file": "COMMITMENT.txt.ots",
   "stamped_at_utc": "2026-07-10T03:28:59.450877+00:00",
-  "status": "pending"
+  "status": "confirmed",
+  "upgraded_at_utc": "2026-07-10T22:46:20+00:00"
  },
  "asof": "2026-07-10",
  "chain_index": 2,
