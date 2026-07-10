@@ -85,18 +85,47 @@ Sortino, Calmar, CVaR, drawdown).
 **What's externally verifiable, and when.** Before the first grading, a public
 cloner can confirm only that the commitment root *exists* and is *Bitcoin-
 timestamped*: `--chain` checks internal link consistency and `--selftest`
-exercises the machinery on synthetic data. The 400 real forecasts stay sealed,
-so their *contents* cannot be independently recomputed yet — `--seal` needs a
-revealed sealed file, which is published per name as it matures. In short: the
-root's existence + timestamp are checkable today; each forecast becomes
-checkable when it is revealed at grading.
+exercises the machinery on synthetic data. Unmatured forecasts stay sealed,
+so their *contents* cannot be independently recomputed yet — they are opened
+per horizon cohort under `reveals/` as they mature (see below), each leaf
+carrying its own membership proof. In short: the root's existence + timestamp
+are checkable today; each forecast becomes checkable when its cohort is
+revealed at grading.
 
 ```bash
 python -X utf8 verify.py --selftest                 # the machinery itself
 python -X utf8 verify.py --chain commitments        # no snapshot reordered
+python -X utf8 verify.py --reveal reveals/<asof>/<horizon>/reveals_<asof>_<horizon>.json
+                                                    # each revealed forecast -> anchored root
 python -X utf8 verify.py --seal <revealed sealed file>   # leaves -> root
 ots verify commitments/<asof>/COMMITMENT.txt.ots    # root existed at block T
 ```
+
+## Reveals & grading
+
+When a horizon cohort matures, it is opened under `reveals/<asof>/<horizon>/`:
+**every** committed leaf of that horizon — graded, unresolved, good or bad —
+published verbatim with its Merkle membership proof. Nothing is dropped
+(survivorship discipline: committed → revealed).
+
+Each reveal file has two layers with different trust properties:
+
+- **`leaf` + `merkle_proof`** — covered by the anchored commitment. Recompute
+  the leaf hash from its canonical fields, walk the proof to the root, check
+  the root against the pre-maturity Bitcoin timestamp. That is
+  `verify.py --reveal`, and it requires zero trust in us.
+- **`grade` + `rollup`** — our measurement annotation, **not** covered by the
+  commitment. Grading follows [`CALIBRATION_PROTOCOL.md`](CALIBRATION_PROTOCOL.md)
+  §2 (single adjusted price series; anchor bar = last close strictly before
+  `asof`). A skeptic should recompute grades from any adjusted price series
+  using the revealed bands — the bands are the committed claim, the grades
+  are arithmetic on top.
+
+The embedded `rollup` (in-band coverage with a Wilson 95% CI, a 6-bin rank
+histogram against nominal `{5, 20, 25, 25, 20, 5}%`, median bias vs P50) is
+recomputable from the reveal file alone. Its standing caveat: one cohort is
+ONE market draw with cross-correlated names — n_effective is far below the
+leaf count, so calibration is judged across cohorts, not within one.
 
 ## Honest caveats
 
@@ -130,8 +159,12 @@ exist before the outcome.
 ```
 ledger_core.py          commitment primitives (project → hash → Merkle)
 seal.py                 seal one snapshot → commitment (public) + envelope (private)
+reveal.py               open one matured cohort → leaves + proofs (+ grade annotations)
 verify.py               independent verifier + self-test
+ots_stamp.py            OpenTimestamps stamper (core-lib; bypasses the broken CLI)
+ots_upgrade.py          upgrade pending .ots attestations to Bitcoin confirmations
 CALIBRATION_PROTOCOL.md pre-registered calibration rules (anchored, amend-prospectively)
 commitments/<asof>/     PUBLIC: COMMITMENT.txt (anchor this) + commitment_<asof>.json
+reveals/<asof>/<hz>/    PUBLIC: matured cohorts, leaf + proof + grade annotation
 seals_private/<asof>/   PRIVATE (gitignored): the sealed leaves, until revealed
 ```

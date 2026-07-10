@@ -13,6 +13,13 @@
       Walk the commitment chain (by chain_index) and confirm each
       prev_commitment matches the previous commitment's root.
 
+  python -X utf8 verify.py --reveal reveals/2026-06-11/1m/reveals_2026-06-11_1m.json
+      For every revealed leaf: recompute the leaf hash from its canonical
+      fields and walk the Merkle membership proof to the file's root; then
+      cross-check that root against the published commitment for that asof.
+      Grade/rollup fields are measurement annotations and are NOT covered by
+      this cryptographic check.
+
 Anchor (timestamp) verification is separate and trustless: `ots verify
 commitments/<asof>/COMMITMENT.txt.ots` against the Bitcoin blockchain.
 """
@@ -79,6 +86,46 @@ def verify_chain(commit_dir: str) -> bool:
     return ok
 
 
+def verify_reveal(path: str, commit_dir: str = "commitments") -> bool:
+    with open(path, encoding="utf-8") as f:
+        doc = json.load(f)
+    root = doc["merkle_root"]
+    ok = True
+    n_checked = 0
+    for entry in doc.get("reveals", []):
+        leaf = _canonical_only(entry["leaf"])
+        h = core.leaf_hash(leaf)
+        if h != entry.get("leaf_hash"):
+            print(f"  LEAF HASH MISMATCH: {leaf['ticker']} {leaf['horizon']}")
+            ok = False
+            continue
+        if not core.verify_membership(h, entry["merkle_proof"], root):
+            print(f"  MEMBERSHIP PROOF FAILED: {leaf['ticker']} {leaf['horizon']}")
+            ok = False
+            continue
+        n_checked += 1
+    if n_checked != doc.get("n_revealed"):
+        print(f"  REVEAL COUNT MISMATCH: verified {n_checked} != "
+              f"declared {doc.get('n_revealed')}")
+        ok = False
+    # cross-check the file's root against the published, anchored commitment
+    commit_path = os.path.join(commit_dir, doc["asof"],
+                               f"commitment_{doc['asof']}.json")
+    if os.path.isfile(commit_path):
+        with open(commit_path, encoding="utf-8") as f:
+            commit = json.load(f)
+        if commit.get("merkle_root") != root:
+            print(f"  ROOT != PUBLISHED COMMITMENT: {root} vs "
+                  f"{commit.get('merkle_root')}")
+            ok = False
+    else:
+        print(f"  (commitment file not found at {commit_path}; "
+              "root not cross-checked)")
+    print(f"{'OK ' if ok else 'FAIL'} reveal {doc['asof']} {doc['horizon']}  "
+          f"leaves={n_checked}/{doc.get('n_revealed')}  root={root[:16]}...")
+    return ok
+
+
 def _synthetic_records(n: int) -> list[dict]:
     recs = []
     for i in range(n):
@@ -130,6 +177,9 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--seal", help="verify a sealed_<asof>.json file")
     ap.add_argument("--chain", help="verify the commitment chain under this dir")
+    ap.add_argument("--reveal", help="verify a reveals_<asof>_<horizon>.json file")
+    ap.add_argument("--commit-dir", default="commitments",
+                    help="commitment dir for --reveal root cross-check")
     ap.add_argument("--selftest", action="store_true")
     args = ap.parse_args()
     results = []
@@ -139,8 +189,10 @@ def main() -> None:
         results.append(verify_seal(args.seal))
     if args.chain:
         results.append(verify_chain(args.chain))
+    if args.reveal:
+        results.append(verify_reveal(args.reveal, args.commit_dir))
     if not results:
-        ap.error("nothing to do: pass --selftest, --seal, and/or --chain")
+        ap.error("nothing to do: pass --selftest, --seal, --chain, and/or --reveal")
     raise SystemExit(0 if all(results) else 1)
 
 
