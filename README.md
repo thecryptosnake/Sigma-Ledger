@@ -138,6 +138,13 @@ leaf count, so calibration is judged across cohorts, not within one.
   read is the 1-month horizon after ~3 cohorts; the 1-year horizon after ~12
   months. Coverage is always reported with its CI; early numbers must not be
   over-read.
+- **Input provider is disclosed per cohort, and it changed at `chain_index 3`.**
+  Cohorts 0–2 were built on yfinance history; from 2026-08-14 the sweep takes
+  Tiingo adjusted EOD first, because yfinance can return a series that is
+  neither empty nor an error yet whose last bar lags by weeks — a stale-but-
+  valid series that the engine's empty/error fallback cannot catch. The change
+  is prospective, the engine is unchanged, and the reasoning plus the
+  measurement behind it live in that commitment's `disclosure` block.
 - **Interval coverage is the calibration claim — not P50.** Sigma deliberately
   under-promises the median on growth/AI names (a disclosed conservative bias).
   Read `prob_positive` for direction and the P5–P95 band for risk; treat P50 as

@@ -1,0 +1,45 @@
+{
+ "anchor": {
+  "calendars": [
+   "https://b.pool.opentimestamps.org",
+   "https://ots.btc.catallaxy.com"
+  ],
+  "method": "opentimestamps-bitcoin",
+  "note": "pending Bitcoin confirmation; upgrade+verify with any OTS verifier",
+  "ots_file": "COMMITMENT.txt.ots",
+  "stamped_at_utc": "2026-08-14T01:04:44.148594+00:00",
+  "status": "pending"
+ },
+ "asof": "2026-08-14",
+ "chain_index": 3,
+ "disclosure": {
+  "engine_version": "sigma-v1.3@045cf62 (unchanged; no engine file was edited \u2014 the sweep wrapper seeds the process-local history cache the engine consults first)",
+  "from": "yfinance primary (chain_index 0-2)",
+  "measured_2026-08-13": "24-name sample vs Tiingo: 23/24 identical to the cent, 1/24 (SATS) stale by 27 days. Provider equivalence on fresh names was gated 2026-06-04 (corr 1.00000) -> calibration-neutral where yfinance was fresh, strictly better where it was stale",
+  "protocol": "CALIBRATION_PROTOCOL.md section 6 \u2014 changes land as a disclosure note in the next commitment metadata; the provider is not among the section 7 frozen parameters (n=50000, df=5, GARCH(1,1), drift blend, per-record seed, pinned universes all unchanged)",
+  "scope": "prospective only; sealed cohorts 0-2 remain graded exactly as sealed",
+  "this_cohort_freshness": "500/501 tickers last bar 2026-08-13; 1 behind (EA @ 2026-08-04) \u2014 counted and never dropped, per the survivorship rule",
+  "to": "Tiingo adjusted EOD primary; the engine chain (yfinance-first) retained as a per-ticker fallback",
+  "topic": "history provider for this cohort inputs",
+  "why": "yfinance can return a series that is neither empty nor an error yet whose last bar lags by weeks; the built-in fallback triggers only on empty/error, so a stale-but-valid series would have sealed forecasts built on stale history"
+ },
+ "header": {
+  "horizons": [
+   "1m",
+   "3m",
+   "6m",
+   "1y",
+   "2y"
+  ],
+  "universe_size": 504,
+  "universe_version": "sp500_v1",
+  "vix_at_generation": 14.63
+ },
+ "merkle_root": "ea451e23fabcdec9744d0f2e9a0ca8695f06642bf97808f4145d767c3ca3fb68",
+ "n_leaves": 2505,
+ "n_skipped": 3,
+ "prev_commitment": "abbe62960adac16fef47cff1e88ee9849b5e8e967dfb25ebcacf382fb1009ccd",
+ "schema": "sigma-public-commitment-1",
+ "sealed_anchor_gap_days": 0,
+ "sealed_at_utc": "2026-08-14T01:04:26.109179+00:00"
+}
