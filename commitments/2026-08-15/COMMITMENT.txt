@@ -1,0 +1,13 @@
+Sigma public validation ledger -- forecast commitment
+asof:            2026-08-15
+chain_index:     4
+prev_commitment: ea451e23fabcdec9744d0f2e9a0ca8695f06642bf97808f4145d767c3ca3fb68
+merkle_root:     ed22a1bc0983f0cdb69325526d199113bf7bee50d58f38590e9358c73ab05c94
+n_leaves:        400
+sealed_at_utc:   2026-08-15T05:00:54.821534+00:00
+anchor_gap_days: 0   (proof date = anchor date, NOT asof)
+
+This Merkle root commits to the engine-free forecast set sealed
+privately on the above date. Anchor this file with OpenTimestamps
+(Bitcoin) to prove it existed at that time; reveal individual
+forecasts with Merkle membership proofs as they are graded.
