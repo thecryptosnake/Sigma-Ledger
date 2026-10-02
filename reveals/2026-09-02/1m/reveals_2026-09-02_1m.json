@@ -1,0 +1,5037 @@
+{
+ "asof": "2026-09-02",
+ "chain_index": 6,
+ "commitment_file": "commitments/2026-09-02/commitment_2026-09-02.json",
+ "grading_convention": "series-internal basis per public CALIBRATION_PROTOCOL.md s2: anchor bar = last close strictly before asof; split/dividend-invariant",
+ "horizon": "1m",
+ "merkle_root": "7278ef07ca5e626cbd86106086a1996235cd951478e2152931d87b9edd441145",
+ "n_leaves_total_in_seal": 400,
+ "n_revealed": 80,
+ "note": "leaf + merkle_proof are covered by the Bitcoin-anchored commitment (verify.py --reveal). grade + rollup are our measurement annotation, NOT covered by the commitment -- recompute them from any adjusted price series using the revealed bands (CALIBRATION_PROTOCOL.md section 2). All leaves of the matured horizon are revealed; unresolved grades are counted, never dropped.",
+ "revealed_at_utc": "2026-10-02T05:31:27.837440+00:00",
+ "reveals": [
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AAOI"
+   },
+   "leaf": {
+    "anchor_price": "103.3900",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-24.9000",
+    "p5": "-47.3000",
+    "p50": "-5.6000",
+    "p75": "18.7000",
+    "p95": "69.3000",
+    "prob_positive": "43.1000",
+    "ticker": "AAOI"
+   },
+   "leaf_hash": "875ef281ac498d5c90a7a926261922cef71538938f0428aaa57474e1f794da6d",
+   "merkle_proof": [
+    {
+     "hash": "8825566e1e7e4246a438d2b1086478b3b3d9b3e9f23fd5227a873d5631411fc5",
+     "side": "right"
+    },
+    {
+     "hash": "dea7b63f588f8c44c6610f02bc58e19841dc9d2ccb56a131a2f0bc443bf4d1d6",
+     "side": "right"
+    },
+    {
+     "hash": "3b7d7b500206c4ad3abf1fde5058a10a809a7cf9ef9048671f15a0e1cdd2b4f3",
+     "side": "right"
+    },
+    {
+     "hash": "6ddf92d76c04c4d1aba98b9d556f33a4c25f3733f359a33e5ff420028f141128",
+     "side": "left"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AAPL"
+   },
+   "leaf": {
+    "anchor_price": "325.1300",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-3.4000",
+    "p5": "-9.3000",
+    "p50": "0.4000",
+    "p75": "4.4000",
+    "p95": "11.1000",
+    "prob_positive": "52.8000",
+    "ticker": "AAPL"
+   },
+   "leaf_hash": "d8c11e6655fdb33bcf6d6df763f47aa3ba2b43ff58281fef827fbd4d5fff811b",
+   "merkle_proof": [
+    {
+     "hash": "d85d4ac1c261ac65f1b45bb6f5b05a4fe5637cbed69f73be53663757d9fd3390",
+     "side": "left"
+    },
+    {
+     "hash": "793809f5994a4b9aebec895a0c36c0beeed3364d1f21d0cd36acf17e5fe576c1",
+     "side": "right"
+    },
+    {
+     "hash": "ab063404b215cb67858e5087d577fe8d977615371fb4f3f7cdaf06caa37c6d75",
+     "side": "left"
+    },
+    {
+     "hash": "cf4c4003a6f563c92eeb0805b43f10e13bc8218b1f72b038f125a27175f40544",
+     "side": "left"
+    },
+    {
+     "hash": "06f721bc05fd8cced0a58028fcb87236a48fad6e15df8f4d90aa3e1091ac4c79",
+     "side": "left"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ADI"
+   },
+   "leaf": {
+    "anchor_price": "354.5200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-5.2000",
+    "p5": "-12.8000",
+    "p50": "0.2000",
+    "p75": "6.0000",
+    "p95": "15.2000",
+    "prob_positive": "51.1000",
+    "ticker": "ADI"
+   },
+   "leaf_hash": "cf9c8581b915e750f14b9e2046b903117e223ea0aca34738697970be41a65187",
+   "merkle_proof": [
+    {
+     "hash": "d033f090f206cc5db310e464cc42e2c39268cb249870601a4793f1af2d60bb53",
+     "side": "right"
+    },
+    {
+     "hash": "0f9439ecce5460d686ef74c94938b747492784fd42abdc37a299624cab41a286",
+     "side": "left"
+    },
+    {
+     "hash": "2a3cf5f392737f8d569baff9b40cb42df00bc5d554ac6d828f8bf2ecd5c71c15",
+     "side": "right"
+    },
+    {
+     "hash": "749f03f0689ec88e52b610721c099370db3e439b7d87c7dc9641f2524e4a4fae",
+     "side": "left"
+    },
+    {
+     "hash": "10b0c3682b995cb44332a7b4c5f4ba3bced4794dde294f1dbc9dd593b880c3ef",
+     "side": "right"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AI"
+   },
+   "leaf": {
+    "anchor_price": "10.3400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-12.3000",
+    "p5": "-27.2000",
+    "p50": "-1.2000",
+    "p75": "11.4000",
+    "p95": "34.1000",
+    "prob_positive": "47.3000",
+    "ticker": "AI"
+   },
+   "leaf_hash": "2affedb02877625096b61879ba0c0e9bd3d058d91555215acd8213b10e2ce574",
+   "merkle_proof": [
+    {
+     "hash": "2baf63a1340bfd957b0e466afbd847dba9d84601bf792175370a52a676cde7d9",
+     "side": "right"
+    },
+    {
+     "hash": "a56cd6e6cffc4d42fd29ab936faa74cbfae73bc865c20c4029cf05f466e0a2ef",
+     "side": "right"
+    },
+    {
+     "hash": "c0f8f384a5e206d948063bb514fbbc0dff6cb8ab6773235f37092581c8210cdc",
+     "side": "left"
+    },
+    {
+     "hash": "87cbffe432ae967df8247e82f9209425f691a6c6d2ea9674ca83e579f25665b1",
+     "side": "left"
+    },
+    {
+     "hash": "8ee9380b5db01c8164bdc3c3e49d9a53439f1b618af47b584e949429bfd3890c",
+     "side": "left"
+    },
+    {
+     "hash": "bcc9ca8a704eae9ca92578b6c62c78fac3a76eb0502b33259ace58a46dd3121f",
+     "side": "left"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ALAB"
+   },
+   "leaf": {
+    "anchor_price": "279.9100",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-15.2000",
+    "p5": "-32.0000",
+    "p50": "-1.9000",
+    "p75": "13.5000",
+    "p95": "41.6000",
+    "prob_positive": "46.3000",
+    "ticker": "ALAB"
+   },
+   "leaf_hash": "5199a2de23bb4a82b7a3ff76e5216c85e2548a953598b38343b5eec0d8fa1f84",
+   "merkle_proof": [
+    {
+     "hash": "51b17b17d5e75b9aced5f6b0bb63849d99fd262e60f85b9232830087c0bb3f6a",
+     "side": "right"
+    },
+    {
+     "hash": "65456058d2cabacb62304ce88e8bfde2fdabbf057c6c09a94c28c5de723c1d5e",
+     "side": "right"
+    },
+    {
+     "hash": "ccbe25d0f326f759b9d8936112db3e003fa0ec4962cca0bbd61d8d748e234d68",
+     "side": "right"
+    },
+    {
+     "hash": "6d9bd5f66d6e114f7efc1866a7c27ae1fba44bf5341f6e17c0bc3ba59d6df984",
+     "side": "left"
+    },
+    {
+     "hash": "9ec60dbf9fd4f9463584f5391a4f77fc9a80e44a31d349458d0a8bfb41500c99",
+     "side": "left"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AMAT"
+   },
+   "leaf": {
+    "anchor_price": "441.8500",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.1000",
+    "p5": "-22.9000",
+    "p50": "-0.6000",
+    "p75": "9.9000",
+    "p95": "28.1000",
+    "prob_positive": "48.4000",
+    "ticker": "AMAT"
+   },
+   "leaf_hash": "90b972a3cdef703b76a53e8d0147af8e4540fa0317f921571837e490eeba47fd",
+   "merkle_proof": [
+    {
+     "hash": "90c69af50513cef31a11475efb7ec8884809c9c53382f7dafc62eb8349a2eb45",
+     "side": "right"
+    },
+    {
+     "hash": "723237e84f7a1d9099e7c36cfa1d718c886877326c1c02cf02d8951263cef616",
+     "side": "right"
+    },
+    {
+     "hash": "9a7d47680029554aaccde4b0210e113e627e949e8d6e69303ce59ac2be790ecd",
+     "side": "right"
+    },
+    {
+     "hash": "06df603517c8e900b16949bca78f818c92793e6a3ed0a400984e5f6b36bf3ef9",
+     "side": "left"
+    },
+    {
+     "hash": "6f96297228ac501f748fc2ada4677b2975fc074205106ea1974eec0840296603",
+     "side": "left"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AMD"
+   },
+   "leaf": {
+    "anchor_price": "459.6100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.1000",
+    "p5": "-24.6000",
+    "p50": "0.5000",
+    "p75": "12.4000",
+    "p95": "40.0000",
+    "prob_positive": "51.2000",
+    "ticker": "AMD"
+   },
+   "leaf_hash": "00dea67ac26d7ae139d8e6888147e7f17d079f6a5bf9455ac69646488e351e6f",
+   "merkle_proof": [
+    {
+     "hash": "01af6a0fbabfd3bba77a13b3f824870c2c31484f235691835148f42c8be6eb82",
+     "side": "right"
+    },
+    {
+     "hash": "8f4f26f07577ec2a32b14ed6136f9c9764afeebca512f272963619f9f8c8caad",
+     "side": "right"
+    },
+    {
+     "hash": "d29659c65313977e067634068c190cd781b93737fa2b640b9493681fc7f1698d",
+     "side": "right"
+    },
+    {
+     "hash": "4bd4669cf0f3a1cd7ca9f73609baf470989e35d9db5d7cf6d4961e790a665954",
+     "side": "right"
+    },
+    {
+     "hash": "9b29400be0f0b7bdf8a4648d524bef06adb49cb1f66b93a510c1ffea4501c556",
+     "side": "right"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AMZN"
+   },
+   "leaf": {
+    "anchor_price": "254.9200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-6.0000",
+    "p5": "-15.2000",
+    "p50": "0.5000",
+    "p75": "7.5000",
+    "p95": "19.1000",
+    "prob_positive": "52.2000",
+    "ticker": "AMZN"
+   },
+   "leaf_hash": "6fc6bd591ebbfef6e3a3edaf405fa028b0f8348be735b0567ac4914b360c18be",
+   "merkle_proof": [
+    {
+     "hash": "6e5fd8abefce3499a1d96b81a06b039456e4c3338563933cbbd6afb4447b951b",
+     "side": "left"
+    },
+    {
+     "hash": "226009a62d7d42d97fcc419bc69271744c76a4f82e5af1bff5960e2f95203246",
+     "side": "left"
+    },
+    {
+     "hash": "c160982a67be7740b87c60a64a50b8cd771ca4529d667879743e9f1c3273d5cd",
+     "side": "left"
+    },
+    {
+     "hash": "db9d3f14a4ed102bb4dec945525524a6aff1c65700872c9ce7f5edc0189a2743",
+     "side": "right"
+    },
+    {
+     "hash": "ebddd3c84c5aa405bd662a5816ee159108a57d122130f0ceaf4897627f4fd767",
+     "side": "right"
+    },
+    {
+     "hash": "84c44ef78a6dacc73c2e7f7cbf51e11bbff4c6d0cc5e97105b161bc528faf02c",
+     "side": "left"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ANET"
+   },
+   "leaf": {
+    "anchor_price": "189.2600",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.0000",
+    "p5": "-21.3000",
+    "p50": "0.4000",
+    "p75": "10.8000",
+    "p95": "33.1000",
+    "prob_positive": "51.0000",
+    "ticker": "ANET"
+   },
+   "leaf_hash": "27350e9e726d48a687716d486ce17ebe8057b5d2701428fd79b74b859b2ee632",
+   "merkle_proof": [
+    {
+     "hash": "272b871f1eee51d890e1b4970a8aad355dd209bf0090bad989fea5b72fdfd257",
+     "side": "left"
+    },
+    {
+     "hash": "dc694daf01670df627bf87ec24d4e45679dcf7b3c9a353537beea2f1f51c710b",
+     "side": "right"
+    },
+    {
+     "hash": "723f09b43e24af400d95a0e920efc0cf094988358611af7879ad85fd03b93dd4",
+     "side": "left"
+    },
+    {
+     "hash": "6ed5677f4b869c99153393f9ff4b24cf07a017c7115a9f12284b4d8983311214",
+     "side": "right"
+    },
+    {
+     "hash": "8ee9380b5db01c8164bdc3c3e49d9a53439f1b618af47b584e949429bfd3890c",
+     "side": "left"
+    },
+    {
+     "hash": "bcc9ca8a704eae9ca92578b6c62c78fac3a76eb0502b33259ace58a46dd3121f",
+     "side": "left"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "APP"
+   },
+   "leaf": {
+    "anchor_price": "311.7400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.4000",
+    "p5": "-23.3000",
+    "p50": "0.7000",
+    "p75": "12.0000",
+    "p95": "38.0000",
+    "prob_positive": "51.9000",
+    "ticker": "APP"
+   },
+   "leaf_hash": "4d81e6699e124ad7efdb23cd72249f0904e62e79c5f38a74f23a8c2f2f04eb62",
+   "merkle_proof": [
+    {
+     "hash": "4d6dd74f19c3e3759ec6a63fc74f4ce562615abd24d48e6203437c35b534a96a",
+     "side": "left"
+    },
+    {
+     "hash": "1dc655146e22e552574940b1308bedaa9875e72d57790757cc9864621e5239c5",
+     "side": "right"
+    },
+    {
+     "hash": "34bc468b1b9bf0f130d57fd6acdd716c1c74f4c2ee82dd0a0a1b98444316feb2",
+     "side": "right"
+    },
+    {
+     "hash": "527c5cfd6c6906dfee926fe301a764fad57fdbee82950d805e0b7af1efae4c86",
+     "side": "right"
+    },
+    {
+     "hash": "9ec60dbf9fd4f9463584f5391a4f77fc9a80e44a31d349458d0a8bfb41500c99",
+     "side": "left"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ARM"
+   },
+   "leaf": {
+    "anchor_price": "234.8200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-12.6000",
+    "p5": "-27.9000",
+    "p50": "-0.9000",
+    "p75": "12.3000",
+    "p95": "42.9000",
+    "prob_positive": "48.0000",
+    "ticker": "ARM"
+   },
+   "leaf_hash": "3ba71c79627101d8565212457fe178660030e71af4e6bc79fa24feb43c005fcc",
+   "merkle_proof": [
+    {
+     "hash": "3ab5465ca7f1ae3f3acee62699972421d5754c237262ac11961d8a88797a40b9",
+     "side": "left"
+    },
+    {
+     "hash": "2f3554806748db67904970ccceb4434c040e13d62ffb2ef83872f7d2847e157e",
+     "side": "left"
+    },
+    {
+     "hash": "4fb6eb76b16e70c688f169bdc5c2d6de0eba9bbc19c304257385823c229a4bda",
+     "side": "left"
+    },
+    {
+     "hash": "5228c8d14d6f45dc5ae60e8012a87048cc08e8319d20f214f2862e2e06e4d378",
+     "side": "left"
+    },
+    {
+     "hash": "eb6d4dad99ccb1737d7b2951ed4b73e773879f55b0176a43d465c64118094793",
+     "side": "right"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ASML"
+   },
+   "leaf": {
+    "anchor_price": "1665.1400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.6000",
+    "p5": "-15.7000",
+    "p50": "0.1000",
+    "p75": "7.2000",
+    "p95": "18.7000",
+    "prob_positive": "50.2000",
+    "ticker": "ASML"
+   },
+   "leaf_hash": "9668a27110bb02a6a82e2771e099d359896ca726a76a21bf15bdcfdf8dc25778",
+   "merkle_proof": [
+    {
+     "hash": "963ad8bb8337a2acbf055729962d9ba3822f63ff77e4561d171daab67eeedb5e",
+     "side": "left"
+    },
+    {
+     "hash": "b956b404b5f01f7e0504a48f6ca390c48987b92733b56f849d4db468a5a26fd9",
+     "side": "left"
+    },
+    {
+     "hash": "b0ae3adfc4a965c736f456858f87aa81b5a0710811847ef45a8d74dce7665c5d",
+     "side": "right"
+    },
+    {
+     "hash": "6372ab70e3297cbc16e3bbc5fbafad076d4e32970d556ac5bcc38b9e3f93f49e",
+     "side": "right"
+    },
+    {
+     "hash": "f5354f28e24e61835b6d839a0464f17b233fc5b47721967555798d7257c785fe",
+     "side": "right"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ASTS"
+   },
+   "leaf": {
+    "anchor_price": "55.8000",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-17.2000",
+    "p5": "-34.9000",
+    "p50": "-2.4000",
+    "p75": "15.0000",
+    "p95": "46.2000",
+    "prob_positive": "46.0000",
+    "ticker": "ASTS"
+   },
+   "leaf_hash": "cb9fdcba7d910e3d8a96156635545cd02b35e886f6771609ac799d09d13521a3",
+   "merkle_proof": [
+    {
+     "hash": "cc0ddd6fd1e22792cdf1061357cebf00663dcb6822dc785c90ed82dad10c0c54",
+     "side": "right"
+    },
+    {
+     "hash": "cdb4d9721869711c0426305dc3fc6e18736af1bdde2f595b78722c094d3daa40",
+     "side": "left"
+    },
+    {
+     "hash": "6c44b60c4112c5e0c8900d4e3d8f4afaf149997733f35f89d870a350a90b7afa",
+     "side": "left"
+    },
+    {
+     "hash": "205a129eb1fe37f094679e26346cda21caa4b74ca22e7f007b2f35f1567cf4cb",
+     "side": "right"
+    },
+    {
+     "hash": "10b0c3682b995cb44332a7b4c5f4ba3bced4794dde294f1dbc9dd593b880c3ef",
+     "side": "right"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AVAV"
+   },
+   "leaf": {
+    "anchor_price": "144.1700",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.7000",
+    "p5": "-26.9000",
+    "p50": "0.1000",
+    "p75": "13.5000",
+    "p95": "37.1000",
+    "prob_positive": "50.2000",
+    "ticker": "AVAV"
+   },
+   "leaf_hash": "ec476fc89c0990e671b8e19ea043410822ea0dc045f2fcae00a1613170fdcba9",
+   "merkle_proof": [
+    {
+     "hash": "ec13fa1b14ecfc4687cd2e1c910fe31b1870edd226b8693648a66ee2ed13d1eb",
+     "side": "left"
+    },
+    {
+     "hash": "6467496f00e3bc5bea90c9337cb736a3e21f3687175300e1489aa624f458a069",
+     "side": "left"
+    },
+    {
+     "hash": "e8b0dc003ee1ae8f4d28e61c829337cd00770cdd50403813f6326958cd360082",
+     "side": "left"
+    },
+    {
+     "hash": "22eb5353b593431923467fe22c6762d3b76b4202ad61a4509db41b07c544c5d7",
+     "side": "right"
+    },
+    {
+     "hash": "9df5e8f5328ae607e27af97447330936ee3b0053ef2c3bc8c8ae61e31df80836",
+     "side": "right"
+    },
+    {
+     "hash": "1a01d00ecaaeed2509d8949aed088733736fb6bf169fcd5e1fb4e98cd23d7925",
+     "side": "left"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "AVGO"
+   },
+   "leaf": {
+    "anchor_price": "369.6800",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.5000",
+    "p5": "-16.8000",
+    "p50": "0.9000",
+    "p75": "8.8000",
+    "p95": "26.0000",
+    "prob_positive": "53.2000",
+    "ticker": "AVGO"
+   },
+   "leaf_hash": "67b9d1b1bb26970cb5d7731ee5599a711bac905a27b7b1104d905b210d5d1b40",
+   "merkle_proof": [
+    {
+     "hash": "6822956b745d2f2546dac18c24b3610c5c37abb66b8746506a091b09cfc527bd",
+     "side": "right"
+    },
+    {
+     "hash": "2d12ce9883e923aeae411ec505248812c169b1ef441918e47380e72ec015a3d9",
+     "side": "left"
+    },
+    {
+     "hash": "e6ab154ab6092956dc789d6aac5c985138ade8782d2ccbaba44524f182125a18",
+     "side": "right"
+    },
+    {
+     "hash": "4b98a65de9a4285aabb204110fd64f014d2587dabc6f3f8225feddcaafcdfb0d",
+     "side": "left"
+    },
+    {
+     "hash": "b06bc169491b93d0f652ed6a58e3685371cef9dcc769d50418437a0242963a00",
+     "side": "left"
+    },
+    {
+     "hash": "1bd0a856c91b9abe7cc155f4b856b71dff5a0a37a0c596dc956c498ab1a7ab25",
+     "side": "right"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "BBAI"
+   },
+   "leaf": {
+    "anchor_price": "2.9500",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-13.1000",
+    "p5": "-28.4000",
+    "p50": "-1.3000",
+    "p75": "12.2000",
+    "p95": "36.0000",
+    "prob_positive": "47.3000",
+    "ticker": "BBAI"
+   },
+   "leaf_hash": "f88d430d707951b88b5b6a0bf198a461269882b05e861fd744175278211d018f",
+   "merkle_proof": [
+    {
+     "hash": "f9c42a72e2d2ca3a006e8d1fc5c577d7b75e21acebaaf19b9a7351e1c328938e",
+     "side": "right"
+    },
+    {
+     "hash": "e47c503c1e8fd12d2c9c405647ae306f593f5dfbe70b5b58d67f534d664253a3",
+     "side": "left"
+    },
+    {
+     "hash": "a2eb745817811a084b26d611d5e075ef4d8c9060a11dbb61178289c6470076d4",
+     "side": "left"
+    },
+    {
+     "hash": "0934098a91aaf3f896ab17ba715e12d4ecdbba722c77e15de46c0b19df9d3494",
+     "side": "right"
+    },
+    {
+     "hash": "e2014af064c982c5615c868e33f7b8cd01af722f84fe810d28f44eb31295e617",
+     "side": "left"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "CDNS"
+   },
+   "leaf": {
+    "anchor_price": "313.0400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.0000",
+    "p5": "-16.9000",
+    "p50": "-0.1000",
+    "p75": "7.4000",
+    "p95": "20.2000",
+    "prob_positive": "49.7000",
+    "ticker": "CDNS"
+   },
+   "leaf_hash": "a5f27477112f97065c777e88574ab70d60d30570e5c326db7cd54578b079fc47",
+   "merkle_proof": [
+    {
+     "hash": "a610d99e8d797397985da468f3447e3eb76acc8d0e595875ee43e5ae8c0a45c0",
+     "side": "right"
+    },
+    {
+     "hash": "17b8154368791076f64349d66721a278f674a642f73ef55689a6840a25c63ee2",
+     "side": "right"
+    },
+    {
+     "hash": "a291edbcdd9a1ba743e20c5a3925125c46288470c0e0cf5954c6d01166b83f7a",
+     "side": "right"
+    },
+    {
+     "hash": "056d389d3ecb44c44c9849fac1c5d08f63a685772b1dcad5584a8b141b5d1999",
+     "side": "left"
+    },
+    {
+     "hash": "50420c043d74e8e07035f8efc67bf425c2ba0697119f8d6bada32ccc0a71a76c",
+     "side": "left"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "CEG"
+   },
+   "leaf": {
+    "anchor_price": "280.3100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.8000",
+    "p5": "-16.4000",
+    "p50": "0.0000",
+    "p75": "7.4000",
+    "p95": "19.6000",
+    "prob_positive": "50.0000",
+    "ticker": "CEG"
+   },
+   "leaf_hash": "5751a431408cb35e63f9ced60e0da986d0a5eb02778141525edb0de36697c3cb",
+   "merkle_proof": [
+    {
+     "hash": "56a15353a923c2747c513c3b6d61a7b44f93923295f8b837369b33583cfdbece",
+     "side": "left"
+    },
+    {
+     "hash": "319e00c4cf343371c86068c78a3a9d6767dec09b3f638aff763d7a86335a10e0",
+     "side": "left"
+    },
+    {
+     "hash": "7deb77162766dacac20f4159d86dada9fa928bcaaa4b8f1d80013a2237772c75",
+     "side": "left"
+    },
+    {
+     "hash": "6d9bd5f66d6e114f7efc1866a7c27ae1fba44bf5341f6e17c0bc3ba59d6df984",
+     "side": "left"
+    },
+    {
+     "hash": "9ec60dbf9fd4f9463584f5391a4f77fc9a80e44a31d349458d0a8bfb41500c99",
+     "side": "left"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "COHR"
+   },
+   "leaf": {
+    "anchor_price": "272.0300",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.7000",
+    "p5": "-33.7000",
+    "p50": "-1.2000",
+    "p75": "15.8000",
+    "p95": "47.1000",
+    "prob_positive": "48.0000",
+    "ticker": "COHR"
+   },
+   "leaf_hash": "a686eb5ae4ebcb113b81c0902a44f96b95d15899e5eac2773f56f6035ec0898d",
+   "merkle_proof": [
+    {
+     "hash": "a74f5601b7c392dafec9b11096eba214a83301ab8e967a247c187b6d02a7c662",
+     "side": "right"
+    },
+    {
+     "hash": "aee38400a3913f842203fea7f5ce2c940ddcfb5c03c8cc99209f5f8e8d915912",
+     "side": "left"
+    },
+    {
+     "hash": "a291edbcdd9a1ba743e20c5a3925125c46288470c0e0cf5954c6d01166b83f7a",
+     "side": "right"
+    },
+    {
+     "hash": "056d389d3ecb44c44c9849fac1c5d08f63a685772b1dcad5584a8b141b5d1999",
+     "side": "left"
+    },
+    {
+     "hash": "50420c043d74e8e07035f8efc67bf425c2ba0697119f8d6bada32ccc0a71a76c",
+     "side": "left"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "CRDO"
+   },
+   "leaf": {
+    "anchor_price": "206.6300",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.8000",
+    "p5": "-35.8000",
+    "p50": "-2.6000",
+    "p75": "15.5000",
+    "p95": "48.0000",
+    "prob_positive": "45.9000",
+    "ticker": "CRDO"
+   },
+   "leaf_hash": "1239d64ae3ddfe09e6e710c912fdcb00deeb2c0ebd4226592795011fb7db32a9",
+   "merkle_proof": [
+    {
+     "hash": "123e15758e3247e7abb17338f2686f4abf58cccf00480cc81f74f857678d29b4",
+     "side": "right"
+    },
+    {
+     "hash": "2025d78c268c54b02ab997df560244bfef291992edcfdd812f9923613417f7cf",
+     "side": "left"
+    },
+    {
+     "hash": "6f1ad5f02a6fe274d14ffc843c4636d878ddd4472e49cee75c1421e621cd0437",
+     "side": "left"
+    },
+    {
+     "hash": "7d8cfd0d2fab99a2aeefdc05edba90b56d3956f7093b05ab77e56ac3179a6590",
+     "side": "right"
+    },
+    {
+     "hash": "c9b63fc17350fe21de77ed258c8d9cffa6421b21c8d61b86fc825bec2b8a77c8",
+     "side": "left"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "CRM"
+   },
+   "leaf": {
+    "anchor_price": "258.1100",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-20.2000",
+    "p5": "-40.5000",
+    "p50": "-3.6000",
+    "p75": "16.5000",
+    "p95": "56.3000",
+    "prob_positive": "44.9000",
+    "ticker": "CRM"
+   },
+   "leaf_hash": "04e03d7ec7b3a1d9804e7953ae829c905ef8dfd88b8a1b0a4178eddbea729b4a",
+   "merkle_proof": [
+    {
+     "hash": "05f4c20abb4ac285be6b787a1cd60386b4847349d5600466cbcdbb1911dd7b08",
+     "side": "right"
+    },
+    {
+     "hash": "05eeb70e12f3eca886e8a7a9bed2d112d8a39671c1b6d007a3276e24166e0cb4",
+     "side": "right"
+    },
+    {
+     "hash": "aa0f81b442cdf02e7ac439ea561014479714fcc476171dd8f3afdf071bef8d14",
+     "side": "left"
+    },
+    {
+     "hash": "4bd4669cf0f3a1cd7ca9f73609baf470989e35d9db5d7cf6d4961e790a665954",
+     "side": "right"
+    },
+    {
+     "hash": "9b29400be0f0b7bdf8a4648d524bef06adb49cb1f66b93a510c1ffea4501c556",
+     "side": "right"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "CRWD"
+   },
+   "leaf": {
+    "anchor_price": "215.0700",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-19.6000",
+    "p5": "-40.4000",
+    "p50": "-3.1000",
+    "p75": "16.7000",
+    "p95": "57.4000",
+    "prob_positive": "45.5000",
+    "ticker": "CRWD"
+   },
+   "leaf_hash": "ae3e97c52395aa3488067ecc7519790c6cd8df6bb3150bd72c28b607bbe32e47",
+   "merkle_proof": [
+    {
+     "hash": "ac6ce23a956041d5bd5ba9c19eae0197b44e4b583dc39cb5db9d101b4b1c591b",
+     "side": "left"
+    },
+    {
+     "hash": "37a659f284e614dda80b4800b2ca6fe41444f7c966d23ac1105ec37f407c658a",
+     "side": "right"
+    },
+    {
+     "hash": "a3c58796081c18e6706610a6a011eba846d4611402ba8b959411f0f5ec9ec90c",
+     "side": "left"
+    },
+    {
+     "hash": "a085997215a46f917f6c11f73de1fa202fc2050b8ca6a1159274ce4f35216c41",
+     "side": "right"
+    },
+    {
+     "hash": "5e24e92c2c28135966b587f815ebd664e2488da36500a10a38bbb35a04b73f62",
+     "side": "right"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "DDOG"
+   },
+   "leaf": {
+    "anchor_price": "223.8400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-12.0000",
+    "p5": "-27.8000",
+    "p50": "-0.7000",
+    "p75": "11.9000",
+    "p95": "36.4000",
+    "prob_positive": "48.4000",
+    "ticker": "DDOG"
+   },
+   "leaf_hash": "890e23d9ec21e1a47206dcddc711f25b1eeec9f9f2e58c4517ad8a0caa328fc4",
+   "merkle_proof": [
+    {
+     "hash": "89a95ec6fe15ac9012b3699b363bf6cfd1dc2fc89bdb9053807c2507827615f8",
+     "side": "right"
+    },
+    {
+     "hash": "3c810b4a128746dfcc5355c418d2c429260986c4b79d967590a7878d64a73cee",
+     "side": "right"
+    },
+    {
+     "hash": "c0a49057d8b8168260e1d1cc24ccc613722c95c3088500414b94e7d3cbc4d404",
+     "side": "left"
+    },
+    {
+     "hash": "6ddf92d76c04c4d1aba98b9d556f33a4c25f3733f359a33e5ff420028f141128",
+     "side": "left"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "DELL"
+   },
+   "leaf": {
+    "anchor_price": "425.0000",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-11.0000",
+    "p5": "-25.0000",
+    "p50": "-0.9000",
+    "p75": "10.4000",
+    "p95": "31.0000",
+    "prob_positive": "47.7000",
+    "ticker": "DELL"
+   },
+   "leaf_hash": "76aef88cb00f57617a435d5b1b66c4818fad14d0b330e670af2696c5c78e1d35",
+   "merkle_proof": [
+    {
+     "hash": "7777c6bef8918018cd82c4275a1e8a914bca991a8505b7b2c89d91d9d4ca784d",
+     "side": "right"
+    },
+    {
+     "hash": "bc65a7031d336a0de9da5bc1e8c1c77b77e2fecf2acc8e4ac33fbf0e58415f86",
+     "side": "right"
+    },
+    {
+     "hash": "d187fe7e8623e7c9dbc6321c540cf05800f6af9d75a209b7d9bef1ff68ce8c27",
+     "side": "right"
+    },
+    {
+     "hash": "57d6a53ea90ed282e6c4d4515497de6f8dc8a6ad29903c2e1379f792bd23e402",
+     "side": "right"
+    },
+    {
+     "hash": "deb59612d25fb9a07410bdb4f4b71344f04e0d586bcb81d65918692e8a59505b",
+     "side": "left"
+    },
+    {
+     "hash": "84c44ef78a6dacc73c2e7f7cbf51e11bbff4c6d0cc5e97105b161bc528faf02c",
+     "side": "left"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ETN"
+   },
+   "leaf": {
+    "anchor_price": "390.7100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.9000",
+    "p5": "-16.5000",
+    "p50": "0.2000",
+    "p75": "7.8000",
+    "p95": "20.1000",
+    "prob_positive": "50.6000",
+    "ticker": "ETN"
+   },
+   "leaf_hash": "ec13fa1b14ecfc4687cd2e1c910fe31b1870edd226b8693648a66ee2ed13d1eb",
+   "merkle_proof": [
+    {
+     "hash": "ec476fc89c0990e671b8e19ea043410822ea0dc045f2fcae00a1613170fdcba9",
+     "side": "right"
+    },
+    {
+     "hash": "6467496f00e3bc5bea90c9337cb736a3e21f3687175300e1489aa624f458a069",
+     "side": "left"
+    },
+    {
+     "hash": "e8b0dc003ee1ae8f4d28e61c829337cd00770cdd50403813f6326958cd360082",
+     "side": "left"
+    },
+    {
+     "hash": "22eb5353b593431923467fe22c6762d3b76b4202ad61a4509db41b07c544c5d7",
+     "side": "right"
+    },
+    {
+     "hash": "9df5e8f5328ae607e27af97447330936ee3b0053ef2c3bc8c8ae61e31df80836",
+     "side": "right"
+    },
+    {
+     "hash": "1a01d00ecaaeed2509d8949aed088733736fb6bf169fcd5e1fb4e98cd23d7925",
+     "side": "left"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "FTNT"
+   },
+   "leaf": {
+    "anchor_price": "161.8500",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.3000",
+    "p5": "-23.5000",
+    "p50": "-0.5000",
+    "p75": "10.3000",
+    "p95": "29.4000",
+    "prob_positive": "48.8000",
+    "ticker": "FTNT"
+   },
+   "leaf_hash": "ac30e2daf93b3fdc6eab65052b880cbb845f635e2d727b580b9d92e839412975",
+   "merkle_proof": [
+    {
+     "hash": "ab3a9b3489f6413cfd414fa658ff85f0d7a4c15b15419c3d1da0278ae4aea600",
+     "side": "left"
+    },
+    {
+     "hash": "a7e7f7c4b6ef2d090e1e99ad00c673b6b41a4b268affdffaedf11009a4e22624",
+     "side": "left"
+    },
+    {
+     "hash": "3687d2966a606f39e12a68528de08927d47827a842395a41d9fec81850959c06",
+     "side": "right"
+    },
+    {
+     "hash": "a085997215a46f917f6c11f73de1fa202fc2050b8ca6a1159274ce4f35216c41",
+     "side": "right"
+    },
+    {
+     "hash": "5e24e92c2c28135966b587f815ebd664e2488da36500a10a38bbb35a04b73f62",
+     "side": "right"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "GLW"
+   },
+   "leaf": {
+    "anchor_price": "145.5600",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.4000",
+    "p5": "-25.7000",
+    "p50": "-0.6000",
+    "p75": "11.6000",
+    "p95": "33.1000",
+    "prob_positive": "48.6000",
+    "ticker": "GLW"
+   },
+   "leaf_hash": "3f33e9d5fcf61e23ecdb45d386f90c01c2b04eac2f27ae8b41a09b2894676c0f",
+   "merkle_proof": [
+    {
+     "hash": "3f7af368e73835847d6d0b6dac3850b5856836c9c4b9ebae6dd02894b4b0da56",
+     "side": "right"
+    },
+    {
+     "hash": "f7436c1bba47343bcfec776f5c770f4b0720bd8934621289cdb00a49a5066856",
+     "side": "right"
+    },
+    {
+     "hash": "b2f50bfee75ccc4ae928f823deb247847508bef0ca0b5bb139e6206d1aad5a38",
+     "side": "left"
+    },
+    {
+     "hash": "30e3c62f88ebe17d0f9ce2f4750a4b33ed17932e76bc50d3c5686b857b5dbf27",
+     "side": "left"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "GOOGL"
+   },
+   "leaf": {
+    "anchor_price": "335.0200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-4.0000",
+    "p5": "-11.3000",
+    "p50": "0.9000",
+    "p75": "6.0000",
+    "p95": "14.7000",
+    "prob_positive": "54.9000",
+    "ticker": "GOOGL"
+   },
+   "leaf_hash": "79d95bbf347cd4c9f08d453177716e18eb06f6ac9087723c326864aa959eb5e8",
+   "merkle_proof": [
+    {
+     "hash": "79b045e24a4c94a9862d674c7366703fc6d1782e229adfcd499c9072dde726ee",
+     "side": "left"
+    },
+    {
+     "hash": "2d2151578cffee2eb125e6e10c95ea29d671b9d7c8f7f0daa5822ca0e55e0f48",
+     "side": "right"
+    },
+    {
+     "hash": "bf29c3bb16375313bf9476c0d6f4547842c323e7c7f5837b7d60709e87b431a0",
+     "side": "left"
+    },
+    {
+     "hash": "57d6a53ea90ed282e6c4d4515497de6f8dc8a6ad29903c2e1379f792bd23e402",
+     "side": "right"
+    },
+    {
+     "hash": "deb59612d25fb9a07410bdb4f4b71344f04e0d586bcb81d65918692e8a59505b",
+     "side": "left"
+    },
+    {
+     "hash": "84c44ef78a6dacc73c2e7f7cbf51e11bbff4c6d0cc5e97105b161bc528faf02c",
+     "side": "left"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "IBM"
+   },
+   "leaf": {
+    "anchor_price": "231.4000",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.0000",
+    "p5": "-17.0000",
+    "p50": "-0.1000",
+    "p75": "7.4000",
+    "p95": "20.3000",
+    "prob_positive": "49.7000",
+    "ticker": "IBM"
+   },
+   "leaf_hash": "38bd7c93fae5f6ec1f746762bc1cfce76d4fda9694abdeab6841863b2b67ae06",
+   "merkle_proof": [
+    {
+     "hash": "3a43d26086d586732748945109184969ac115097534712f8ecb846b3e0390b22",
+     "side": "right"
+    },
+    {
+     "hash": "547b7a35ec281ebbcb60e60f546d62fabdfabbaa10579de1acd8437ae5cbc13e",
+     "side": "right"
+    },
+    {
+     "hash": "4fb6eb76b16e70c688f169bdc5c2d6de0eba9bbc19c304257385823c229a4bda",
+     "side": "left"
+    },
+    {
+     "hash": "5228c8d14d6f45dc5ae60e8012a87048cc08e8319d20f214f2862e2e06e4d378",
+     "side": "left"
+    },
+    {
+     "hash": "eb6d4dad99ccb1737d7b2951ed4b73e773879f55b0176a43d465c64118094793",
+     "side": "right"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "INTC"
+   },
+   "leaf": {
+    "anchor_price": "88.9700",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-13.7000",
+    "p5": "-28.9000",
+    "p50": "-2.1000",
+    "p75": "11.0000",
+    "p95": "34.8000",
+    "prob_positive": "45.3000",
+    "ticker": "INTC"
+   },
+   "leaf_hash": "4afabb3745d6510e8e24ebd599059db5e3d3b8eca866f9687b446244a5867afd",
+   "merkle_proof": [
+    {
+     "hash": "4ba936417655623c6e577b7e2d56c2dcfa3e868da908decf915c19e76c35d9e8",
+     "side": "right"
+    },
+    {
+     "hash": "17de5a317be0a6083816f2acd4170d911a61e30eb5e63e32f2c4e412f9f9e367",
+     "side": "right"
+    },
+    {
+     "hash": "4b2705307f5fcc130ce3e4c57ed86fb42cfce86dcf0417e8205c8fc15e3b11f5",
+     "side": "right"
+    },
+    {
+     "hash": "e0226f9d0b150c7ed3859856bde44431997204fd29c889c993f89b459c8973e9",
+     "side": "left"
+    },
+    {
+     "hash": "5af8cfde95ff0212e71cea8b821ab9ffd22d4bc56e72d9f807066ecefaa5fe69",
+     "side": "right"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "IONQ"
+   },
+   "leaf": {
+    "anchor_price": "37.7800",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.2000",
+    "p5": "-34.9000",
+    "p50": "-2.2000",
+    "p75": "15.7000",
+    "p95": "56.6000",
+    "prob_positive": "46.4000",
+    "ticker": "IONQ"
+   },
+   "leaf_hash": "a74f5601b7c392dafec9b11096eba214a83301ab8e967a247c187b6d02a7c662",
+   "merkle_proof": [
+    {
+     "hash": "a686eb5ae4ebcb113b81c0902a44f96b95d15899e5eac2773f56f6035ec0898d",
+     "side": "left"
+    },
+    {
+     "hash": "aee38400a3913f842203fea7f5ce2c940ddcfb5c03c8cc99209f5f8e8d915912",
+     "side": "left"
+    },
+    {
+     "hash": "a291edbcdd9a1ba743e20c5a3925125c46288470c0e0cf5954c6d01166b83f7a",
+     "side": "right"
+    },
+    {
+     "hash": "056d389d3ecb44c44c9849fac1c5d08f63a685772b1dcad5584a8b141b5d1999",
+     "side": "left"
+    },
+    {
+     "hash": "50420c043d74e8e07035f8efc67bf425c2ba0697119f8d6bada32ccc0a71a76c",
+     "side": "left"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "IRDM"
+   },
+   "leaf": {
+    "anchor_price": "46.7200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.5000",
+    "p5": "-18.0000",
+    "p50": "-0.2000",
+    "p75": "7.7000",
+    "p95": "21.5000",
+    "prob_positive": "49.4000",
+    "ticker": "IRDM"
+   },
+   "leaf_hash": "8bc7a1a3459e551f3db3da67bffea7e0a010bfc11fabe1408ed55d4cd0920b4b",
+   "merkle_proof": [
+    {
+     "hash": "8adc86c595702bf73630823355869303c3da11dca2fd7e376caf2c3a500b7767",
+     "side": "left"
+    },
+    {
+     "hash": "f342ad7ee1d81fd1f0f2d86a3b631e9b9c72ac74a9833f06af8669348e9fe5d9",
+     "side": "left"
+    },
+    {
+     "hash": "c0a49057d8b8168260e1d1cc24ccc613722c95c3088500414b94e7d3cbc4d404",
+     "side": "left"
+    },
+    {
+     "hash": "6ddf92d76c04c4d1aba98b9d556f33a4c25f3733f359a33e5ff420028f141128",
+     "side": "left"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ITA"
+   },
+   "leaf": {
+    "anchor_price": "225.4600",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-4.7000",
+    "p5": "-11.8000",
+    "p50": "0.3000",
+    "p75": "5.6000",
+    "p95": "14.1000",
+    "prob_positive": "51.6000",
+    "ticker": "ITA"
+   },
+   "leaf_hash": "e00f9548a5334504343a130ded6bffd885f40689adf1db9152047ff0390ea8c6",
+   "merkle_proof": [
+    {
+     "hash": "df81dc3eaef02c44b142171fa1d2461c2ea3607d0a2913f03a5b429bf3c9c625",
+     "side": "left"
+    },
+    {
+     "hash": "e786a9b6bb06743d78515fdf166ffad964fc64707fe8bb236570c7a7a1a4474c",
+     "side": "left"
+    },
+    {
+     "hash": "c6af520c723c75a7370b295ca35461e6f430aa9b13f964447b6c4d92fa76419c",
+     "side": "left"
+    },
+    {
+     "hash": "25386c92c549114d8110e807c07f4a3fd63e3bc02f7fc0be8be99bace8ad875c",
+     "side": "left"
+    },
+    {
+     "hash": "93025113b4f77c340394ec2c8c73ef477064f5422d67bf2c1fcc6903805f2dc1",
+     "side": "right"
+    },
+    {
+     "hash": "e1dc7918aada4bf2a2e44fe67c16640457798103e114637de62dde360c8ae8bb",
+     "side": "right"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "KLAC"
+   },
+   "leaf": {
+    "anchor_price": "170.8900",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-8.7000",
+    "p5": "-20.6000",
+    "p50": "-0.4000",
+    "p75": "8.8000",
+    "p95": "25.0000",
+    "prob_positive": "48.9000",
+    "ticker": "KLAC"
+   },
+   "leaf_hash": "e9563cb830b7fe0d32edbb048e22d180dcceef5379eaacd20c802a521d51a233",
+   "merkle_proof": [
+    {
+     "hash": "eadf7691ce16f8c551641c0fffacd4b2d82709141d3e7ed17682615c4fa7872d",
+     "side": "right"
+    },
+    {
+     "hash": "cc0ca60ff1a5d7f86a88ac602355c8583e7cb78934cb81906036277ec2249df6",
+     "side": "right"
+    },
+    {
+     "hash": "e2601d59e1be5f2d5239862e4c08f812cbde52badb7252baaacfe09906277e27",
+     "side": "right"
+    },
+    {
+     "hash": "22eb5353b593431923467fe22c6762d3b76b4202ad61a4509db41b07c544c5d7",
+     "side": "right"
+    },
+    {
+     "hash": "9df5e8f5328ae607e27af97447330936ee3b0053ef2c3bc8c8ae61e31df80836",
+     "side": "right"
+    },
+    {
+     "hash": "1a01d00ecaaeed2509d8949aed088733736fb6bf169fcd5e1fb4e98cd23d7925",
+     "side": "left"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "KTOS"
+   },
+   "leaf": {
+    "anchor_price": "49.3400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.1000",
+    "p5": "-25.3000",
+    "p50": "0.0000",
+    "p75": "12.4000",
+    "p95": "33.8000",
+    "prob_positive": "50.0000",
+    "ticker": "KTOS"
+   },
+   "leaf_hash": "123e15758e3247e7abb17338f2686f4abf58cccf00480cc81f74f857678d29b4",
+   "merkle_proof": [
+    {
+     "hash": "1239d64ae3ddfe09e6e710c912fdcb00deeb2c0ebd4226592795011fb7db32a9",
+     "side": "left"
+    },
+    {
+     "hash": "2025d78c268c54b02ab997df560244bfef291992edcfdd812f9923613417f7cf",
+     "side": "left"
+    },
+    {
+     "hash": "6f1ad5f02a6fe274d14ffc843c4636d878ddd4472e49cee75c1421e621cd0437",
+     "side": "left"
+    },
+    {
+     "hash": "7d8cfd0d2fab99a2aeefdc05edba90b56d3956f7093b05ab77e56ac3179a6590",
+     "side": "right"
+    },
+    {
+     "hash": "c9b63fc17350fe21de77ed258c8d9cffa6421b21c8d61b86fc825bec2b8a77c8",
+     "side": "left"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "LITE"
+   },
+   "leaf": {
+    "anchor_price": "868.9500",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.5000",
+    "p5": "-32.8000",
+    "p50": "-1.8000",
+    "p75": "14.1000",
+    "p95": "43.4000",
+    "prob_positive": "46.6000",
+    "ticker": "LITE"
+   },
+   "leaf_hash": "d85d4ac1c261ac65f1b45bb6f5b05a4fe5637cbed69f73be53663757d9fd3390",
+   "merkle_proof": [
+    {
+     "hash": "d8c11e6655fdb33bcf6d6df763f47aa3ba2b43ff58281fef827fbd4d5fff811b",
+     "side": "right"
+    },
+    {
+     "hash": "793809f5994a4b9aebec895a0c36c0beeed3364d1f21d0cd36acf17e5fe576c1",
+     "side": "right"
+    },
+    {
+     "hash": "ab063404b215cb67858e5087d577fe8d977615371fb4f3f7cdaf06caa37c6d75",
+     "side": "left"
+    },
+    {
+     "hash": "cf4c4003a6f563c92eeb0805b43f10e13bc8218b1f72b038f125a27175f40544",
+     "side": "left"
+    },
+    {
+     "hash": "06f721bc05fd8cced0a58028fcb87236a48fad6e15df8f4d90aa3e1091ac4c79",
+     "side": "left"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "LRCX"
+   },
+   "leaf": {
+    "anchor_price": "290.2000",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.2000",
+    "p5": "-24.8000",
+    "p50": "-0.8000",
+    "p75": "10.8000",
+    "p95": "30.9000",
+    "prob_positive": "47.9000",
+    "ticker": "LRCX"
+   },
+   "leaf_hash": "5cd4d9ee04d1fa790f38c1a7c38c9a1c31294d42a0026c076171f7426fc69492",
+   "merkle_proof": [
+    {
+     "hash": "5c956b1ca67da941a12551f87ca7490d3db3a42fdab3b93b36c11ea68090d889",
+     "side": "left"
+    },
+    {
+     "hash": "7c3369fe2eb2f83ffca5638df9905cc5bde353875fc47dbc6c53f55d42b6994a",
+     "side": "right"
+    },
+    {
+     "hash": "fe21c2215cd49fd3f0624c9d9684eea0dd6854b538c8348fb75445ff09a646b6",
+     "side": "left"
+    },
+    {
+     "hash": "4104a1a9b00536e90e9359a2948db3f25809aa63b7d3fd5ca0e15f4ee0dfde22",
+     "side": "right"
+    },
+    {
+     "hash": "2d537ef7eec972ad4242b3e18c37c24806ebbf7bd15d3530781b1d38b06d3f3b",
+     "side": "right"
+    },
+    {
+     "hash": "1bd0a856c91b9abe7cc155f4b856b71dff5a0a37a0c596dc956c498ab1a7ab25",
+     "side": "right"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "LUNR"
+   },
+   "leaf": {
+    "anchor_price": "14.7200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-19.3000",
+    "p5": "-38.5000",
+    "p50": "-3.2000",
+    "p75": "16.1000",
+    "p95": "52.4000",
+    "prob_positive": "45.2000",
+    "ticker": "LUNR"
+   },
+   "leaf_hash": "c5b9817880d43d890b7112093192ade840201b795ad07d6b3de5130d0b471779",
+   "merkle_proof": [
+    {
+     "hash": "c5c2df630e71a07655611a1df1dc6bd09394d6f62f3c213ad0fa2f4ccfc35b7f",
+     "side": "right"
+    },
+    {
+     "hash": "9f732d52c2a6bde36a42abec0b14d18c7891f6594be5c1bcdcd9c09fa1d08c57",
+     "side": "left"
+    },
+    {
+     "hash": "1e1c5fcc22310a0017d240dbe3fc88f79388734ab737fa1e555ada19924f4caf",
+     "side": "left"
+    },
+    {
+     "hash": "e52c6909e87706966861afce7617e76d3e1882642e3a1806cded48c33956ce9e",
+     "side": "left"
+    },
+    {
+     "hash": "7edc0c2fcb2b64960fd12a23e489bb01853d7cbe83b0ce10accbcced225ba37d",
+     "side": "left"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "META"
+   },
+   "leaf": {
+    "anchor_price": "578.5400",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-4.3000",
+    "p5": "-12.7000",
+    "p50": "1.3000",
+    "p75": "7.2000",
+    "p95": "20.2000",
+    "prob_positive": "56.0000",
+    "ticker": "META"
+   },
+   "leaf_hash": "9fa5e9081e97c45d21121cc1827edf011f974cb0c4333e347db6e0354ebc3693",
+   "merkle_proof": [
+    {
+     "hash": "9f9b3c1abe1cbe5e9549a139a338f11f0dd86b7afa0f5cec9240ed88cb1c6ee3",
+     "side": "left"
+    },
+    {
+     "hash": "28076bd782da608e72d8f18641ab5fe3c7874cf9ba1d0ffb642040603d65f966",
+     "side": "left"
+    },
+    {
+     "hash": "b7ae28c6681d925610e0309f5b0eaf58995b9f2f62c2c16f74fda383104bd9fd",
+     "side": "right"
+    },
+    {
+     "hash": "9278e0c433da549a6613d1d2686e5485f07239b910bd76d5b629a75c9179d0e1",
+     "side": "left"
+    },
+    {
+     "hash": "f5354f28e24e61835b6d839a0464f17b233fc5b47721967555798d7257c785fe",
+     "side": "right"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "MRAM"
+   },
+   "leaf": {
+    "anchor_price": "15.8600",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-21.8000",
+    "p5": "-43.3000",
+    "p50": "-4.4000",
+    "p75": "16.8000",
+    "p95": "61.1000",
+    "prob_positive": "43.8000",
+    "ticker": "MRAM"
+   },
+   "leaf_hash": "3a43d26086d586732748945109184969ac115097534712f8ecb846b3e0390b22",
+   "merkle_proof": [
+    {
+     "hash": "38bd7c93fae5f6ec1f746762bc1cfce76d4fda9694abdeab6841863b2b67ae06",
+     "side": "left"
+    },
+    {
+     "hash": "547b7a35ec281ebbcb60e60f546d62fabdfabbaa10579de1acd8437ae5cbc13e",
+     "side": "right"
+    },
+    {
+     "hash": "4fb6eb76b16e70c688f169bdc5c2d6de0eba9bbc19c304257385823c229a4bda",
+     "side": "left"
+    },
+    {
+     "hash": "5228c8d14d6f45dc5ae60e8012a87048cc08e8319d20f214f2862e2e06e4d378",
+     "side": "left"
+    },
+    {
+     "hash": "eb6d4dad99ccb1737d7b2951ed4b73e773879f55b0176a43d465c64118094793",
+     "side": "right"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "MRVL"
+   },
+   "leaf": {
+    "anchor_price": "210.3900",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.2000",
+    "p5": "-33.5000",
+    "p50": "-1.0000",
+    "p75": "15.7000",
+    "p95": "56.8000",
+    "prob_positive": "48.3000",
+    "ticker": "MRVL"
+   },
+   "leaf_hash": "b83a0baff0a694bdd389e6539ce01c68c862ea37095751db8bff2aa0133a95be",
+   "merkle_proof": [
+    {
+     "hash": "b913fbee6b4fbc134e914a752ba0e857554adedd7b36fc968dc73d7c7b32c125",
+     "side": "right"
+    },
+    {
+     "hash": "748b50200cf4954a49db08a9accd24e168b40d732a2cd2af87f360ae197b777f",
+     "side": "right"
+    },
+    {
+     "hash": "16cbc4243a9c71724f78db886cab1d6d47e234b48123fd918c2316f44f4ae244",
+     "side": "left"
+    },
+    {
+     "hash": "4700b94a8547d27171e425ce6a6a89b2fd97293d6a58060aa7879bc478af757e",
+     "side": "left"
+    },
+    {
+     "hash": "5e24e92c2c28135966b587f815ebd664e2488da36500a10a38bbb35a04b73f62",
+     "side": "right"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "MSFT"
+   },
+   "leaf": {
+    "anchor_price": "501.0200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-4.2000",
+    "p5": "-11.9000",
+    "p50": "0.8000",
+    "p75": "6.1000",
+    "p95": "15.4000",
+    "prob_positive": "54.6000",
+    "ticker": "MSFT"
+   },
+   "leaf_hash": "f1733bae6da6fdd83f089830e9e5acd5614c2a48d04e38c227aac70965fcc1b4",
+   "merkle_proof": [
+    {
+     "hash": "f2c68df0571269debe91084ae4c4e9a1e003a80013672002da44b11f42fa2435",
+     "side": "right"
+    },
+    {
+     "hash": "4a407ce6741111f352b49231233ca0344f94fe6acb821b7149cd748db11289b3",
+     "side": "right"
+    },
+    {
+     "hash": "cb988215271441547ff58d948dbbcd5261c94f42a285846c9c156abade2c20df",
+     "side": "right"
+    },
+    {
+     "hash": "50acbde26495fdb4f6fb6214661f9b8fe58133117cb44e097dcfe677aae03c14",
+     "side": "left"
+    },
+    {
+     "hash": "424a5592bbb915b42c58d0d2e917242889d47f3fdf976b29d8000d058a60f372",
+     "side": "left"
+    },
+    {
+     "hash": "1a01d00ecaaeed2509d8949aed088733736fb6bf169fcd5e1fb4e98cd23d7925",
+     "side": "left"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "MU"
+   },
+   "leaf": {
+    "anchor_price": "933.4400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.3000",
+    "p5": "-25.4000",
+    "p50": "1.4000",
+    "p75": "14.6000",
+    "p95": "44.7000",
+    "prob_positive": "53.0000",
+    "ticker": "MU"
+   },
+   "leaf_hash": "0cabcdf680eaa6ab6cf7c50e52fbf636fae4a9417bdf465dd109bbce921eedb3",
+   "merkle_proof": [
+    {
+     "hash": "0da61176502958281ca8bae7edc1586ca1620dd6f3daef54f6ee80a99888e7d5",
+     "side": "right"
+    },
+    {
+     "hash": "48b082fa23c405e218748ac22b257c3f8c84348e2392d6b636452cc1d2d07b2d",
+     "side": "right"
+    },
+    {
+     "hash": "c41a94f1b79716fbebc12fef6adad165c8ccdd88cc2db08b9790a19927b2284a",
+     "side": "right"
+    },
+    {
+     "hash": "7d8cfd0d2fab99a2aeefdc05edba90b56d3956f7093b05ab77e56ac3179a6590",
+     "side": "right"
+    },
+    {
+     "hash": "c9b63fc17350fe21de77ed258c8d9cffa6421b21c8d61b86fc825bec2b8a77c8",
+     "side": "left"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "NBIS"
+   },
+   "leaf": {
+    "anchor_price": "199.5400",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-22.0000",
+    "p5": "-43.1000",
+    "p50": "-4.4000",
+    "p75": "17.1000",
+    "p95": "60.5000",
+    "prob_positive": "43.9000",
+    "ticker": "NBIS"
+   },
+   "leaf_hash": "ac6ce23a956041d5bd5ba9c19eae0197b44e4b583dc39cb5db9d101b4b1c591b",
+   "merkle_proof": [
+    {
+     "hash": "ae3e97c52395aa3488067ecc7519790c6cd8df6bb3150bd72c28b607bbe32e47",
+     "side": "right"
+    },
+    {
+     "hash": "37a659f284e614dda80b4800b2ca6fe41444f7c966d23ac1105ec37f407c658a",
+     "side": "right"
+    },
+    {
+     "hash": "a3c58796081c18e6706610a6a011eba846d4611402ba8b959411f0f5ec9ec90c",
+     "side": "left"
+    },
+    {
+     "hash": "a085997215a46f917f6c11f73de1fa202fc2050b8ca6a1159274ce4f35216c41",
+     "side": "right"
+    },
+    {
+     "hash": "5e24e92c2c28135966b587f815ebd664e2488da36500a10a38bbb35a04b73f62",
+     "side": "right"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "NET"
+   },
+   "leaf": {
+    "anchor_price": "285.5100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.8000",
+    "p5": "-26.9000",
+    "p50": "-0.6000",
+    "p75": "12.0000",
+    "p95": "35.2000",
+    "prob_positive": "48.7000",
+    "ticker": "NET"
+   },
+   "leaf_hash": "f6570db0db5f9337689b393857c098b5e8ff18c0e343a402a37793e75ab51204",
+   "merkle_proof": [
+    {
+     "hash": "f5f9043063c73dc89558e9567f0608ef8e968bbb9b3de6dd854223937c3ffce0",
+     "side": "left"
+    },
+    {
+     "hash": "6764cf164cf88bd1c3295ce9d599bcb8459e69bbc80c08d282a571b38f4705d1",
+     "side": "right"
+    },
+    {
+     "hash": "2092b9455c594c27c24f16beb73b5d0466a577a81ab06188849c47d55eced59f",
+     "side": "right"
+    },
+    {
+     "hash": "0934098a91aaf3f896ab17ba715e12d4ecdbba722c77e15de46c0b19df9d3494",
+     "side": "right"
+    },
+    {
+     "hash": "e2014af064c982c5615c868e33f7b8cd01af722f84fe810d28f44eb31295e617",
+     "side": "left"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "NOW"
+   },
+   "leaf": {
+    "anchor_price": "142.9000",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-11.5000",
+    "p5": "-26.5000",
+    "p50": "-0.7000",
+    "p75": "11.5000",
+    "p95": "34.2000",
+    "prob_positive": "48.5000",
+    "ticker": "NOW"
+   },
+   "leaf_hash": "4fe3fc1abf4a7002b3c04f91a5d4cd76ccc7d834e4f9497496f401bd7ece0ffa",
+   "merkle_proof": [
+    {
+     "hash": "4e66fda71f6070cd2e440180662ba64e2beaf63874b708269d1f4c9c5b6166d8",
+     "side": "left"
+    },
+    {
+     "hash": "31ffdb4ddb815697196ccd4418bb56cac79ace0ef9b8be629b40265596d9949d",
+     "side": "right"
+    },
+    {
+     "hash": "75aac91d93acb6712a3d9c7f2726aaa82de86b401ebdfca788514d90347eb9a4",
+     "side": "left"
+    },
+    {
+     "hash": "527c5cfd6c6906dfee926fe301a764fad57fdbee82950d805e0b7af1efae4c86",
+     "side": "right"
+    },
+    {
+     "hash": "9ec60dbf9fd4f9463584f5391a4f77fc9a80e44a31d349458d0a8bfb41500c99",
+     "side": "left"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "NVDA"
+   },
+   "leaf": {
+    "anchor_price": "217.4400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.5000",
+    "p5": "-21.1000",
+    "p50": "1.0000",
+    "p75": "11.7000",
+    "p95": "34.5000",
+    "prob_positive": "52.7000",
+    "ticker": "NVDA"
+   },
+   "leaf_hash": "c123bfa010479f5c107140f11510a679ea2d680feeeefd66f27ec143164ddd3b",
+   "merkle_proof": [
+    {
+     "hash": "c2276e02e0532705f74f774016c8a4b1b49053dad5c2a5cd2251dd5ebf097ac9",
+     "side": "right"
+    },
+    {
+     "hash": "76768a4d9b7d69f3e1efd9dee12f296c70490b32617cc6155443293d672f4a11",
+     "side": "right"
+    },
+    {
+     "hash": "323ddbf41d020503bf231035ad6786aa584f8f0448e89b85da427b2a2cc1bd6e",
+     "side": "right"
+    },
+    {
+     "hash": "e52c6909e87706966861afce7617e76d3e1882642e3a1806cded48c33956ce9e",
+     "side": "left"
+    },
+    {
+     "hash": "7edc0c2fcb2b64960fd12a23e489bb01853d7cbe83b0ce10accbcced225ba37d",
+     "side": "left"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "NVTS"
+   },
+   "leaf": {
+    "anchor_price": "10.9400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-22.1000",
+    "p5": "-43.0000",
+    "p50": "-4.2000",
+    "p75": "17.7000",
+    "p95": "60.8000",
+    "prob_positive": "44.3000",
+    "ticker": "NVTS"
+   },
+   "leaf_hash": "2baf63a1340bfd957b0e466afbd847dba9d84601bf792175370a52a676cde7d9",
+   "merkle_proof": [
+    {
+     "hash": "2affedb02877625096b61879ba0c0e9bd3d058d91555215acd8213b10e2ce574",
+     "side": "left"
+    },
+    {
+     "hash": "a56cd6e6cffc4d42fd29ab936faa74cbfae73bc865c20c4029cf05f466e0a2ef",
+     "side": "right"
+    },
+    {
+     "hash": "c0f8f384a5e206d948063bb514fbbc0dff6cb8ab6773235f37092581c8210cdc",
+     "side": "left"
+    },
+    {
+     "hash": "87cbffe432ae967df8247e82f9209425f691a6c6d2ea9674ca83e579f25665b1",
+     "side": "left"
+    },
+    {
+     "hash": "8ee9380b5db01c8164bdc3c3e49d9a53439f1b618af47b584e949429bfd3890c",
+     "side": "left"
+    },
+    {
+     "hash": "bcc9ca8a704eae9ca92578b6c62c78fac3a76eb0502b33259ace58a46dd3121f",
+     "side": "left"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "OKLO"
+   },
+   "leaf": {
+    "anchor_price": "38.5300",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.6000",
+    "p5": "-36.3000",
+    "p50": "-1.6000",
+    "p75": "17.6000",
+    "p95": "62.7000",
+    "prob_positive": "47.4000",
+    "ticker": "OKLO"
+   },
+   "leaf_hash": "d9778e4955c8822a715aa25c88bc487bf5062acc0df65b5dfe66a09c17ff1f7d",
+   "merkle_proof": [
+    {
+     "hash": "d94ec1463505bf6754f36502a5b41e57a3c1344d58036fabadf246143e991d4a",
+     "side": "left"
+    },
+    {
+     "hash": "33c9e0a5d20daec65112c353b7ec41b09f5be4b3d4db046cd6cbfb1dfc97d164",
+     "side": "right"
+    },
+    {
+     "hash": "94f2817b58854e1a18c2d02d190f6ed36718ef48710428409c097e0e69f0677d",
+     "side": "right"
+    },
+    {
+     "hash": "9b21a79eadfb9b47ac66fa3fbb34055cb70a664cef347ba9e8cb80f846133581",
+     "side": "right"
+    },
+    {
+     "hash": "93025113b4f77c340394ec2c8c73ef477064f5422d67bf2c1fcc6903805f2dc1",
+     "side": "right"
+    },
+    {
+     "hash": "e1dc7918aada4bf2a2e44fe67c16640457798103e114637de62dde360c8ae8bb",
+     "side": "right"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ONDS"
+   },
+   "leaf": {
+    "anchor_price": "7.0400",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-19.6000",
+    "p5": "-39.4000",
+    "p50": "-3.4000",
+    "p75": "16.2000",
+    "p95": "54.1000",
+    "prob_positive": "45.0000",
+    "ticker": "ONDS"
+   },
+   "leaf_hash": "34f0229ab735b193c7f60f58352526113a5a40de4ba4e13721e38ae95384097b",
+   "merkle_proof": [
+    {
+     "hash": "34c5d23d268f770a923189504f5dc1d9035cc3284922d52f1a4deed50bfd70b3",
+     "side": "left"
+    },
+    {
+     "hash": "79e8e64b86f64bd75fb00a46b9be0a7e85af322bd96bec60873e4e5757f17f91",
+     "side": "right"
+    },
+    {
+     "hash": "051dd820e75db56029e51c76d3098d4dcfbb92afcbb59ff7bcfb0e92d080bc8b",
+     "side": "right"
+    },
+    {
+     "hash": "5228c8d14d6f45dc5ae60e8012a87048cc08e8319d20f214f2862e2e06e4d378",
+     "side": "left"
+    },
+    {
+     "hash": "eb6d4dad99ccb1737d7b2951ed4b73e773879f55b0176a43d465c64118094793",
+     "side": "right"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "ORCL"
+   },
+   "leaf": {
+    "anchor_price": "141.3200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-9.3000",
+    "p5": "-22.2000",
+    "p50": "-0.3000",
+    "p75": "9.7000",
+    "p95": "27.8000",
+    "prob_positive": "49.3000",
+    "ticker": "ORCL"
+   },
+   "leaf_hash": "3ddff42eb860c5ad864b7b54e3e7a285a074e7aa38aee4345e13e4754c915112",
+   "merkle_proof": [
+    {
+     "hash": "3dacfa55131254b6ce65413e3d631f9df074b219aeccdb6a1b837098887d4f85",
+     "side": "left"
+    },
+    {
+     "hash": "73696c7b3bccbfc0593658668686c8d6fecfccaa264f7ef8afcb1c7c42f9448f",
+     "side": "right"
+    },
+    {
+     "hash": "6a2ece4e40beac23e536878e651f35695668515fed46bd442c4e5fead4168b52",
+     "side": "right"
+    },
+    {
+     "hash": "30e3c62f88ebe17d0f9ce2f4750a4b33ed17932e76bc50d3c5686b857b5dbf27",
+     "side": "left"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "PANW"
+   },
+   "leaf": {
+    "anchor_price": "362.0900",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.1000",
+    "p5": "-28.7000",
+    "p50": "-1.1000",
+    "p75": "12.7000",
+    "p95": "37.4000",
+    "prob_positive": "47.8000",
+    "ticker": "PANW"
+   },
+   "leaf_hash": "d0c88b445259f5837e1bfc852605d32845359576fb25701f35689d1d30e57a4c",
+   "merkle_proof": [
+    {
+     "hash": "d09f9cf133347d74728f5f01f2d35b227dacb933e2bf73531c92332a658f41b9",
+     "side": "left"
+    },
+    {
+     "hash": "bd9eec1c1dba935150478af003112ac02cff14fef0b55d1f8acaabb0f790ab8a",
+     "side": "left"
+    },
+    {
+     "hash": "3192ca85849a6c56cdf102901fc41e5b7cc64a3a63bb52cdbaccbd203dbb0653",
+     "side": "left"
+    },
+    {
+     "hash": "749f03f0689ec88e52b610721c099370db3e439b7d87c7dc9641f2524e4a4fae",
+     "side": "left"
+    },
+    {
+     "hash": "10b0c3682b995cb44332a7b4c5f4ba3bced4794dde294f1dbc9dd593b880c3ef",
+     "side": "right"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "PATH"
+   },
+   "leaf": {
+    "anchor_price": "18.1400",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-12.4000",
+    "p5": "-27.2000",
+    "p50": "-1.2000",
+    "p75": "11.5000",
+    "p95": "34.1000",
+    "prob_positive": "47.3000",
+    "ticker": "PATH"
+   },
+   "leaf_hash": "9382866a40a7d9a54c1240081ccd8fd5d43e973b79614d96e7ce20fc7912ad64",
+   "merkle_proof": [
+    {
+     "hash": "93cd5fe5f8c4777126c229b862e313f3101f8e3c75a6c5a9c0451780280635f6",
+     "side": "right"
+    },
+    {
+     "hash": "2eaef7db98c4515d5f8a7698c9cba123d7e40c6debc55605f9050bd3205b9063",
+     "side": "left"
+    },
+    {
+     "hash": "71c03588da47df94d31a2b6d64067602e1b5b31684b9309f31623ffb42b0d707",
+     "side": "left"
+    },
+    {
+     "hash": "06df603517c8e900b16949bca78f818c92793e6a3ed0a400984e5f6b36bf3ef9",
+     "side": "left"
+    },
+    {
+     "hash": "6f96297228ac501f748fc2ada4677b2975fc074205106ea1974eec0840296603",
+     "side": "left"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "PLTR"
+   },
+   "leaf": {
+    "anchor_price": "179.9200",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-9.8000",
+    "p5": "-23.6000",
+    "p50": "0.2000",
+    "p75": "11.4000",
+    "p95": "37.0000",
+    "prob_positive": "50.4000",
+    "ticker": "PLTR"
+   },
+   "leaf_hash": "3beabf562722059fa513f9bb254de582928b73dafac2e5f5988ee45b8486d0ba",
+   "merkle_proof": [
+    {
+     "hash": "3c4b1a5fa4c092988f169542a985ef77f9fb5df99394b54b6fdb528198aa3c1b",
+     "side": "right"
+    },
+    {
+     "hash": "55bc19729b37477d6b74dcd4e15318ecac0ed8722aa4070ef3fe761169b0136a",
+     "side": "left"
+    },
+    {
+     "hash": "5dd3531cc42d16d08faa0979b59cf654dd592e7cfba075d9b5df6d0dd8707de6",
+     "side": "right"
+    },
+    {
+     "hash": "b645c2ecdb30c0ae48af5ad1fec589009e89aa4e1e272041c8336f5b5e793dc2",
+     "side": "right"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "PWR"
+   },
+   "leaf": {
+    "anchor_price": "611.3900",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.0000",
+    "p5": "-18.9000",
+    "p50": "-0.2000",
+    "p75": "8.2000",
+    "p95": "22.7000",
+    "prob_positive": "49.2000",
+    "ticker": "PWR"
+   },
+   "leaf_hash": "b913fbee6b4fbc134e914a752ba0e857554adedd7b36fc968dc73d7c7b32c125",
+   "merkle_proof": [
+    {
+     "hash": "b83a0baff0a694bdd389e6539ce01c68c862ea37095751db8bff2aa0133a95be",
+     "side": "left"
+    },
+    {
+     "hash": "748b50200cf4954a49db08a9accd24e168b40d732a2cd2af87f360ae197b777f",
+     "side": "right"
+    },
+    {
+     "hash": "16cbc4243a9c71724f78db886cab1d6d47e234b48123fd918c2316f44f4ae244",
+     "side": "left"
+    },
+    {
+     "hash": "4700b94a8547d27171e425ce6a6a89b2fd97293d6a58060aa7879bc478af757e",
+     "side": "left"
+    },
+    {
+     "hash": "5e24e92c2c28135966b587f815ebd664e2488da36500a10a38bbb35a04b73f62",
+     "side": "right"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "QBTS"
+   },
+   "leaf": {
+    "anchor_price": "16.5400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-19.1000",
+    "p5": "-38.6000",
+    "p50": "-3.2000",
+    "p75": "16.0000",
+    "p95": "52.7000",
+    "prob_positive": "45.0000",
+    "ticker": "QBTS"
+   },
+   "leaf_hash": "9069a21b3600c4c4607cc7cf33f435a9a6882368e1c0b0da91cecebca82aabbe",
+   "merkle_proof": [
+    {
+     "hash": "8f49e40a898c1259582f73db7438e0b2712b4f6ba7bfdb946d9709d73f0d21b8",
+     "side": "left"
+    },
+    {
+     "hash": "1608838920f183e55966e6306b4fb458d5df83767d73f99665d76ad620587c87",
+     "side": "left"
+    },
+    {
+     "hash": "6d5574fc918783747cea0a3b5b3d78184356b29949af8a2ea83c3246de20717d",
+     "side": "left"
+    },
+    {
+     "hash": "f76f28d31a093dcf94880f3833f67f7ea18a3c598f389f384b3822f6b739f64f",
+     "side": "right"
+    },
+    {
+     "hash": "6f96297228ac501f748fc2ada4677b2975fc074205106ea1974eec0840296603",
+     "side": "left"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "QCOM"
+   },
+   "leaf": {
+    "anchor_price": "166.6100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.8000",
+    "p5": "-21.0000",
+    "p50": "-0.4000",
+    "p75": "8.7000",
+    "p95": "25.5000",
+    "prob_positive": "48.7000",
+    "ticker": "QCOM"
+   },
+   "leaf_hash": "81dcbbfa8d81d7d9aafdd5174a25146023ce020e2cb925717dec481fc781073f",
+   "merkle_proof": [
+    {
+     "hash": "83dc7cdc2f0ff1d7864f9cc8c83b6e31e8095468560a1c922474bf81075b9480",
+     "side": "right"
+    },
+    {
+     "hash": "6bea9eb12d3582369c084e557c651c8f65883bd1ae29c9c4f5e9d3aa0b7abeb4",
+     "side": "left"
+    },
+    {
+     "hash": "a54486639f82ef08be77242f2dfe6144466be58ec0cdf26e392543e60bb96742",
+     "side": "right"
+    },
+    {
+     "hash": "a3fa7dcf54f7be56b3ede9413387716b1003418b0bb9bf45b7df4f1eaaa3fc15",
+     "side": "right"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "QQQ"
+   },
+   "leaf": {
+    "anchor_price": "707.6400",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-2.6000",
+    "p5": "-6.9000",
+    "p50": "0.4000",
+    "p75": "3.4000",
+    "p95": "8.3000",
+    "prob_positive": "53.4000",
+    "ticker": "QQQ"
+   },
+   "leaf_hash": "890a966e17aede9e1b5088e1daaab5a4801a58e19620e70822c3b4cdce172e72",
+   "merkle_proof": [
+    {
+     "hash": "88ced74116d0074a97ed516e2ab0d069d743927e5e06da2c977b5600e3feadef",
+     "side": "left"
+    },
+    {
+     "hash": "f39d1941a830a4563a28ccc391e6cc5441a61a5e3c79e1ecc969c0cb208c4d36",
+     "side": "left"
+    },
+    {
+     "hash": "3b7d7b500206c4ad3abf1fde5058a10a809a7cf9ef9048671f15a0e1cdd2b4f3",
+     "side": "right"
+    },
+    {
+     "hash": "6ddf92d76c04c4d1aba98b9d556f33a4c25f3733f359a33e5ff420028f141128",
+     "side": "left"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "RGTI"
+   },
+   "leaf": {
+    "anchor_price": "14.9900",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-18.7000",
+    "p5": "-38.3000",
+    "p50": "-2.8000",
+    "p75": "16.5000",
+    "p95": "64.6000",
+    "prob_positive": "45.9000",
+    "ticker": "RGTI"
+   },
+   "leaf_hash": "5589b82321695fabd28df9521410d384402c600e34c57f162f2112961598850c",
+   "merkle_proof": [
+    {
+     "hash": "5450e4ca9e3e4ae715727fe88357d48084419dac11f4356c65af9f3ba6382278",
+     "side": "left"
+    },
+    {
+     "hash": "726cff7bae162cb99f65d878e67df22ac2cf2bf0f7cecb544c2a0a9b75799c11",
+     "side": "right"
+    },
+    {
+     "hash": "7deb77162766dacac20f4159d86dada9fa928bcaaa4b8f1d80013a2237772c75",
+     "side": "left"
+    },
+    {
+     "hash": "6d9bd5f66d6e114f7efc1866a7c27ae1fba44bf5341f6e17c0bc3ba59d6df984",
+     "side": "left"
+    },
+    {
+     "hash": "9ec60dbf9fd4f9463584f5391a4f77fc9a80e44a31d349458d0a8bfb41500c99",
+     "side": "left"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "RKLB"
+   },
+   "leaf": {
+    "anchor_price": "62.5400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.3000",
+    "p5": "-33.4000",
+    "p50": "-0.5000",
+    "p75": "17.0000",
+    "p95": "58.0000",
+    "prob_positive": "49.1000",
+    "ticker": "RKLB"
+   },
+   "leaf_hash": "3e5b1816c62d68f3ca4d92af245c7f9656e497619a88fe6ac765d40e2f67c5ee",
+   "merkle_proof": [
+    {
+     "hash": "3f07a196e1b949591331cc31fee13731aefa5dd81c2070c95a4215dacd86cb77",
+     "side": "right"
+    },
+    {
+     "hash": "0425ed9c81040d8a205a5cd3fc6a00763c7d8f2f2ca9bd86b0b5ea0244c22f43",
+     "side": "left"
+    },
+    {
+     "hash": "6a2ece4e40beac23e536878e651f35695668515fed46bd442c4e5fead4168b52",
+     "side": "right"
+    },
+    {
+     "hash": "30e3c62f88ebe17d0f9ce2f4750a4b33ed17932e76bc50d3c5686b857b5dbf27",
+     "side": "left"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "RXT"
+   },
+   "leaf": {
+    "anchor_price": "3.0000",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-37.1000",
+    "p5": "-62.9000",
+    "p50": "-13.1000",
+    "p75": "20.0000",
+    "p95": "103.1000",
+    "prob_positive": "38.3000",
+    "ticker": "RXT"
+   },
+   "leaf_hash": "3da300d56abba6587f33dfad6b9ae7559a9dada9b143fd8c1711d91e29b1dbd5",
+   "merkle_proof": [
+    {
+     "hash": "3d9f25e803ceaf77e0a8a5094590eb54840fef064b049649696f0a2cbc0cc09b",
+     "side": "left"
+    },
+    {
+     "hash": "9fc4e8d657d009789575551662502b7fa90d21b633c6f5b178c0e3bc275a73a1",
+     "side": "left"
+    },
+    {
+     "hash": "e07792f1045d1a5623550cd810bccbcdc8bfeb2a0fb56f57557ee6b6790b9e75",
+     "side": "left"
+    },
+    {
+     "hash": "b645c2ecdb30c0ae48af5ad1fec589009e89aa4e1e272041c8336f5b5e793dc2",
+     "side": "right"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SERV"
+   },
+   "leaf": {
+    "anchor_price": "4.6900",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.3000",
+    "p5": "-30.5000",
+    "p50": "-1.6000",
+    "p75": "12.8000",
+    "p95": "39.2000",
+    "prob_positive": "46.8000",
+    "ticker": "SERV"
+   },
+   "leaf_hash": "ca3b377222b36d358b1893d392e7c9bf333753d6b606596ceeb6818921ef1e24",
+   "merkle_proof": [
+    {
+     "hash": "caea9c5b139744c53bc906500f75adb37cdc8d6563cc474d2e730aed603aab32",
+     "side": "right"
+    },
+    {
+     "hash": "435257b1e265b7816cb380c78b37e441ad1a66620ec9d13fc73abd89c1b74ab5",
+     "side": "right"
+    },
+    {
+     "hash": "6c44b60c4112c5e0c8900d4e3d8f4afaf149997733f35f89d870a350a90b7afa",
+     "side": "left"
+    },
+    {
+     "hash": "205a129eb1fe37f094679e26346cda21caa4b74ca22e7f007b2f35f1567cf4cb",
+     "side": "right"
+    },
+    {
+     "hash": "10b0c3682b995cb44332a7b4c5f4ba3bced4794dde294f1dbc9dd593b880c3ef",
+     "side": "right"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SMCI"
+   },
+   "leaf": {
+    "anchor_price": "36.7100",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.2000",
+    "p5": "-33.5000",
+    "p50": "-2.1000",
+    "p75": "13.2000",
+    "p95": "53.2000",
+    "prob_positive": "46.1000",
+    "ticker": "SMCI"
+   },
+   "leaf_hash": "61f037e66dafca044c6812e7f8645fa4a5e08aa79d9f3bc768f9cfcac5506b02",
+   "merkle_proof": [
+    {
+     "hash": "5fa94e08a2642c5e1e50f508efe431a20fe32bded674b48bcb0b1649ed7f68a5",
+     "side": "left"
+    },
+    {
+     "hash": "4a6de7e889dc32c8c841ccfd296286dafd31b356e7c5b66f1b3f3036be665b40",
+     "side": "left"
+    },
+    {
+     "hash": "2873f808301abafb591e2103a2362b58a907de984221d9cc45a8a1e5adc69dea",
+     "side": "left"
+    },
+    {
+     "hash": "72b18ff55e39aaa8900c8811539ccb4d2c7e0e757f578022a8bd18dd3f1b6bf0",
+     "side": "left"
+    },
+    {
+     "hash": "2d537ef7eec972ad4242b3e18c37c24806ebbf7bd15d3530781b1d38b06d3f3b",
+     "side": "right"
+    },
+    {
+     "hash": "1bd0a856c91b9abe7cc155f4b856b71dff5a0a37a0c596dc956c498ab1a7ab25",
+     "side": "right"
+    },
+    {
+     "hash": "1dc2f6902af6deef7655c2015675decee210ba9a3a3e416f209fb73bfc7a8dc6",
+     "side": "right"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SMH"
+   },
+   "leaf": {
+    "anchor_price": "545.2200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.6000",
+    "p5": "-15.8000",
+    "p50": "0.0000",
+    "p75": "7.1000",
+    "p95": "18.9000",
+    "prob_positive": "50.1000",
+    "ticker": "SMH"
+   },
+   "leaf_hash": "d29686e2313b6eb7c1056b1e2ca5fa908afb97b5ac7c6e1089ba6b7251119e96",
+   "merkle_proof": [
+    {
+     "hash": "d2fdb212eb9c8b8331f66e93b50e91872ad3dca5b24dc9e7581575061bcf7e7b",
+     "side": "right"
+    },
+    {
+     "hash": "a2a49b7bd3de5f6be862ae7b2db0068afd1be13389010d3404dbefde79e703a2",
+     "side": "right"
+    },
+    {
+     "hash": "66653eccc6a0d3bfb65e1920da46ede487be856710e8b5badfb173507bcf420d",
+     "side": "left"
+    },
+    {
+     "hash": "65dedb47d2a1bf28b888bbd311a301b4a8b264c4bf9d55e749770ec061179f7e",
+     "side": "right"
+    },
+    {
+     "hash": "06f721bc05fd8cced0a58028fcb87236a48fad6e15df8f4d90aa3e1091ac4c79",
+     "side": "left"
+    },
+    {
+     "hash": "ad6e89f535f8677400a2118a9281d93edd3c5f1c0c329ece4e62e7cddb605cc3",
+     "side": "left"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SNDK"
+   },
+   "leaf": {
+    "anchor_price": "1536.8700",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-18.0000",
+    "p5": "-36.4000",
+    "p50": "-2.7000",
+    "p75": "15.5000",
+    "p95": "48.9000",
+    "prob_positive": "45.6000",
+    "ticker": "SNDK"
+   },
+   "leaf_hash": "8825566e1e7e4246a438d2b1086478b3b3d9b3e9f23fd5227a873d5631411fc5",
+   "merkle_proof": [
+    {
+     "hash": "875ef281ac498d5c90a7a926261922cef71538938f0428aaa57474e1f794da6d",
+     "side": "left"
+    },
+    {
+     "hash": "dea7b63f588f8c44c6610f02bc58e19841dc9d2ccb56a131a2f0bc443bf4d1d6",
+     "side": "right"
+    },
+    {
+     "hash": "3b7d7b500206c4ad3abf1fde5058a10a809a7cf9ef9048671f15a0e1cdd2b4f3",
+     "side": "right"
+    },
+    {
+     "hash": "6ddf92d76c04c4d1aba98b9d556f33a4c25f3733f359a33e5ff420028f141128",
+     "side": "left"
+    },
+    {
+     "hash": "eadcca1e1196a05452e4c6757e670b0450007b2d35cefe4a8daaabca4e3ef446",
+     "side": "right"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SNOW"
+   },
+   "leaf": {
+    "anchor_price": "319.8000",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.2000",
+    "p5": "-22.2000",
+    "p50": "-0.2000",
+    "p75": "9.7000",
+    "p95": "28.1000",
+    "prob_positive": "49.4000",
+    "ticker": "SNOW"
+   },
+   "leaf_hash": "476e9b81a04a3fa6086eaadcb366bcaadff8e8a7ce4c97d195763713d1065b22",
+   "merkle_proof": [
+    {
+     "hash": "47d667774550c7429d470ce5e1090159193c7681e415a04b977bb4e8678d77c4",
+     "side": "right"
+    },
+    {
+     "hash": "ade22d15af8756504a6fc381a97e7ab21dbe5e9299d678b9768e99710555f27c",
+     "side": "left"
+    },
+    {
+     "hash": "6c880d0b815676e33ed0f01f502b317e675c69681ac81e9ec2447db088e3be7f",
+     "side": "right"
+    },
+    {
+     "hash": "09f294d397236955f8041af7d3579fda97a4a9fbf5fef4ba220d6255f8064573",
+     "side": "right"
+    },
+    {
+     "hash": "5af8cfde95ff0212e71cea8b821ab9ffd22d4bc56e72d9f807066ecefaa5fe69",
+     "side": "right"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SNPS"
+   },
+   "leaf": {
+    "anchor_price": "414.8200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.5000",
+    "p5": "-31.8000",
+    "p50": "-1.9000",
+    "p75": "12.4000",
+    "p95": "41.0000",
+    "prob_positive": "46.1000",
+    "ticker": "SNPS"
+   },
+   "leaf_hash": "ef7c9bc8bc746a05b0ca5d1cc8b958cd28d979a1583d3bb0f168ea4b5e0b99fa",
+   "merkle_proof": [
+    {
+     "hash": "ef6c24d8488a60b622f726602e8d7e60f7e14264b8124a8e2d2b1ba9324654ec",
+     "side": "left"
+    },
+    {
+     "hash": "d26490c546422be7a80cec3932a221d543b6e30a35ab9971708d94e1f9e9505c",
+     "side": "left"
+    },
+    {
+     "hash": "d4958a03c69b796ebe017a25167475f3e804fcdf803a42d4a60e68be5fb51ab0",
+     "side": "right"
+    },
+    {
+     "hash": "792ea7995f211eb7454c5a46a54fe7b8b1d9ffbb71f629cea4d71ec03faeff89",
+     "side": "right"
+    },
+    {
+     "hash": "424a5592bbb915b42c58d0d2e917242889d47f3fdf976b29d8000d058a60f372",
+     "side": "left"
+    },
+    {
+     "hash": "1a01d00ecaaeed2509d8949aed088733736fb6bf169fcd5e1fb4e98cd23d7925",
+     "side": "left"
+    },
+    {
+     "hash": "7358cd44b299266f04f98600114932b428da5b9a86f57a42ca1dbfed02dcf2cd",
+     "side": "left"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SOUN"
+   },
+   "leaf": {
+    "anchor_price": "6.8500",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-10.7000",
+    "p5": "-24.0000",
+    "p50": "-0.8000",
+    "p75": "10.3000",
+    "p95": "29.6000",
+    "prob_positive": "48.2000",
+    "ticker": "SOUN"
+   },
+   "leaf_hash": "493e8adca978c677c75484e9bbf02ab27330e8ed5eacdb79f32a27c2c1e3383c",
+   "merkle_proof": [
+    {
+     "hash": "4855fb8fca78bed26bcc7700e3064be4310d5873b35e72530ad85c9693a5443c",
+     "side": "left"
+    },
+    {
+     "hash": "b7663c05ad0877ead9e4daa5caa31ca25b04e3d5cad8be6da73f8d853316533e",
+     "side": "right"
+    },
+    {
+     "hash": "a107808c69859ea97345527638e4c216a7e4536b19db43fc77bf9c3226f2d0db",
+     "side": "left"
+    },
+    {
+     "hash": "09f294d397236955f8041af7d3579fda97a4a9fbf5fef4ba220d6255f8064573",
+     "side": "right"
+    },
+    {
+     "hash": "5af8cfde95ff0212e71cea8b821ab9ffd22d4bc56e72d9f807066ecefaa5fe69",
+     "side": "right"
+    },
+    {
+     "hash": "d53e696c7f9494465575e4a267a9df0cb18203dc650395cff28b093708d81152",
+     "side": "left"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SOXL"
+   },
+   "leaf": {
+    "anchor_price": "105.9100",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-23.2000",
+    "p5": "-44.8000",
+    "p50": "-4.8000",
+    "p75": "18.1000",
+    "p95": "64.3000",
+    "prob_positive": "43.9000",
+    "ticker": "SOXL"
+   },
+   "leaf_hash": "a3c9024c4669eb02f0262c12780279d63079f84e815660cbcb948880b44ca293",
+   "merkle_proof": [
+    {
+     "hash": "a322e5584a225c8ee8c12cf7df1d45acad8a3b084803acfbc5a302dcd60785c7",
+     "side": "left"
+    },
+    {
+     "hash": "9f4fa050364b24001ba0694135c61fafa59b003cfa88c390f01ae5c66d7bbe81",
+     "side": "right"
+    },
+    {
+     "hash": "4a82c0f75d08254c83e2424cf1bd366eecc71484ff95b198059cdc8f3dc2a9d7",
+     "side": "left"
+    },
+    {
+     "hash": "e6004c904ed86f6db68873aabfedaadf014efd526d1aed58f32510da42356ac9",
+     "side": "right"
+    },
+    {
+     "hash": "50420c043d74e8e07035f8efc67bf425c2ba0697119f8d6bada32ccc0a71a76c",
+     "side": "left"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SPY"
+   },
+   "leaf": {
+    "anchor_price": "761.7800",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-1.4000",
+    "p5": "-4.1000",
+    "p50": "0.4000",
+    "p75": "2.2000",
+    "p95": "5.1000",
+    "prob_positive": "55.4000",
+    "ticker": "SPY"
+   },
+   "leaf_hash": "c5c2df630e71a07655611a1df1dc6bd09394d6f62f3c213ad0fa2f4ccfc35b7f",
+   "merkle_proof": [
+    {
+     "hash": "c5b9817880d43d890b7112093192ade840201b795ad07d6b3de5130d0b471779",
+     "side": "left"
+    },
+    {
+     "hash": "9f732d52c2a6bde36a42abec0b14d18c7891f6594be5c1bcdcd9c09fa1d08c57",
+     "side": "left"
+    },
+    {
+     "hash": "1e1c5fcc22310a0017d240dbe3fc88f79388734ab737fa1e555ada19924f4caf",
+     "side": "left"
+    },
+    {
+     "hash": "e52c6909e87706966861afce7617e76d3e1882642e3a1806cded48c33956ce9e",
+     "side": "left"
+    },
+    {
+     "hash": "7edc0c2fcb2b64960fd12a23e489bb01853d7cbe83b0ce10accbcced225ba37d",
+     "side": "left"
+    },
+    {
+     "hash": "b4904a6ab5d97709bdb2e0e3655b27a18f8d979a6993de9c504af55b6cde14cb",
+     "side": "right"
+    },
+    {
+     "hash": "f5bb0e4c59a60d6cb89c365e821a12ccbef23edac5d93401e013c6901b22c876",
+     "side": "right"
+    },
+    {
+     "hash": "68ff0e5f037e39718fbbf06b984cd714f05f65a9026724de806c42e5c3e08254",
+     "side": "right"
+    },
+    {
+     "hash": "1e31f0832fc82baa9c0c07888c20f1011f20600bed24cf8548052c397b091e7b",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "STX"
+   },
+   "leaf": {
+    "anchor_price": "816.6400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.9000",
+    "p5": "-29.2000",
+    "p50": "-1.8000",
+    "p75": "12.0000",
+    "p95": "36.2000",
+    "prob_positive": "46.3000",
+    "ticker": "STX"
+   },
+   "leaf_hash": "05f4c20abb4ac285be6b787a1cd60386b4847349d5600466cbcdbb1911dd7b08",
+   "merkle_proof": [
+    {
+     "hash": "04e03d7ec7b3a1d9804e7953ae829c905ef8dfd88b8a1b0a4178eddbea729b4a",
+     "side": "left"
+    },
+    {
+     "hash": "05eeb70e12f3eca886e8a7a9bed2d112d8a39671c1b6d007a3276e24166e0cb4",
+     "side": "right"
+    },
+    {
+     "hash": "aa0f81b442cdf02e7ac439ea561014479714fcc476171dd8f3afdf071bef8d14",
+     "side": "left"
+    },
+    {
+     "hash": "4bd4669cf0f3a1cd7ca9f73609baf470989e35d9db5d7cf6d4961e790a665954",
+     "side": "right"
+    },
+    {
+     "hash": "9b29400be0f0b7bdf8a4648d524bef06adb49cb1f66b93a510c1ffea4501c556",
+     "side": "right"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "SYM"
+   },
+   "leaf": {
+    "anchor_price": "38.2200",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.6000",
+    "p5": "-26.1000",
+    "p50": "-1.0000",
+    "p75": "10.8000",
+    "p95": "32.5000",
+    "prob_positive": "47.5000",
+    "ticker": "SYM"
+   },
+   "leaf_hash": "963ad8bb8337a2acbf055729962d9ba3822f63ff77e4561d171daab67eeedb5e",
+   "merkle_proof": [
+    {
+     "hash": "9668a27110bb02a6a82e2771e099d359896ca726a76a21bf15bdcfdf8dc25778",
+     "side": "right"
+    },
+    {
+     "hash": "b956b404b5f01f7e0504a48f6ca390c48987b92733b56f849d4db468a5a26fd9",
+     "side": "left"
+    },
+    {
+     "hash": "b0ae3adfc4a965c736f456858f87aa81b5a0710811847ef45a8d74dce7665c5d",
+     "side": "right"
+    },
+    {
+     "hash": "6372ab70e3297cbc16e3bbc5fbafad076d4e32970d556ac5bcc38b9e3f93f49e",
+     "side": "right"
+    },
+    {
+     "hash": "f5354f28e24e61835b6d839a0464f17b233fc5b47721967555798d7257c785fe",
+     "side": "right"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "TKAMY"
+   },
+   "leaf": {
+    "anchor_price": "16.2800",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.2000",
+    "p5": "-25.0000",
+    "p50": "-0.9000",
+    "p75": "10.6000",
+    "p95": "30.9000",
+    "prob_positive": "47.8000",
+    "ticker": "TKAMY"
+   },
+   "leaf_hash": "90ccf98c7eacdac8fa52993b26a13771f9a26260cecfef849137f081a839110a",
+   "merkle_proof": [
+    {
+     "hash": "921ad31db2cdc75d343a664a4561da88a79be7636e2ad4091fbbf7431acaa5ed",
+     "side": "right"
+    },
+    {
+     "hash": "bcb99971c6391f54f6419d4ad63cf2a895dfa2887c5ff0f73dad325539fe1f72",
+     "side": "left"
+    },
+    {
+     "hash": "9a7d47680029554aaccde4b0210e113e627e949e8d6e69303ce59ac2be790ecd",
+     "side": "right"
+    },
+    {
+     "hash": "06df603517c8e900b16949bca78f818c92793e6a3ed0a400984e5f6b36bf3ef9",
+     "side": "left"
+    },
+    {
+     "hash": "6f96297228ac501f748fc2ada4677b2975fc074205106ea1974eec0840296603",
+     "side": "left"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "TSEM"
+   },
+   "leaf": {
+    "anchor_price": "199.0600",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.0000",
+    "p5": "-31.7000",
+    "p50": "-1.9000",
+    "p75": "13.2000",
+    "p95": "41.0000",
+    "prob_positive": "46.4000",
+    "ticker": "TSEM"
+   },
+   "leaf_hash": "071a0cccef2ae433eca3364b97befc029ed6419e256ac7dbba1851601d1e6246",
+   "merkle_proof": [
+    {
+     "hash": "073a6191fa21e51182bcf1a4baccee4becfcfb2c7b186d4b2cee32a302d824ec",
+     "side": "right"
+    },
+    {
+     "hash": "07673b82243a0e775f5d917d0483a964258397c74b2bd0f4fc4dd0d48bc6f60d",
+     "side": "right"
+    },
+    {
+     "hash": "3b7c634d8f50d796889d5c3ec776b081616e5646d309d28f93eb6dd5e709d520",
+     "side": "right"
+    },
+    {
+     "hash": "a3d8d6df9d60e7980231fdb84099442ca6fb33de37e3f08d02d14b1bf912f64d",
+     "side": "left"
+    },
+    {
+     "hash": "9b29400be0f0b7bdf8a4648d524bef06adb49cb1f66b93a510c1ffea4501c556",
+     "side": "right"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "TSLA"
+   },
+   "leaf": {
+    "anchor_price": "356.0900",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-10.2000",
+    "p5": "-23.3000",
+    "p50": "-0.3000",
+    "p75": "10.7000",
+    "p95": "29.6000",
+    "prob_positive": "49.2000",
+    "ticker": "TSLA"
+   },
+   "leaf_hash": "31105589dc5885c5df0371d9d0ccb8f82e2137cb8cf78eb93ecc9f96dfb6d9ec",
+   "merkle_proof": [
+    {
+     "hash": "318bdaf3ae71349996b359329ded5b97ec265ba822885939ba018d441aaa2bda",
+     "side": "right"
+    },
+    {
+     "hash": "eae6b9b860cc28d9ed9705c95264d1dbf5721a1cc925231487554a292640c7f9",
+     "side": "left"
+    },
+    {
+     "hash": "338928d49764162ad8b763f40df855aff4e2b2edb4870977306562d3cc31c17b",
+     "side": "right"
+    },
+    {
+     "hash": "505db67f1fefbad4d4de77bc51765dfb0bca86c20af84441867ac4dcb0cc3c1b",
+     "side": "right"
+    },
+    {
+     "hash": "eb6d4dad99ccb1737d7b2951ed4b73e773879f55b0176a43d465c64118094793",
+     "side": "right"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "TSM"
+   },
+   "leaf": {
+    "anchor_price": "414.0000",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-4.8000",
+    "p5": "-12.3000",
+    "p50": "0.6000",
+    "p75": "6.2000",
+    "p95": "15.3000",
+    "prob_positive": "52.8000",
+    "ticker": "TSM"
+   },
+   "leaf_hash": "20e7058a5b837d71a6b6f5b6fb829be36a141004dba9274f79c89b485b3244a9",
+   "merkle_proof": [
+    {
+     "hash": "20492b60f391f4b3ea30e9a34ebb5c175910e5ebb95b2f0343f5f63e2749c40e",
+     "side": "left"
+    },
+    {
+     "hash": "7320862788fe5dc28ab9ca15df77134172d4519dace1f0b2f1d3fda82162f069",
+     "side": "left"
+    },
+    {
+     "hash": "3a6eacce9a12edfd1a0183c306db2cb9f1405a9c730cb1dd9dd0fb3f1816bf30",
+     "side": "right"
+    },
+    {
+     "hash": "557df43c7d7a4fb99be88b547000101ed102d3936b70e9bab2ad7063231a7a48",
+     "side": "left"
+    },
+    {
+     "hash": "4ff0d24c2c35e1eeb0fed6a5eb80f41043936758b8e52a453871ce033697e7be",
+     "side": "right"
+    },
+    {
+     "hash": "bcc9ca8a704eae9ca92578b6c62c78fac3a76eb0502b33259ace58a46dd3121f",
+     "side": "left"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "TXN"
+   },
+   "leaf": {
+    "anchor_price": "253.3400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.7000",
+    "p5": "-16.3000",
+    "p50": "-0.1000",
+    "p75": "7.0000",
+    "p95": "19.2000",
+    "prob_positive": "49.7000",
+    "ticker": "TXN"
+   },
+   "leaf_hash": "aa13ab10980a2e6827d749523d23a874b313d7602877bfa08e7ba34bba38fd63",
+   "merkle_proof": [
+    {
+     "hash": "a9cb3de214e6ebf36e4ea4234e2f7a7b6251c5915ca32400ba2a5e0b29909dbe",
+     "side": "left"
+    },
+    {
+     "hash": "735294e306e64a07e75bbd23bbdc6be9dcf515bbbd0da596267c227630969ff5",
+     "side": "left"
+    },
+    {
+     "hash": "613a79222fe156460446240935c1d504208d82c9c1707f62b1ec051e6031d740",
+     "side": "left"
+    },
+    {
+     "hash": "056d389d3ecb44c44c9849fac1c5d08f63a685772b1dcad5584a8b141b5d1999",
+     "side": "left"
+    },
+    {
+     "hash": "50420c043d74e8e07035f8efc67bf425c2ba0697119f8d6bada32ccc0a71a76c",
+     "side": "left"
+    },
+    {
+     "hash": "28aeff78c8f6223d4ae178e9f11ad68b19a0e48e95d997aea58a5fee91035738",
+     "side": "left"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "VRT"
+   },
+   "leaf": {
+    "anchor_price": "255.9700",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.8000",
+    "p5": "-20.9000",
+    "p50": "-0.1000",
+    "p75": "9.4000",
+    "p95": "26.1000",
+    "prob_positive": "49.6000",
+    "ticker": "VRT"
+   },
+   "leaf_hash": "3f07a196e1b949591331cc31fee13731aefa5dd81c2070c95a4215dacd86cb77",
+   "merkle_proof": [
+    {
+     "hash": "3e5b1816c62d68f3ca4d92af245c7f9656e497619a88fe6ac765d40e2f67c5ee",
+     "side": "left"
+    },
+    {
+     "hash": "0425ed9c81040d8a205a5cd3fc6a00763c7d8f2f2ca9bd86b0b5ea0244c22f43",
+     "side": "left"
+    },
+    {
+     "hash": "6a2ece4e40beac23e536878e651f35695668515fed46bd442c4e5fead4168b52",
+     "side": "right"
+    },
+    {
+     "hash": "30e3c62f88ebe17d0f9ce2f4750a4b33ed17932e76bc50d3c5686b857b5dbf27",
+     "side": "left"
+    },
+    {
+     "hash": "b55c45ed84d17c20401feff65a94bc5d7a4478b84c1464f04fc23006c79ad9db",
+     "side": "left"
+    },
+    {
+     "hash": "a8f4959993d2b68cff6045276dcba1b9a5f2572ed08bd6ffac255854c9034734",
+     "side": "right"
+    },
+    {
+     "hash": "688505097c8744c9c2a074da08e3544ae204f6fe7e3f1ad4aa74e603a3fc1d84",
+     "side": "left"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "VST"
+   },
+   "leaf": {
+    "anchor_price": "138.0800",
+    "asof": "2026-09-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-5.0000",
+    "p5": "-12.5000",
+    "p50": "0.2000",
+    "p75": "5.8000",
+    "p95": "14.9000",
+    "prob_positive": "51.2000",
+    "ticker": "VST"
+   },
+   "leaf_hash": "069f7f839fe34042d7dd51dec71b5cdd7127981f62397a663c9f14a4fef8b318",
+   "merkle_proof": [
+    {
+     "hash": "06ae0b12636c8e64cfb0ed896623f52e089472d719bca6f018d4013405301842",
+     "side": "right"
+    },
+    {
+     "hash": "d157df886ba01f09682b0554ec4c1781589e7268d91700aff449bfcf59de2550",
+     "side": "left"
+    },
+    {
+     "hash": "aa0f81b442cdf02e7ac439ea561014479714fcc476171dd8f3afdf071bef8d14",
+     "side": "left"
+    },
+    {
+     "hash": "4bd4669cf0f3a1cd7ca9f73609baf470989e35d9db5d7cf6d4961e790a665954",
+     "side": "right"
+    },
+    {
+     "hash": "9b29400be0f0b7bdf8a4648d524bef06adb49cb1f66b93a510c1ffea4501c556",
+     "side": "right"
+    },
+    {
+     "hash": "394e6e610801374f9b10621c58c97e7181a7ab43e68b19a7893fe42efdf7c0b8",
+     "side": "right"
+    },
+    {
+     "hash": "0abc7c4795d85b21fa9c9e7e8464b3f657fc2bc80a8869eeb8524580e16399cd",
+     "side": "right"
+    },
+    {
+     "hash": "ad03bc05f66b8f82abf21fb81a97493bb2b96f1adc598399f0d66633d9c5024e",
+     "side": "right"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "asof": "2026-09-02",
+    "grade_status": "unresolved_possible_delisting",
+    "horizon": "1m",
+    "maturity_date": "2026-10-02",
+    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "ticker": "WDC"
+   },
+   "leaf": {
+    "anchor_price": "450.4400",
+    "asof": "2026-09-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.7000",
+    "p5": "-30.6000",
+    "p50": "-1.9000",
+    "p75": "12.8000",
+    "p95": "38.6000",
+    "prob_positive": "46.4000",
+    "ticker": "WDC"
+   },
+   "leaf_hash": "90c69af50513cef31a11475efb7ec8884809c9c53382f7dafc62eb8349a2eb45",
+   "merkle_proof": [
+    {
+     "hash": "90b972a3cdef703b76a53e8d0147af8e4540fa0317f921571837e490eeba47fd",
+     "side": "left"
+    },
+    {
+     "hash": "723237e84f7a1d9099e7c36cfa1d718c886877326c1c02cf02d8951263cef616",
+     "side": "right"
+    },
+    {
+     "hash": "9a7d47680029554aaccde4b0210e113e627e949e8d6e69303ce59ac2be790ecd",
+     "side": "right"
+    },
+    {
+     "hash": "06df603517c8e900b16949bca78f818c92793e6a3ed0a400984e5f6b36bf3ef9",
+     "side": "left"
+    },
+    {
+     "hash": "6f96297228ac501f748fc2ada4677b2975fc074205106ea1974eec0840296603",
+     "side": "left"
+    },
+    {
+     "hash": "f364a90b383c4de7637759d3d722db26993a2d790c246e60d9e7ae07810345f1",
+     "side": "right"
+    },
+    {
+     "hash": "95438955ff12bf13cd491b055176525e56c032b411cc526a4adacf0df25e140c",
+     "side": "left"
+    },
+    {
+     "hash": "e75ef551ec874aea4ed88339593e5d48129b2af23a6657d66dccb803278b0fae",
+     "side": "left"
+    },
+    {
+     "hash": "153855bb896d00933dfbf7566e9efbffcdd77a0dc9d1310b354a8ef4b02837eb",
+     "side": "right"
+    }
+   ]
+  }
+ ],
+ "rollup": {
+  "caveat": "one cohort = ONE market draw; the names are cross-correlated, so n_effective is far below n_graded. Judge calibration across cohorts, not within one.",
+  "n_graded": 0,
+  "n_revealed": 80,
+  "n_unresolved": 80
+ },
+ "schema": "sigma-public-reveal-1"
+}
