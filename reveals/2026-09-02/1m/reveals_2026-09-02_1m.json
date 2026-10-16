@@ -8,15 +8,25 @@
  "n_leaves_total_in_seal": 400,
  "n_revealed": 80,
  "note": "leaf + merkle_proof are covered by the Bitcoin-anchored commitment (verify.py --reveal). grade + rollup are our measurement annotation, NOT covered by the commitment -- recompute them from any adjusted price series using the revealed bands (CALIBRATION_PROTOCOL.md section 2). All leaves of the matured horizon are revealed; unresolved grades are counted, never dropped.",
- "revealed_at_utc": "2026-10-02T05:31:27.837440+00:00",
+ "revealed_at_utc": "2026-10-16T01:38:27.767546+00:00",
  "reveals": [
   {
    "grade": {
+    "anchor_bar_price": 103.39,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 17.4,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 115.59,
+    "realized_pct": 11.8,
     "ticker": "AAOI"
    },
    "leaf": {
@@ -75,11 +85,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 325.13,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 2.23,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 333.69,
+    "realized_pct": 2.63,
     "ticker": "AAPL"
    },
    "leaf": {
@@ -138,11 +158,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 354.52,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": false,
+    "bias_vs_p50": 17.47,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": false,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 417.15,
+    "realized_pct": 17.67,
     "ticker": "ADI"
    },
    "leaf": {
@@ -201,11 +231,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 10.34,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 7.68,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 11.01,
+    "realized_pct": 6.48,
     "ticker": "AI"
    },
    "leaf": {
@@ -264,11 +304,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 279.91,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 27.06,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 350.33,
+    "realized_pct": 25.16,
     "ticker": "ALAB"
    },
    "leaf": {
@@ -327,11 +377,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 441.85,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 22.82,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 540.04,
+    "realized_pct": 22.22,
     "ticker": "AMAT"
    },
    "leaf": {
@@ -390,11 +450,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 459.61,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 37.42,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 633.91,
+    "realized_pct": 37.92,
     "ticker": "AMD"
    },
    "leaf": {
@@ -453,11 +523,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 254.92,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -1.83,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 251.52,
+    "realized_pct": -1.33,
     "ticker": "AMZN"
    },
    "leaf": {
@@ -516,11 +596,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 189.26,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 9.16,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 207.35,
+    "realized_pct": 9.56,
     "ticker": "ANET"
    },
    "leaf": {
@@ -579,11 +669,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 311.74,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -14.66,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 268.22,
+    "realized_pct": -13.96,
     "ticker": "APP"
    },
    "leaf": {
@@ -642,11 +742,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 234.82,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 31.85,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 307.49,
+    "realized_pct": 30.95,
     "ticker": "ARM"
    },
    "leaf": {
@@ -705,11 +815,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 1665.14,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 12.04,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 1867.31,
+    "realized_pct": 12.14,
     "ticker": "ASML"
    },
    "leaf": {
@@ -768,11 +888,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 55.8,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 7.15,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 58.45,
+    "realized_pct": 4.75,
     "ticker": "ASTS"
    },
    "leaf": {
@@ -831,11 +961,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 144.17,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -2.42,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 140.82,
+    "realized_pct": -2.32,
     "ticker": "AVAV"
    },
    "leaf": {
@@ -894,11 +1034,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 369.0186,
+    "anchor_drift_pct": -0.18,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -4.66,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 355.14,
+    "realized_pct": -3.76,
     "ticker": "AVGO"
    },
    "leaf": {
@@ -957,11 +1107,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 2.95,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.87,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 2.65,
+    "realized_pct": -10.17,
     "ticker": "BBAI"
    },
    "leaf": {
@@ -1008,11 +1168,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 313.04,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 12.34,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 351.35,
+    "realized_pct": 12.24,
     "ticker": "CDNS"
    },
    "leaf": {
@@ -1071,11 +1241,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 280.31,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.14,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 257.49,
+    "realized_pct": -8.14,
     "ticker": "CEG"
    },
    "leaf": {
@@ -1134,11 +1314,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 272.03,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 25.1,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 337.04,
+    "realized_pct": 23.9,
     "ticker": "COHR"
    },
    "leaf": {
@@ -1197,11 +1387,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 206.63,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 8.41,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 218.64,
+    "realized_pct": 5.81,
     "ticker": "CRDO"
    },
    "leaf": {
@@ -1260,11 +1460,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 257.6432,
+    "anchor_drift_pct": -0.18,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -5.31,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 234.69,
+    "realized_pct": -8.91,
     "ticker": "CRM"
    },
    "leaf": {
@@ -1323,11 +1533,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 215.07,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 28.66,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 270.04,
+    "realized_pct": 25.56,
     "ticker": "CRWD"
    },
    "leaf": {
@@ -1386,11 +1606,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 223.84,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 24.55,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 277.22,
+    "realized_pct": 23.85,
     "ticker": "DDOG"
    },
    "leaf": {
@@ -1449,11 +1679,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 425.0,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": false,
+    "bias_vs_p50": 33.26,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": false,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 562.52,
+    "realized_pct": 32.36,
     "ticker": "DELL"
    },
    "leaf": {
@@ -1512,11 +1752,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 390.71,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 11.42,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 436.11,
+    "realized_pct": 11.62,
     "ticker": "ETN"
    },
    "leaf": {
@@ -1575,11 +1825,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 161.85,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 12.3,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 180.95,
+    "realized_pct": 11.8,
     "ticker": "FTNT"
    },
    "leaf": {
@@ -1638,11 +1898,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 145.56,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 13.4,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 164.19,
+    "realized_pct": 12.8,
     "ticker": "GLW"
    },
    "leaf": {
@@ -1701,11 +1971,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 334.8024,
+    "anchor_drift_pct": -0.06,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 1.7,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 343.5,
+    "realized_pct": 2.6,
     "ticker": "GOOGL"
    },
    "leaf": {
@@ -1764,11 +2044,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 231.4,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -3.69,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 222.64,
+    "realized_pct": -3.79,
     "ticker": "IBM"
    },
    "leaf": {
@@ -1827,11 +2117,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 88.97,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 36.22,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 119.33,
+    "realized_pct": 34.12,
     "ticker": "INTC"
    },
    "leaf": {
@@ -1890,11 +2190,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 37.78,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 18.05,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 43.77,
+    "realized_pct": 15.85,
     "ticker": "IONQ"
    },
    "leaf": {
@@ -1953,11 +2263,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 46.5717,
+    "anchor_drift_pct": -0.32,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 5.33,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 48.96,
+    "realized_pct": 5.13,
     "ticker": "IRDM"
    },
    "leaf": {
@@ -2016,11 +2336,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 225.1964,
+    "anchor_drift_pct": -0.12,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.03,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 207.79,
+    "realized_pct": -7.73,
     "ticker": "ITA"
    },
    "leaf": {
@@ -2079,11 +2409,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 170.89,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 21.47,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 206.89,
+    "realized_pct": 21.07,
     "ticker": "KLAC"
    },
    "leaf": {
@@ -2142,11 +2482,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 49.34,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -12.71,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 43.07,
+    "realized_pct": -12.71,
     "ticker": "KTOS"
    },
    "leaf": {
@@ -2205,11 +2555,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 868.95,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 26.71,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 1085.42,
+    "realized_pct": 24.91,
     "ticker": "LITE"
    },
    "leaf": {
@@ -2268,11 +2628,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 289.8887,
+    "anchor_drift_pct": -0.11,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 20.67,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 347.49,
+    "realized_pct": 19.87,
     "ticker": "LRCX"
    },
    "leaf": {
@@ -2331,11 +2701,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 14.72,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 3.13,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 14.71,
+    "realized_pct": -0.07,
     "ticker": "LUNR"
    },
    "leaf": {
@@ -2394,11 +2774,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 578.1305,
+    "anchor_drift_pct": -0.07,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": false,
+    "bias_vs_p50": 24.64,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": false,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 728.08,
+    "realized_pct": 25.94,
     "ticker": "META"
    },
    "leaf": {
@@ -2457,11 +2847,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 15.86,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 23.13,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 18.83,
+    "realized_pct": 18.73,
     "ticker": "MRAM"
    },
    "leaf": {
@@ -2520,11 +2920,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 210.3442,
+    "anchor_drift_pct": -0.02,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 30.42,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 272.2307,
+    "realized_pct": 29.42,
     "ticker": "MRVL"
    },
    "leaf": {
@@ -2583,11 +2993,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 501.02,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 2.5,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 517.53,
+    "realized_pct": 3.3,
     "ticker": "MSFT"
    },
    "leaf": {
@@ -2646,11 +3066,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 933.2869,
+    "anchor_drift_pct": -0.02,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 13.75,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 1074.7136,
+    "realized_pct": 15.15,
     "ticker": "MU"
    },
    "leaf": {
@@ -2709,11 +3139,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 199.54,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 26.08,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 242.81,
+    "realized_pct": 21.68,
     "ticker": "NBIS"
    },
    "leaf": {
@@ -2772,11 +3212,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 285.51,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 22.86,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 349.07,
+    "realized_pct": 22.26,
     "ticker": "NET"
    },
    "leaf": {
@@ -2823,11 +3273,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 142.9,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -5.26,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 134.38,
+    "realized_pct": -5.96,
     "ticker": "NOW"
    },
    "leaf": {
@@ -2886,11 +3346,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 217.1913,
+    "anchor_drift_pct": -0.11,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 6.72,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 233.95,
+    "realized_pct": 7.72,
     "ticker": "NVDA"
    },
    "leaf": {
@@ -2949,11 +3419,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 10.94,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 17.55,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 12.4,
+    "realized_pct": 13.35,
     "ticker": "NVTS"
    },
    "leaf": {
@@ -3012,11 +3492,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 38.53,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -5.3,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 35.87,
+    "realized_pct": -6.9,
     "ticker": "OKLO"
    },
    "leaf": {
@@ -3075,11 +3565,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 7.04,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 6.24,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 7.24,
+    "realized_pct": 2.84,
     "ticker": "ONDS"
    },
    "leaf": {
@@ -3138,11 +3638,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 140.822,
+    "anchor_drift_pct": -0.35,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 0.99,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 141.7986,
+    "realized_pct": 0.69,
     "ticker": "ORCL"
    },
    "leaf": {
@@ -3201,11 +3711,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 362.09,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 12.46,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 403.24,
+    "realized_pct": 11.36,
     "ticker": "PANW"
    },
    "leaf": {
@@ -3264,11 +3784,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 18.14,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -26.47,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": false,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 13.12,
+    "realized_pct": -27.67,
     "ticker": "PATH"
    },
    "leaf": {
@@ -3327,11 +3857,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 179.92,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 4.71,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 188.75,
+    "realized_pct": 4.91,
     "ticker": "PLTR"
    },
    "leaf": {
@@ -3390,11 +3930,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 611.2885,
+    "anchor_drift_pct": -0.02,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 10.88,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 676.56,
+    "realized_pct": 10.68,
     "ticker": "PWR"
    },
    "leaf": {
@@ -3453,11 +4003,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 16.54,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -1.46,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 15.77,
+    "realized_pct": -4.66,
     "ticker": "QBTS"
    },
    "leaf": {
@@ -3516,11 +4076,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 165.7056,
+    "anchor_drift_pct": -0.54,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 11.97,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 184.87,
+    "realized_pct": 11.57,
     "ticker": "QCOM"
    },
    "leaf": {
@@ -3579,11 +4149,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 706.9236,
+    "anchor_drift_pct": -0.1,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 5.63,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 749.58,
+    "realized_pct": 6.03,
     "ticker": "QQQ"
    },
    "leaf": {
@@ -3642,11 +4222,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 14.99,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 4.53,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 15.25,
+    "realized_pct": 1.73,
     "ticker": "RGTI"
    },
    "leaf": {
@@ -3705,11 +4295,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 62.54,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 18.7,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 73.92,
+    "realized_pct": 18.2,
     "ticker": "RKLB"
    },
    "leaf": {
@@ -3768,11 +4368,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 3.0,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 50.43,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 4.12,
+    "realized_pct": 37.33,
     "ticker": "RXT"
    },
    "leaf": {
@@ -3831,11 +4441,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 4.69,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 0.0,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 4.615,
+    "realized_pct": -1.6,
     "ticker": "SERV"
    },
    "leaf": {
@@ -3894,11 +4514,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 36.71,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 21.11,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 43.69,
+    "realized_pct": 19.01,
     "ticker": "SMCI"
    },
    "leaf": {
@@ -3957,11 +4587,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 545.22,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 15.66,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 630.6,
+    "realized_pct": 15.66,
     "ticker": "SMH"
    },
    "leaf": {
@@ -4020,11 +4660,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 1536.87,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 14.62,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 1719.99,
+    "realized_pct": 11.92,
     "ticker": "SNDK"
    },
    "leaf": {
@@ -4083,11 +4733,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 319.8,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 6.84,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 341.04,
+    "realized_pct": 6.64,
     "ticker": "SNOW"
    },
    "leaf": {
@@ -4146,11 +4806,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 414.82,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 20.0,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 489.9,
+    "realized_pct": 18.1,
     "ticker": "SNPS"
    },
    "leaf": {
@@ -4209,11 +4879,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 6.85,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -13.94,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 5.84,
+    "realized_pct": -14.74,
     "ticker": "SOUN"
    },
    "leaf": {
@@ -4272,11 +4952,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 105.8453,
+    "anchor_drift_pct": -0.06,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 59.47,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 163.71,
+    "realized_pct": 54.67,
     "ticker": "SOXL"
    },
    "leaf": {
@@ -4335,11 +5025,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 759.8956,
+    "anchor_drift_pct": -0.25,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 0.88,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 769.64,
+    "realized_pct": 1.28,
     "ticker": "SPY"
    },
    "leaf": {
@@ -4398,11 +5098,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 815.9735,
+    "anchor_drift_pct": -0.08,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 5.85,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 848.99,
+    "realized_pct": 4.05,
     "ticker": "STX"
    },
    "leaf": {
@@ -4461,11 +5171,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 38.22,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 14.24,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 43.28,
+    "realized_pct": 13.24,
     "ticker": "SYM"
    },
    "leaf": {
@@ -4524,11 +5244,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 16.293,
+    "anchor_drift_pct": 0.08,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -2.56,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 15.73,
+    "realized_pct": -3.46,
     "ticker": "TKAMY"
    },
    "leaf": {
@@ -4587,11 +5317,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 199.06,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 22.9,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 240.86,
+    "realized_pct": 21.0,
     "ticker": "TSEM"
    },
    "leaf": {
@@ -4650,11 +5390,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 356.09,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 4.37,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 370.59,
+    "realized_pct": 4.07,
     "ticker": "TSLA"
    },
    "leaf": {
@@ -4713,11 +5463,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 412.9053,
+    "anchor_drift_pct": -0.26,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 13.9,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 472.78,
+    "realized_pct": 14.5,
     "ticker": "TSM"
    },
    "leaf": {
@@ -4776,11 +5536,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 253.34,
+    "anchor_drift_pct": 0.0,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 16.07,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 293.8,
+    "realized_pct": 15.97,
     "ticker": "TXN"
    },
    "leaf": {
@@ -4839,11 +5609,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 255.9026,
+    "anchor_drift_pct": -0.03,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -1.35,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 252.18,
+    "realized_pct": -1.45,
     "ticker": "VRT"
    },
    "leaf": {
@@ -4902,11 +5682,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 137.8548,
+    "anchor_drift_pct": -0.16,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 1.37,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 140.02,
+    "realized_pct": 1.57,
     "ticker": "VST"
    },
    "leaf": {
@@ -4965,11 +5755,21 @@
   },
   {
    "grade": {
+    "anchor_bar_price": 450.2985,
+    "anchor_drift_pct": -0.03,
     "asof": "2026-09-02",
-    "grade_status": "unresolved_possible_delisting",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -5.87,
+    "grade_status": "graded",
     "horizon": "1m",
+    "in_band": true,
     "maturity_date": "2026-10-02",
-    "note": "no price within tolerance at maturity \u2014 kept and counted, NEVER dropped (terminal grading via EDGAR is the planned closure)",
+    "price_at_maturity": 415.29,
+    "realized_pct": -7.77,
     "ticker": "WDC"
    },
    "leaf": {
@@ -5029,9 +5829,52 @@
  ],
  "rollup": {
   "caveat": "one cohort = ONE market draw; the names are cross-correlated, so n_effective is far below n_graded. Judge calibration across cohorts, not within one.",
-  "n_graded": 0,
+  "coverage_p5_p95": {
+   "in_band": 76,
+   "n": 80,
+   "nominal_pct": 90.0,
+   "pct": 95.0,
+   "wilson_95_ci_pct": [
+    87.8,
+    98.0
+   ]
+  },
+  "median_bias_vs_p50_pp": 11.15,
+  "n_graded": 80,
   "n_revealed": 80,
-  "n_unresolved": 80
+  "n_unresolved": 0,
+  "rank_histogram": {
+   "at_or_above_p95": {
+    "count": 3,
+    "nominal_pct": 5.0,
+    "pct": 3.8
+   },
+   "below_p5": {
+    "count": 1,
+    "nominal_pct": 5.0,
+    "pct": 1.2
+   },
+   "p25_p50": {
+    "count": 12,
+    "nominal_pct": 25.0,
+    "pct": 15.0
+   },
+   "p50_p75": {
+    "count": 24,
+    "nominal_pct": 25.0,
+    "pct": 30.0
+   },
+   "p5_p25": {
+    "count": 5,
+    "nominal_pct": 20.0,
+    "pct": 6.2
+   },
+   "p75_p95": {
+    "count": 35,
+    "nominal_pct": 20.0,
+    "pct": 43.8
+   }
+  }
  },
  "schema": "sigma-public-reveal-1"
 }
