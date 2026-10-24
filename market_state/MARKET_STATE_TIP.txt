@@ -1,9 +1,9 @@
 Sigma Risk Intelligence -- Market-State regime-call commitment
 feed:               market_state
 constants_version:  ms-2
-asof:               2026-10-23
-n_rows:             9
-tip_sha256:         796f839f7419854698f6c2ddef1ae5ff0f00631d4689a52e155f90757e25dcba
+asof:               2026-10-24
+n_rows:             10
+tip_sha256:         1dbcca51468ba0dab75f06899f25138037c1e8499592a0fd201315824654b222
 
 This SHA-256 is the head of the market-state feed's hash chain; it
 commits to the entire regime-call history (one row per trading day).
