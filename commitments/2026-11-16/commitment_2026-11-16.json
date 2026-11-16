@@ -1,0 +1,36 @@
+{
+ "anchor": {
+  "calendars": [
+   "https://a.pool.opentimestamps.org",
+   "https://b.pool.opentimestamps.org",
+   "https://a.pool.eternitywall.com",
+   "https://ots.btc.catallaxy.com"
+  ],
+  "method": "opentimestamps-bitcoin",
+  "note": "pending Bitcoin confirmation; upgrade+verify with any OTS verifier",
+  "ots_file": "COMMITMENT.txt.ots",
+  "stamped_at_utc": "2026-11-16T01:34:57.723936+00:00",
+  "status": "pending"
+ },
+ "asof": "2026-11-16",
+ "chain_index": 16,
+ "header": {
+  "horizons": [
+   "1m",
+   "3m",
+   "6m",
+   "1y",
+   "2y"
+  ],
+  "universe_size": 80,
+  "universe_version": "ai_v1",
+  "vix_at_generation": 19.3
+ },
+ "merkle_root": "541007325cdeba3312fccda2e4ac241874e08d61cba0158847eff7eecac06a37",
+ "n_leaves": 400,
+ "n_skipped": 0,
+ "prev_commitment": "6ba72e66544ac3fffdc7267ad24a8e573a4ac0f704694894bd2ea24dc74f5840",
+ "schema": "sigma-public-commitment-1",
+ "sealed_anchor_gap_days": 0,
+ "sealed_at_utc": "2026-11-16T01:34:53.086007+00:00"
+}
