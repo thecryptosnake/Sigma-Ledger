@@ -1,0 +1,5856 @@
+{
+ "asof": "2026-10-02",
+ "chain_index": 10,
+ "commitment_file": "commitments/2026-10-02/commitment_2026-10-02.json",
+ "grading_convention": "series-internal basis per public CALIBRATION_PROTOCOL.md s2: anchor bar = last close strictly before asof; split/dividend-invariant",
+ "horizon": "1m",
+ "merkle_root": "4d445accce112f6be074922a8114753a7309db0579ab57e50538ea302cfa5977",
+ "n_leaves_total_in_seal": 400,
+ "n_revealed": 80,
+ "note": "leaf + merkle_proof are covered by the Bitcoin-anchored commitment (verify.py --reveal). grade + rollup are our measurement annotation, NOT covered by the commitment -- recompute them from any adjusted price series using the revealed bands (CALIBRATION_PROTOCOL.md section 2). All leaves of the matured horizon are revealed; unresolved grades are counted, never dropped.",
+ "revealed_at_utc": "2026-11-16T01:39:05.232837+00:00",
+ "reveals": [
+  {
+   "grade": {
+    "anchor_bar_price": 107.32,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -38.16,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 62.5,
+    "realized_pct": -41.76,
+    "ticker": "AAOI"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-20.3000",
+    "p5": "-40.1000",
+    "p50": "-3.6000",
+    "p75": "16.7000",
+    "p95": "55.1000",
+    "prob_positive": "44.9000",
+    "ticker": "AAOI"
+   },
+   "leaf_hash": "fa810b9afceb36c05888ffd38595db290311c46a92a0cbd09de203ec5ac34416",
+   "merkle_proof": [
+    {
+     "hash": "fc3ef54169731ebc2a26828fe43ff2390352556c28758cdc92cc3f58d9f5fc5a",
+     "side": "right"
+    },
+    {
+     "hash": "fddc81267dd188b9c6f1d3590bf1f99f0507060e78612534f37176c4f25e0338",
+     "side": "left"
+    },
+    {
+     "hash": "d455cc09dbb126ffff26a84cce417ad520324edad8bc700aa484018b6bc6f730",
+     "side": "right"
+    },
+    {
+     "hash": "208775336b20fdf1730e6a20bdbf39c745ca40c2b70abd2df696b425f68e2698",
+     "side": "left"
+    },
+    {
+     "hash": "43bcd484f987b59b290870602ffaed625a120ebd8736c637d1b3a4499426f866",
+     "side": "left"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 330.0689,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 2.02,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 338.0628,
+    "realized_pct": 2.42,
+    "ticker": "AAPL"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-3.8000",
+    "p5": "-10.1000",
+    "p50": "0.4000",
+    "p75": "4.7000",
+    "p95": "12.0000",
+    "prob_positive": "52.3000",
+    "ticker": "AAPL"
+   },
+   "leaf_hash": "9f404d2a1c74ce4854efbd76bbf64eac85e769a1d9fc29edffdc2cb69054f3d0",
+   "merkle_proof": [
+    {
+     "hash": "9ea41d3db30250290001fe0709431ee078f4af3fdc7c0e8eeca9019bc9642833",
+     "side": "left"
+    },
+    {
+     "hash": "09898cff3cd1f61a118c9c75f02fea70b17d9051fd85ca3d3a7d09d66dbf985d",
+     "side": "right"
+    },
+    {
+     "hash": "32e34148650fe7dd5ddf6050d1d810a5e3c3f4e49333a00bf0a90714953ab526",
+     "side": "left"
+    },
+    {
+     "hash": "5d9fef809cf9052f3e821abf84fbe6d40f922f200a725410d28c9bfea9c4b534",
+     "side": "right"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 404.6,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 1.84,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 412.85,
+    "realized_pct": 2.04,
+    "ticker": "ADI"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-5.7000",
+    "p5": "-13.8000",
+    "p50": "0.2000",
+    "p75": "6.4000",
+    "p95": "16.4000",
+    "prob_positive": "50.8000",
+    "ticker": "ADI"
+   },
+   "leaf_hash": "e9c36ec28bf79b47b1729b02d1e3f1823f24de069e10384d7d30fbcf8255fe8c",
+   "merkle_proof": [
+    {
+     "hash": "e90ae2a71b1402ecc28e034f60754296adf2d6856e831a382a4681886ddad61f",
+     "side": "left"
+    },
+    {
+     "hash": "2ae4dcf6b52bc5b59f28ba4525bd28fc1691fc34496c76235ba6672203b25942",
+     "side": "right"
+    },
+    {
+     "hash": "fbbfa41bfb9acd4ad1eb6e22e593489cfeed5dd9bba719a29cb8624d1232dad5",
+     "side": "right"
+    },
+    {
+     "hash": "a21aec1624d8446f98c18ada81e282340661832a7214587577fb88be4f67b055",
+     "side": "left"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 11.11,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 4.16,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 11.55,
+    "realized_pct": 3.96,
+    "ticker": "AI"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.9000",
+    "p5": "-18.8000",
+    "p50": "-0.2000",
+    "p75": "8.2000",
+    "p95": "22.7000",
+    "prob_positive": "49.2000",
+    "ticker": "AI"
+   },
+   "leaf_hash": "2d063f3dffdefbb2d23ef79fb00712cdbe7aa88da606da8c8470d5f4ab51f331",
+   "merkle_proof": [
+    {
+     "hash": "2c73e146ab1039285d494fbc2662c5e17773a4beb20a5d130c68dd513e9c379e",
+     "side": "left"
+    },
+    {
+     "hash": "c3a18ebc97a4781126c902f03dc220038b450f83113b116588a66a03be4d0f78",
+     "side": "left"
+    },
+    {
+     "hash": "73e4e5bcd18e40422e6f531526ade18cbaaf86f34926b896850be6ffc4f69c30",
+     "side": "right"
+    },
+    {
+     "hash": "77065fc515eb7911d6fba40b359a12a20bc74181dc8594dc64af8e0b7560168b",
+     "side": "left"
+    },
+    {
+     "hash": "b32d3245d7da748fe5a7b23827e3d308cd9a0f59320f384fdf896e26e9d3f1ff",
+     "side": "right"
+    },
+    {
+     "hash": "605ba9b50d56ff968aff53fe30970277717a4b3143c38f4e9ec51cb6619913b1",
+     "side": "right"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 356.42,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -33.76,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 229.67,
+    "realized_pct": -35.56,
+    "ticker": "ALAB"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.8000",
+    "p5": "-31.1000",
+    "p50": "-1.8000",
+    "p75": "13.2000",
+    "p95": "40.0000",
+    "prob_positive": "46.6000",
+    "ticker": "ALAB"
+   },
+   "leaf_hash": "844b617fabe6583c8721512268a801f8f70db73d38fffd536227eef0e1c1b5b2",
+   "merkle_proof": [
+    {
+     "hash": "85036df7cd09f14dbf831ebdd9954f07286fd0390499f69331f620ce1cce4143",
+     "side": "right"
+    },
+    {
+     "hash": "8ede1d8d5d49106e5a0f234c3929a8bca1c726683c1e2c6e26b455cebcff52a5",
+     "side": "right"
+    },
+    {
+     "hash": "e79949b717f8680b70d0aab88718467d4289987d444e42a481c1ed984c0ca3d9",
+     "side": "right"
+    },
+    {
+     "hash": "bfad070c68352481b2fd47a46ed5cf5bfb894ae893109f091ee9bdc76acc7e0a",
+     "side": "right"
+    },
+    {
+     "hash": "c9ed7ee3d093d9c2a17e6371cf2e4561a1a6d5c115a5adbbe3161243eb34cf5c",
+     "side": "right"
+    },
+    {
+     "hash": "3cc8b03dd496e807d7879606c7832755ed22f57081f9faef048b22533601b3d4",
+     "side": "left"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 529.3,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -28.64,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 374.53,
+    "realized_pct": -29.24,
+    "ticker": "AMAT"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.2000",
+    "p5": "-23.0000",
+    "p50": "-0.6000",
+    "p75": "9.9000",
+    "p95": "28.2000",
+    "prob_positive": "48.4000",
+    "ticker": "AMAT"
+   },
+   "leaf_hash": "4770b82e7cb9a4849e0e07915afe47f45cd1e7aaa6dd71a9195c36bfc6901bfb",
+   "merkle_proof": [
+    {
+     "hash": "47e0f7ca8dbca6b8b4d79fb0ffc31e7550fe8c14c733e22e00b658c908a891d7",
+     "side": "right"
+    },
+    {
+     "hash": "47d3ca0864ad22e76c132f63940342a8aea69c3676bb123c03e86c1a86c84fd5",
+     "side": "right"
+    },
+    {
+     "hash": "311a0d84e0d123447d3ae50c35ee68683f18ac6d6bfa1fe3224c7bc7e6b86ace",
+     "side": "left"
+    },
+    {
+     "hash": "65d3d737bd43d7c4fc9dccbc2c45e103c4560988eba46207b8f23f5974f97dfa",
+     "side": "right"
+    },
+    {
+     "hash": "8bd8a149644342cdb3d9b414d023fa7b9b70e049298dacf767d15bda98764003",
+     "side": "left"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 615.73,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -24.68,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 466.84,
+    "realized_pct": -24.18,
+    "ticker": "AMD"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.3000",
+    "p5": "-24.8000",
+    "p50": "0.5000",
+    "p75": "12.7000",
+    "p95": "40.4000",
+    "prob_positive": "51.1000",
+    "ticker": "AMD"
+   },
+   "leaf_hash": "006cfb4153f6af939cadb3e559f98d4ed9812164ed825c209da7982eab546296",
+   "merkle_proof": [
+    {
+     "hash": "003bda711a21963727e7c4da3529a689d7a31717520b730bafa9775047435278",
+     "side": "left"
+    },
+    {
+     "hash": "9851aac47a941e69f804217fc78ca4f0ad46e47c55308b2532b376d7d63056f5",
+     "side": "right"
+    },
+    {
+     "hash": "c81c8b5503523e8611b9cc6db3347b82353148d331951ff469d7ab7cc9600a16",
+     "side": "right"
+    },
+    {
+     "hash": "c67a94a11eebfc08dda4c3ab9191f875679e9077cc142ee1b434fe6fa0e1520f",
+     "side": "right"
+    },
+    {
+     "hash": "cc8376ca2732a8dc3c460b090e92255e3d9566db6876c654b8d5d19f9a699a93",
+     "side": "right"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 248.23,
+    "anchor_drift_pct": NaN,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -1.85,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 245.63,
+    "realized_pct": -1.05,
+    "ticker": "AMZN"
+   },
+   "leaf": {
+    "anchor_price": "nan",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-4.1000",
+    "p5": "-11.5000",
+    "p50": "0.8000",
+    "p75": "5.9000",
+    "p95": "14.7000",
+    "prob_positive": "54.3000",
+    "ticker": "AMZN"
+   },
+   "leaf_hash": "084c3fe1998417a696311b4953302f093fe2253cc50f8e3e218de4b826402172",
+   "merkle_proof": [
+    {
+     "hash": "081ebfc14c811f5197dd325d1318259f216c5481f57373cf0d68054c0c986e18",
+     "side": "left"
+    },
+    {
+     "hash": "ab431f17e900e398d7da671cfd5c5b89bc24771220fd34c396848ff9604f0cb9",
+     "side": "right"
+    },
+    {
+     "hash": "adcfaa7ce98132e3066fbe9ebc9090ca8dcf4ddda81d9f758a126ff4f30383a5",
+     "side": "left"
+    },
+    {
+     "hash": "f588f5ff5aa659eb102ab20a1c22b734eef2abb1674e77c3d3b079def58abcb5",
+     "side": "left"
+    },
+    {
+     "hash": "cc8376ca2732a8dc3c460b090e92255e3d9566db6876c654b8d5d19f9a699a93",
+     "side": "right"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 204.49,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -20.63,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 164.14,
+    "realized_pct": -19.73,
+    "ticker": "ANET"
+   },
+   "leaf": {
+    "anchor_price": "204.4900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.2000",
+    "p5": "-15.9000",
+    "p50": "0.9000",
+    "p75": "8.6000",
+    "p95": "24.4000",
+    "prob_positive": "53.4000",
+    "ticker": "ANET"
+   },
+   "leaf_hash": "121a117e2e69714b206135fec1d853424e89fa87fe70e6250fe67ef39fc3b346",
+   "merkle_proof": [
+    {
+     "hash": "10d6f90a2087476e8b8d4130913fcb383a0f664615aa37d5e69146818cb83871",
+     "side": "left"
+    },
+    {
+     "hash": "49b6a20146ef8485b1e15aaf34603a117bd53f15bb5f9723c5212a0cdf91cf71",
+     "side": "right"
+    },
+    {
+     "hash": "2716a9b597b6ba431e83ebc42328a56f31b6b5818e2573878f7800e5b2ad4a00",
+     "side": "right"
+    },
+    {
+     "hash": "c4ae86884685e30445d8991ad66f473469804f0d64e6b5a750869e23c4b82227",
+     "side": "right"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 281.31,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -19.35,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 228.85,
+    "realized_pct": -18.65,
+    "ticker": "APP"
+   },
+   "leaf": {
+    "anchor_price": "281.3100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.3000",
+    "p5": "-23.3000",
+    "p50": "0.7000",
+    "p75": "11.8000",
+    "p95": "37.7000",
+    "prob_positive": "51.7000",
+    "ticker": "APP"
+   },
+   "leaf_hash": "0f54478b7f15304239b19962f87f53353a95970fe7b08b0acd880e8d4ce7010a",
+   "merkle_proof": [
+    {
+     "hash": "0ecdf208a608a9087eaa4045b48abe387528466e524281531f553f96fad003d4",
+     "side": "left"
+    },
+    {
+     "hash": "b1bab2e390881d2a4f048f78659e62c2cd40f33907b675aa7c0567dd290086f5",
+     "side": "right"
+    },
+    {
+     "hash": "84fccc36f283767b1c654e5574feb4f85caca1fc3a11f0a106ad6bf05946305e",
+     "side": "left"
+    },
+    {
+     "hash": "2ae2f14b26bfb27b993b432a1aba6e2485589c39b478e9d9e548ce012817bec2",
+     "side": "left"
+    },
+    {
+     "hash": "0257e4d7e119a1fa6ca21adadecc2212f29d33d464a7f471c402348cf11eb4bf",
+     "side": "left"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 292.34,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -30.28,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 196.79,
+    "realized_pct": -32.68,
+    "ticker": "ARM"
+   },
+   "leaf": {
+    "anchor_price": "292.3400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.3000",
+    "p5": "-36.5000",
+    "p50": "-2.4000",
+    "p75": "15.2000",
+    "p95": "60.6000",
+    "prob_positive": "46.0000",
+    "ticker": "ARM"
+   },
+   "leaf_hash": "adfaa66cd52dce035df6cfeb527d4eea78a14b806f81a2be46b25bce4b71a413",
+   "merkle_proof": [
+    {
+     "hash": "b0fd19143fd6270ee02c722b917e593d2805be106285bb6b94c5accf37a8d7fd",
+     "side": "right"
+    },
+    {
+     "hash": "2277a441658eb65e6fdbb8c1d4ebdcd2a47aa575d0656d3f0c85862eae45cd4b",
+     "side": "right"
+    },
+    {
+     "hash": "b71954b3120b28790ca439cce221232e6d9e883ae0e77927febe96b7ca0c5bee",
+     "side": "right"
+    },
+    {
+     "hash": "2b765940fc5e6bd4483e7fa9c0d2eaf3289278107a7e4706903711583348df5b",
+     "side": "right"
+    },
+    {
+     "hash": "b9f7da65525f07713e65c5eba2ed60a4db50980bf916d6e5ec40b69f701689f6",
+     "side": "right"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 1806.1756,
+    "anchor_drift_pct": -0.13,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -15.4,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 1526.14,
+    "realized_pct": -15.5,
+    "ticker": "ASML"
+   },
+   "leaf": {
+    "anchor_price": "1808.4900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.2000",
+    "p5": "-17.0000",
+    "p50": "-0.1000",
+    "p75": "7.7000",
+    "p95": "20.3000",
+    "prob_positive": "49.8000",
+    "ticker": "ASML"
+   },
+   "leaf_hash": "ab9ccf345a749b7ce1ba56e85cd7f5a48c267de5a0ec6db18f11be91862d2ced",
+   "merkle_proof": [
+    {
+     "hash": "abd392696a0771e9b16e8373ac8988abd601aa68287f5a6dfde7fb61c45d1cb3",
+     "side": "right"
+    },
+    {
+     "hash": "6d54a94e2ddefdcfbefb18cfc910baa9bce8ba151d0ccb3cf06d187ee683305c",
+     "side": "right"
+    },
+    {
+     "hash": "20bfaf4575ac819509f29d71aae68ee03387f48f859013c36384524e1e782752",
+     "side": "left"
+    },
+    {
+     "hash": "97f30118e1ce0abb09cf5552547e8c305b4ba6a149b6ab81bc5da29eed7f14f3",
+     "side": "left"
+    },
+    {
+     "hash": "8238f8ba9e7a97c6f4062c265ba289a077c9b6da6182ff3fa10e984fb40c0c04",
+     "side": "left"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 57.04,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -34.51,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 36.33,
+    "realized_pct": -36.31,
+    "ticker": "ASTS"
+   },
+   "leaf": {
+    "anchor_price": "57.0400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.0000",
+    "p5": "-31.2000",
+    "p50": "-1.8000",
+    "p75": "13.3000",
+    "p95": "40.1000",
+    "prob_positive": "46.5000",
+    "ticker": "ASTS"
+   },
+   "leaf_hash": "9929a5d5dc663bf957ddb37d95fa13d24f1ce2df501c5a87d6895cfce9a3dbfc",
+   "merkle_proof": [
+    {
+     "hash": "993e1bfb9f28aea818fd53480ff9963694b8646669668734426a8229bb7a7c8f",
+     "side": "right"
+    },
+    {
+     "hash": "28a9beb4272a34450c52bbe2d26c96a1d50895fd2b1d00ced79894962aeafdd7",
+     "side": "right"
+    },
+    {
+     "hash": "5cf0e1de66b77bc49048bcfa8aedd9a82a61816950849048afe1cbd33a133639",
+     "side": "left"
+    },
+    {
+     "hash": "10716cc282b6bd941c3cf3705b6ec87cc421997711af254bba3dee33abb23a2e",
+     "side": "left"
+    },
+    {
+     "hash": "809ed0da53086aad4fb05ade424166ead4dab4bb2d8aa6a6490f433a4aa95b6b",
+     "side": "left"
+    },
+    {
+     "hash": "3cc8b03dd496e807d7879606c7832755ed22f57081f9faef048b22533601b3d4",
+     "side": "left"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 140.31,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -12.98,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 123.08,
+    "realized_pct": -12.28,
+    "ticker": "AVAV"
+   },
+   "leaf": {
+    "anchor_price": "140.3100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.1000",
+    "p5": "-22.5000",
+    "p50": "0.7000",
+    "p75": "11.5000",
+    "p95": "30.9000",
+    "prob_positive": "51.9000",
+    "ticker": "AVAV"
+   },
+   "leaf_hash": "31ea4c59bf3058e061faaf61b2eef59f66b21851f8f9abf1be6a82345990882a",
+   "merkle_proof": [
+    {
+     "hash": "31d1f19b409a782f294c5dd842571b48e7836fc5f8cea2389b9f9682287ab4e7",
+     "side": "left"
+    },
+    {
+     "hash": "7c67759160c5d2b2bddff63f47fbf8d6d6392422a900b44af4f82a9885d65119",
+     "side": "left"
+    },
+    {
+     "hash": "bd5df2b4384fde8f98783efe63493b13f0a5661366c5afbc9c298bf1a19f8a08",
+     "side": "left"
+    },
+    {
+     "hash": "016d14afab4e36f6648c285ad905e48def399bad751b933d42bb42349257e165",
+     "side": "right"
+    },
+    {
+     "hash": "85fefea63cc18cd956a619ece37e3fabdeb2c872ba086bed562d0f499935b27c",
+     "side": "left"
+    },
+    {
+     "hash": "605ba9b50d56ff968aff53fe30970277717a4b3143c38f4e9ec51cb6619913b1",
+     "side": "right"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 343.64,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -7.33,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 322.23,
+    "realized_pct": -6.23,
+    "ticker": "AVGO"
+   },
+   "leaf": {
+    "anchor_price": "343.6400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-5.2000",
+    "p5": "-14.0000",
+    "p50": "1.1000",
+    "p75": "7.8000",
+    "p95": "21.9000",
+    "prob_positive": "54.7000",
+    "ticker": "AVGO"
+   },
+   "leaf_hash": "555defd4b430c01f53b71ab6ed852ac178236c627ef3d133f46452e2776f4d1a",
+   "merkle_proof": [
+    {
+     "hash": "5431ec99218dbe2751747e4d4b9a23692c0acf34aeb2df8915726dbf2506d11d",
+     "side": "left"
+    },
+    {
+     "hash": "b7916a406eb9416e733d44e32420e3dbef73b079b138de5a8770c032db20c7a8",
+     "side": "left"
+    },
+    {
+     "hash": "6f19c06373b2896579c3c2d986347433ea83f2c16dd0035036e82be73cfccd82",
+     "side": "right"
+    },
+    {
+     "hash": "d0eb1aa8e9a6ecfa0c65239705c683fd0ac1ae6e56cfea0f8c4ab4eef131b995",
+     "side": "left"
+    },
+    {
+     "hash": "8a6bc2322e8c3160fd2c97cadb9b89409e7cb8ad6f7766d67d6e84616119f803",
+     "side": "right"
+    },
+    {
+     "hash": "3b25eaa5b44c42ea61bcc2245dc97762ad8968dc994218800706a034f8aaa95a",
+     "side": "right"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 2.74,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -4.94,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 2.58,
+    "realized_pct": -5.84,
+    "ticker": "BBAI"
+   },
+   "leaf": {
+    "anchor_price": "2.7400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.2000",
+    "p5": "-24.9000",
+    "p50": "-0.9000",
+    "p75": "10.7000",
+    "p95": "30.8000",
+    "prob_positive": "47.9000",
+    "ticker": "BBAI"
+   },
+   "leaf_hash": "034184b62b9bac41e9f2e5d8b53b99f1ce7ed1dc2aca94efaf6475c40b37d67d",
+   "merkle_proof": [
+    {
+     "hash": "032e101eb627ec04e1722e40d742d6f31a5c2ec92ff5813eeb369d1036d039df",
+     "side": "left"
+    },
+    {
+     "hash": "69e4f6090a3ea40ca1dc7d4d2ff306e624a5ae443f03fab0a662b68a3efceeb5",
+     "side": "right"
+    },
+    {
+     "hash": "4de7deab2dcf688feaf31cbcd28888c57c9f72936a55c61ac938f771a89175d9",
+     "side": "left"
+    },
+    {
+     "hash": "c67a94a11eebfc08dda4c3ab9191f875679e9077cc142ee1b434fe6fa0e1520f",
+     "side": "right"
+    },
+    {
+     "hash": "cc8376ca2732a8dc3c460b090e92255e3d9566db6876c654b8d5d19f9a699a93",
+     "side": "right"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 350.73,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -6.05,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 329.51,
+    "realized_pct": -6.05,
+    "ticker": "CDNS"
+   },
+   "leaf": {
+    "anchor_price": "350.7300",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.5000",
+    "p5": "-16.1000",
+    "p50": "0.0000",
+    "p75": "7.0000",
+    "p95": "19.3000",
+    "prob_positive": "50.1000",
+    "ticker": "CDNS"
+   },
+   "leaf_hash": "71ab62e8e414e5fccf40fcb086ac4dea7867ce1e4f38638d848bf72a0322e82a",
+   "merkle_proof": [
+    {
+     "hash": "71c6c4a3a8c1de557bdff4dcaf39bd216c11d619b5a8c80fc3eba20d459746fe",
+     "side": "right"
+    },
+    {
+     "hash": "72bc1824849d03877184719d319f88d37b2a237ea955dce65b8f3ccb7b68c5ac",
+     "side": "left"
+    },
+    {
+     "hash": "958c001579162bcc6253222e4559f0788ccfd363c66c8a819bff76c5cd41e67e",
+     "side": "left"
+    },
+    {
+     "hash": "74c4d8f5dd313d256bbd3a427533668dfe2caa8125b3eb7b850700984dbd5cc5",
+     "side": "left"
+    },
+    {
+     "hash": "94e34667ad7ef9832293d7c155c081cb721ef2ffc8e49e6d967cbf5a8795319a",
+     "side": "left"
+    },
+    {
+     "hash": "dd8fd599d3df8b613915e2a061a4c415350f10588a46268b4d0fbf6548b32c81",
+     "side": "left"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 258.92,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -0.44,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 257.25,
+    "realized_pct": -0.64,
+    "ticker": "CEG"
+   },
+   "leaf": {
+    "anchor_price": "258.9200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.3000",
+    "p5": "-19.1000",
+    "p50": "-0.2000",
+    "p75": "8.6000",
+    "p95": "23.0000",
+    "prob_positive": "49.3000",
+    "ticker": "CEG"
+   },
+   "leaf_hash": "a830c98078b68d55be626d7512686324bfbe7b9907179893302230b740b6f51a",
+   "merkle_proof": [
+    {
+     "hash": "a81d31372b3eb1b34c15099df4fb57f8fd2cd8290d302afb89b5e1e4fbf4a251",
+     "side": "left"
+    },
+    {
+     "hash": "8aa9039b2321b12e94a2b81eb4a22981c7eeb70706ef992eac7d10b684d8ac4c",
+     "side": "right"
+    },
+    {
+     "hash": "fdd0e64dd2abdcdfedb906251224038160141f828593aab07fedcdd5b9989514",
+     "side": "left"
+    },
+    {
+     "hash": "d8a14ef3cedf426d7380a2ce9d4aad61b71903f0558f8d01996e6984d27f15ff",
+     "side": "right"
+    },
+    {
+     "hash": "8238f8ba9e7a97c6f4062c265ba289a077c9b6da6182ff3fa10e984fb40c0c04",
+     "side": "left"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 319.19,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -36.86,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 199.95,
+    "realized_pct": -37.36,
+    "ticker": "COHR"
+   },
+   "leaf": {
+    "anchor_price": "319.1900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.1000",
+    "p5": "-29.1000",
+    "p50": "-0.5000",
+    "p75": "13.9000",
+    "p95": "39.6000",
+    "prob_positive": "49.0000",
+    "ticker": "COHR"
+   },
+   "leaf_hash": "a45da43230a56f8f5312c0e0f6ad3bbcac251c6346397cf4a5bea7dfb66157e0",
+   "merkle_proof": [
+    {
+     "hash": "a445f221c6ccdaf633b48d4c6ed389cb464cc268b698efeaf0cf7d4e72486ba5",
+     "side": "left"
+    },
+    {
+     "hash": "7883075f48ecb5024d604447474d3a05e366d61ef5f80547307a4eeb1e447d4b",
+     "side": "right"
+    },
+    {
+     "hash": "41c9a2bcca612b49381d8be2044dae9243ced50f5cab8f1f683dc5edb75808d7",
+     "side": "left"
+    },
+    {
+     "hash": "d2ebad7690760418b4794e104ccf971e352190bcbc4d149f308fe79e55a08b09",
+     "side": "left"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 210.17,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -30.98,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 140.02,
+    "realized_pct": -33.38,
+    "ticker": "CRDO"
+   },
+   "leaf": {
+    "anchor_price": "210.1700",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.2000",
+    "p5": "-35.1000",
+    "p50": "-2.4000",
+    "p75": "15.0000",
+    "p95": "46.7000",
+    "prob_positive": "45.9000",
+    "ticker": "CRDO"
+   },
+   "leaf_hash": "b7fa582c6ba15cfe39e0f613291f3c9e262c049d390f2080885b7ff9e5bb34df",
+   "merkle_proof": [
+    {
+     "hash": "b7cba5ef1407b9d4c7f931b2ebfe93802686b18c385cbf7475199231771f272f",
+     "side": "left"
+    },
+    {
+     "hash": "f433d8ac2d168abcb8250c3270e203d30c74c66d7769fc68f15548b0f232f1be",
+     "side": "left"
+    },
+    {
+     "hash": "55e130d675e11fa6d1dd90d76860b7f7731493d5e38f2caada62dd3756866b71",
+     "side": "left"
+    },
+    {
+     "hash": "63f623543268c53baaf155f4af33ea3ba0962d16df745a88a9ba6f3b85d42a2b",
+     "side": "left"
+    },
+    {
+     "hash": "b9f7da65525f07713e65c5eba2ed60a4db50980bf916d6e5ec40b69f701689f6",
+     "side": "right"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 236.69,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -4.54,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 226.18,
+    "realized_pct": -4.44,
+    "ticker": "CRM"
+   },
+   "leaf": {
+    "anchor_price": "236.6900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.3000",
+    "p5": "-17.6000",
+    "p50": "0.1000",
+    "p75": "8.0000",
+    "p95": "21.5000",
+    "prob_positive": "50.3000",
+    "ticker": "CRM"
+   },
+   "leaf_hash": "e77127145da46ecf4b6d109cc9bff27536a1b11a0a88b2f9e59e1e14afeb3383",
+   "merkle_proof": [
+    {
+     "hash": "e750c86b69a9f64d5fc7123543dcfd2d060ee1085fe597b475d1920543ad6047",
+     "side": "left"
+    },
+    {
+     "hash": "00bed15c9e00a1ec1d983226ffdb9abf3ec2a0e672c5bc6faefc29d9256c8631",
+     "side": "right"
+    },
+    {
+     "hash": "bbd03840463dbc85940f0f6d04596002100f588963dcd7d484dcf0ec9902d5b9",
+     "side": "left"
+    },
+    {
+     "hash": "9859a6addc586755feea6a646b9ddde7f6bd1c83c9e3e977d6e1b142353bfad6",
+     "side": "right"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 266.09,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -9.12,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 241.81,
+    "realized_pct": -9.12,
+    "ticker": "CRWD"
+   },
+   "leaf": {
+    "anchor_price": "266.0900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.7000",
+    "p5": "-23.0000",
+    "p50": "0.0000",
+    "p75": "10.7000",
+    "p95": "29.9000",
+    "prob_positive": "50.0000",
+    "ticker": "CRWD"
+   },
+   "leaf_hash": "4a6c1ef4604c1db1f42858726f4044dc982cf66b4c374aa6eae9a340545ca237",
+   "merkle_proof": [
+    {
+     "hash": "4a1c2db65c2cafdb40f1662c8018ddfaa8703079d085ea44258d346df40cd2d2",
+     "side": "left"
+    },
+    {
+     "hash": "97466fb59c1d09435f8855fb35edbdfa1d3955474ab44682a89d009f889e891a",
+     "side": "left"
+    },
+    {
+     "hash": "fbb5c9a23e9f35edf69dc7f2329866219a7bda90d67ed83d6228b4790fce4737",
+     "side": "right"
+    },
+    {
+     "hash": "63461f9e7097b679379c94cb55a2fc23e0326a2fa27da19f8273d092d987d279",
+     "side": "left"
+    },
+    {
+     "hash": "8bd8a149644342cdb3d9b414d023fa7b9b70e049298dacf767d15bda98764003",
+     "side": "left"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 276.46,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -21.63,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 216.1,
+    "realized_pct": -21.83,
+    "ticker": "DDOG"
+   },
+   "leaf": {
+    "anchor_price": "276.4600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.7000",
+    "p5": "-23.6000",
+    "p50": "-0.2000",
+    "p75": "10.4000",
+    "p95": "30.4000",
+    "prob_positive": "49.6000",
+    "ticker": "DDOG"
+   },
+   "leaf_hash": "aacfd34ec752ff00f53c65027396d3bb6f5268c7ae5d0a00af714193250d1fca",
+   "merkle_proof": [
+    {
+     "hash": "aafc90397438809e658b492e791d2871420f23cce30fe5f2c16fa42e9e91e6df",
+     "side": "right"
+    },
+    {
+     "hash": "8e10b10c21e37c91a382f245dee794e4d52c9196b946045069b12b01387c4150",
+     "side": "left"
+    },
+    {
+     "hash": "f130d97e272675ee5ee10830e441cad841a37b1c6df4911bc97e5dad3cbdb1e7",
+     "side": "right"
+    },
+    {
+     "hash": "97f30118e1ce0abb09cf5552547e8c305b4ba6a149b6ab81bc5da29eed7f14f3",
+     "side": "left"
+    },
+    {
+     "hash": "8238f8ba9e7a97c6f4062c265ba289a077c9b6da6182ff3fa10e984fb40c0c04",
+     "side": "left"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 541.0016,
+    "anchor_drift_pct": -0.14,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -26.3,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 392.78,
+    "realized_pct": -27.4,
+    "ticker": "DELL"
+   },
+   "leaf": {
+    "anchor_price": "541.7400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-12.1000",
+    "p5": "-27.0000",
+    "p50": "-1.1000",
+    "p75": "11.2000",
+    "p95": "34.0000",
+    "prob_positive": "47.4000",
+    "ticker": "DELL"
+   },
+   "leaf_hash": "ff032c93a3eb3cc37da501a6b9ba3df7762685440c21ba3814e1af002536cd62",
+   "merkle_proof": [
+    {
+     "hash": "ffe4534f084f120532caf7cf5c245f37599cabadd238e77bd733113f0bf33acb",
+     "side": "right"
+    },
+    {
+     "hash": "0ec95aee668fa10fd93bfbf0dd3117c6674d632054f6b3f86bb72b8b5ac62e84",
+     "side": "left"
+    },
+    {
+     "hash": "2a26fc471725fa21dfed8a94624476ca4586abd9a68adbe00669ef210d34b1dd",
+     "side": "left"
+    },
+    {
+     "hash": "208775336b20fdf1730e6a20bdbf39c745ca40c2b70abd2df696b425f68e2698",
+     "side": "left"
+    },
+    {
+     "hash": "43bcd484f987b59b290870602ffaed625a120ebd8736c637d1b3a4499426f866",
+     "side": "left"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 435.9263,
+    "anchor_drift_pct": -0.31,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -16.58,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 364.9367,
+    "realized_pct": -16.28,
+    "ticker": "ETN"
+   },
+   "leaf": {
+    "anchor_price": "437.2800",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.0000",
+    "p5": "-14.8000",
+    "p50": "0.3000",
+    "p75": "7.1000",
+    "p95": "18.0000",
+    "prob_positive": "51.3000",
+    "ticker": "ETN"
+   },
+   "leaf_hash": "86b259b37e89fd70d2a45c86cfbb75b423e86bcf30f00d6a6899c5ddc8eec2b5",
+   "merkle_proof": [
+    {
+     "hash": "875a94d6fd5a2ed6c3fb06b30382f72abc42e5f1abca178a1fb0fe5e3d54af28",
+     "side": "right"
+    },
+    {
+     "hash": "5d12e7a17059bd673dc3ca16ee62fafefba344a039109ff351a70bc027cf8865",
+     "side": "right"
+    },
+    {
+     "hash": "24244d1124248ea1fae75a500dbadda8b5cae07eb356aed895ae3117bf5f1848",
+     "side": "left"
+    },
+    {
+     "hash": "bfad070c68352481b2fd47a46ed5cf5bfb894ae893109f091ee9bdc76acc7e0a",
+     "side": "right"
+    },
+    {
+     "hash": "c9ed7ee3d093d9c2a17e6371cf2e4561a1a6d5c115a5adbbe3161243eb34cf5c",
+     "side": "right"
+    },
+    {
+     "hash": "3cc8b03dd496e807d7879606c7832755ed22f57081f9faef048b22533601b3d4",
+     "side": "left"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 178.72,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -29.58,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 126.21,
+    "realized_pct": -29.38,
+    "ticker": "FTNT"
+   },
+   "leaf": {
+    "anchor_price": "178.7200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.6000",
+    "p5": "-16.3000",
+    "p50": "0.2000",
+    "p75": "7.5000",
+    "p95": "20.0000",
+    "prob_positive": "50.8000",
+    "ticker": "FTNT"
+   },
+   "leaf_hash": "ed780fc7d1abfd4db5c6a5e93740956d18e4eb4ea2fa8db6fd7b1cfd02e7901f",
+   "merkle_proof": [
+    {
+     "hash": "edbfd4c17062c84e2a3a9cee89f9765747ab3692c787fca0eaaee163cb137431",
+     "side": "right"
+    },
+    {
+     "hash": "4357da76b084e8eeea9b15f1b0ebe0a875c8b8150e146cfa59b972a8569e41dd",
+     "side": "left"
+    },
+    {
+     "hash": "d2c4201672afebc38de56d6366fde21b2a650f34f625c0aca485ad722b4b8e43",
+     "side": "left"
+    },
+    {
+     "hash": "a21aec1624d8446f98c18ada81e282340661832a7214587577fb88be4f67b055",
+     "side": "left"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 160.0272,
+    "anchor_drift_pct": -0.24,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -22.5,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 122.8984,
+    "realized_pct": -23.2,
+    "ticker": "GLW"
+   },
+   "leaf": {
+    "anchor_price": "160.4200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.8000",
+    "p5": "-26.6000",
+    "p50": "-0.7000",
+    "p75": "11.8000",
+    "p95": "34.3000",
+    "prob_positive": "48.3000",
+    "ticker": "GLW"
+   },
+   "leaf_hash": "e2f31b681a74a89be4821513b8d417536080f74df97ba980220d4b9805eece95",
+   "merkle_proof": [
+    {
+     "hash": "e265fabf21d467276b5a69a5c368afc873a8ea0ce00351e8c2f62d5138cd419f",
+     "side": "left"
+    },
+    {
+     "hash": "061d73db2675d1a7c445ad659ca708a04f2d440f7e2ba3e6cff3b63f73d6fefb",
+     "side": "right"
+    },
+    {
+     "hash": "3fb8f40382413f152b7a036be3d55fa45cf3729ed3a44ff1ad50d97a52ae3ee9",
+     "side": "left"
+    },
+    {
+     "hash": "eba9e790871579fa868a242e1979be09fe8067ab03c641c70fa45f651df9e27c",
+     "side": "left"
+    },
+    {
+     "hash": "68c554e4dce812d99be16e8efedd33a8f0a8b3b18d0db90f0aa83e4ac058a576",
+     "side": "right"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 338.24,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -18.42,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 278.99,
+    "realized_pct": -17.52,
+    "ticker": "GOOGL"
+   },
+   "leaf": {
+    "anchor_price": "338.2400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-3.9000",
+    "p5": "-10.9000",
+    "p50": "0.9000",
+    "p75": "5.9000",
+    "p95": "14.3000",
+    "prob_positive": "55.1000",
+    "ticker": "GOOGL"
+   },
+   "leaf_hash": "a1443e9c63f00b8ee8bd8cf9b5094fe16c045eb86d5f0f1643dc4ffc70f96269",
+   "merkle_proof": [
+    {
+     "hash": "9f71f2ca8c4d247cbed8a6e32ca3e0ee9c0a1d3748cd91132e824cbc308750b3",
+     "side": "left"
+    },
+    {
+     "hash": "aed0bc04a23794ce25a8f16822066d0df6b71061fed6521ce2d63e708795031f",
+     "side": "left"
+    },
+    {
+     "hash": "32e34148650fe7dd5ddf6050d1d810a5e3c3f4e49333a00bf0a90714953ab526",
+     "side": "left"
+    },
+    {
+     "hash": "5d9fef809cf9052f3e821abf84fbe6d40f922f200a725410d28c9bfea9c4b534",
+     "side": "right"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 224.0714,
+    "anchor_drift_pct": -0.69,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 11.82,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 250.7768,
+    "realized_pct": 11.92,
+    "ticker": "IBM"
+   },
+   "leaf": {
+    "anchor_price": "225.6200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.1000",
+    "p5": "-15.3000",
+    "p50": "0.1000",
+    "p75": "6.6000",
+    "p95": "18.2000",
+    "prob_positive": "50.3000",
+    "ticker": "IBM"
+   },
+   "leaf_hash": "b23f8139c8814474cbd0384204ad635a8a1090821849799a8f9ddfabd4f5a524",
+   "merkle_proof": [
+    {
+     "hash": "b218720a885e7e91719d3ba8df3da6fbf74b8ac1bae8563cb24cff04b971eeb2",
+     "side": "left"
+    },
+    {
+     "hash": "fd450dbf5b483d262c023a861ebd07b9f1e74fc404ba33732afa78b514063b05",
+     "side": "right"
+    },
+    {
+     "hash": "9bae34fd4dc4a997ae97ced184472f74cc5deb43668e0a969e5d816e5e0646bc",
+     "side": "left"
+    },
+    {
+     "hash": "2b765940fc5e6bd4483e7fa9c0d2eaf3289278107a7e4706903711583348df5b",
+     "side": "right"
+    },
+    {
+     "hash": "b9f7da65525f07713e65c5eba2ed60a4db50980bf916d6e5ec40b69f701689f6",
+     "side": "right"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 120.0,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -47.63,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 59.97,
+    "realized_pct": -50.03,
+    "ticker": "INTC"
+   },
+   "leaf": {
+    "anchor_price": "120.0000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.9000",
+    "p5": "-30.9000",
+    "p50": "-2.4000",
+    "p75": "11.9000",
+    "p95": "37.7000",
+    "prob_positive": "45.2000",
+    "ticker": "INTC"
+   },
+   "leaf_hash": "b36fdf97195b9d4b307e153581c04d463da8a871618cd3b32f379d7f5de167fb",
+   "merkle_proof": [
+    {
+     "hash": "b2ebfff47fd14293504ed3ea44381867d9e365ecec90059b24bfa93b9072da3d",
+     "side": "left"
+    },
+    {
+     "hash": "5ea30cec4fd9fc61b72939e6a89a2549ee9cbc4a58fdc577fe8c26a026d118f3",
+     "side": "right"
+    },
+    {
+     "hash": "227994b350a0a3548d826006b19b64850741c036265629e2d0b0dd2a63a285ee",
+     "side": "right"
+    },
+    {
+     "hash": "63f623543268c53baaf155f4af33ea3ba0962d16df745a88a9ba6f3b85d42a2b",
+     "side": "left"
+    },
+    {
+     "hash": "b9f7da65525f07713e65c5eba2ed60a4db50980bf916d6e5ec40b69f701689f6",
+     "side": "right"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 43.99,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -34.56,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 28.17,
+    "realized_pct": -35.96,
+    "ticker": "IONQ"
+   },
+   "leaf": {
+    "anchor_price": "43.9900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.5000",
+    "p5": "-30.6000",
+    "p50": "-1.4000",
+    "p75": "13.7000",
+    "p95": "47.9000",
+    "prob_positive": "47.3000",
+    "ticker": "IONQ"
+   },
+   "leaf_hash": "c7665f3fa27b33ec91930a66e9f263db3ae7a0926498a037bb40023a9c45707a",
+   "merkle_proof": [
+    {
+     "hash": "c7eba6fc831b70c3fac1cc83d53847e37509c6e5da471b8df08db2d4a996e4c9",
+     "side": "right"
+    },
+    {
+     "hash": "8779838f1c133491cf291152bd4dfe7fff263f22365a8c6b27ff131e66a4ab07",
+     "side": "right"
+    },
+    {
+     "hash": "b9ace4d1b9400ce67103fc412c1d75d8fe3143cbe2989802a38c60234fcfacb5",
+     "side": "right"
+    },
+    {
+     "hash": "573432d33e4b768471858615ac46c6b152bbe3512cf2d13bccda153183d70a8b",
+     "side": "left"
+    },
+    {
+     "hash": "e224e530893d1129ea3d8739d6b1dd4ae1cff1d06f893564d04e82a854aa3c38",
+     "side": "right"
+    },
+    {
+     "hash": "a9b4ba8510d59e67568cf736bb3319cf9036509fd3aeff3177fb3d43a2771f2c",
+     "side": "right"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 47.87,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.63,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 43.74,
+    "realized_pct": -8.63,
+    "ticker": "IRDM"
+   },
+   "leaf": {
+    "anchor_price": "47.8700",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.7000",
+    "p5": "-16.5000",
+    "p50": "0.0000",
+    "p75": "7.1000",
+    "p95": "19.7000",
+    "prob_positive": "49.9000",
+    "ticker": "IRDM"
+   },
+   "leaf_hash": "a499b60b372e191cc3ed021cec5c8c3f63dfefe26d3ca6314ee70f0e62d066b8",
+   "merkle_proof": [
+    {
+     "hash": "a49805f750d29a855e378b19689a00601018ceea8ccc7e4909c9c0130c79fefb",
+     "side": "left"
+    },
+    {
+     "hash": "52a16858db3f891d2835e2c6ccfe06500ca60a5ea1137fd21f105e8aa02bed33",
+     "side": "left"
+    },
+    {
+     "hash": "41c9a2bcca612b49381d8be2044dae9243ced50f5cab8f1f683dc5edb75808d7",
+     "side": "left"
+    },
+    {
+     "hash": "d2ebad7690760418b4794e104ccf971e352190bcbc4d149f308fe79e55a08b09",
+     "side": "left"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 69.3467,
+    "anchor_drift_pct": -66.67,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 2.79,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 71.56,
+    "realized_pct": 3.19,
+    "ticker": "ITA"
+   },
+   "leaf": {
+    "anchor_price": "208.0400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-3.2000",
+    "p5": "-8.5000",
+    "p50": "0.4000",
+    "p75": "4.3000",
+    "p95": "10.2000",
+    "prob_positive": "53.3000",
+    "ticker": "ITA"
+   },
+   "leaf_hash": "51ef2c27d80400e1357742af60c4f1c316a5c07a1f71347f28c9d5b00ec59652",
+   "merkle_proof": [
+    {
+     "hash": "4ffa66f973ac2c60ee77622b3e57e4247ca604bdbe52394100ca19d194f75f9a",
+     "side": "left"
+    },
+    {
+     "hash": "1fdfd0c898bf29679b43b6cf6b3883c3d520b3a704e3c5a846520f365238e500",
+     "side": "right"
+    },
+    {
+     "hash": "a9d862e3ed5142b62aa431ea8e9ed86456a80ab58d7f5bce97f2e2c1a349f086",
+     "side": "left"
+    },
+    {
+     "hash": "31e396558a9ca23a8f7120d61403449694f6e96063f992b0a79f373efd1182e5",
+     "side": "right"
+    },
+    {
+     "hash": "8a6bc2322e8c3160fd2c97cadb9b89409e7cb8ad6f7766d67d6e84616119f803",
+     "side": "right"
+    },
+    {
+     "hash": "3b25eaa5b44c42ea61bcc2245dc97762ad8968dc994218800706a034f8aaa95a",
+     "side": "right"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 200.33,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -23.27,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 153.11,
+    "realized_pct": -23.57,
+    "ticker": "KLAC"
+   },
+   "leaf": {
+    "anchor_price": "200.3300",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.7000",
+    "p5": "-20.3000",
+    "p50": "-0.3000",
+    "p75": "8.7000",
+    "p95": "24.7000",
+    "prob_positive": "49.0000",
+    "ticker": "KLAC"
+   },
+   "leaf_hash": "bf8645b83ba64b5a753577a7d1efad08643b0df82db4861bf22c4209ef36439e",
+   "merkle_proof": [
+    {
+     "hash": "bd80299c05ee02100d49da039e763a9b621f0ab0876584591fad4d264418d53f",
+     "side": "left"
+    },
+    {
+     "hash": "c4c1e2fc36d30cb988c5c83d333347947c9cad2f0f628698688cf3e8959bf354",
+     "side": "right"
+    },
+    {
+     "hash": "948b63b14fe043bba356c39f033bd2084be43c97548febfc026cc779304064d7",
+     "side": "left"
+    },
+    {
+     "hash": "dbc811c317aca939f9e24b35217813c126d19861f86cd1b18db93cc755ccbb7f",
+     "side": "left"
+    },
+    {
+     "hash": "ce9f9ab71999dfd79978b91b0e349a1f4ef73021650311c05e8e1941c0d34e99",
+     "side": "left"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 42.82,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -6.35,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 40.23,
+    "realized_pct": -6.05,
+    "ticker": "KTOS"
+   },
+   "leaf": {
+    "anchor_price": "42.8200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.8000",
+    "p5": "-22.8000",
+    "p50": "0.3000",
+    "p75": "11.5000",
+    "p95": "30.4000",
+    "prob_positive": "50.7000",
+    "ticker": "KTOS"
+   },
+   "leaf_hash": "563d2238bd0ac58ce1bc9625c8b16279d5edbe22e51f01fd4c6c69c142ab559c",
+   "merkle_proof": [
+    {
+     "hash": "576a704155e39d11af2a2b4d54408d0b9c15d03b6cbb8f461813f6f95929d0e7",
+     "side": "right"
+    },
+    {
+     "hash": "15e810b0b42e94168980367974f6fcdc1fb824984c86325d6bbfc73705d358d6",
+     "side": "right"
+    },
+    {
+     "hash": "26df30a0ca55aa17cf4c19484de130417f17915b229ba7d9664dc959bb2f8596",
+     "side": "left"
+    },
+    {
+     "hash": "d0eb1aa8e9a6ecfa0c65239705c683fd0ac1ae6e56cfea0f8c4ab4eef131b995",
+     "side": "left"
+    },
+    {
+     "hash": "8a6bc2322e8c3160fd2c97cadb9b89409e7cb8ad6f7766d67d6e84616119f803",
+     "side": "right"
+    },
+    {
+     "hash": "3b25eaa5b44c42ea61bcc2245dc97762ad8968dc994218800706a034f8aaa95a",
+     "side": "right"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 1045.78,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -33.26,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 684.4,
+    "realized_pct": -34.56,
+    "ticker": "LITE"
+   },
+   "leaf": {
+    "anchor_price": "1045.7800",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.8000",
+    "p5": "-29.6000",
+    "p50": "-1.3000",
+    "p75": "13.0000",
+    "p95": "38.3000",
+    "prob_positive": "47.3000",
+    "ticker": "LITE"
+   },
+   "leaf_hash": "0ecdf208a608a9087eaa4045b48abe387528466e524281531f553f96fad003d4",
+   "merkle_proof": [
+    {
+     "hash": "0f54478b7f15304239b19962f87f53353a95970fe7b08b0acd880e8d4ce7010a",
+     "side": "right"
+    },
+    {
+     "hash": "b1bab2e390881d2a4f048f78659e62c2cd40f33907b675aa7c0567dd290086f5",
+     "side": "right"
+    },
+    {
+     "hash": "84fccc36f283767b1c654e5574feb4f85caca1fc3a11f0a106ad6bf05946305e",
+     "side": "left"
+    },
+    {
+     "hash": "2ae2f14b26bfb27b993b432a1aba6e2485589c39b478e9d9e548ce012817bec2",
+     "side": "left"
+    },
+    {
+     "hash": "0257e4d7e119a1fa6ca21adadecc2212f29d33d464a7f471c402348cf11eb4bf",
+     "side": "left"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 340.1,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -32.49,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 227.56,
+    "realized_pct": -33.09,
+    "ticker": "LRCX"
+   },
+   "leaf": {
+    "anchor_price": "340.1000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.2000",
+    "p5": "-22.6000",
+    "p50": "-0.6000",
+    "p75": "10.0000",
+    "p95": "27.6000",
+    "prob_positive": "48.4000",
+    "ticker": "LRCX"
+   },
+   "leaf_hash": "de790703b479347a20349d747514e51ea68dace65e52a7fbcd50778d6047c6d6",
+   "merkle_proof": [
+    {
+     "hash": "df6b7f43911d4eeeec01a260120c47b83855ea7f64bdb471506586bea6fd4816",
+     "side": "right"
+    },
+    {
+     "hash": "413fb88839cb2a68ff6967e0af34137c16de4e9e899f440705a7f6bbc5d87cc0",
+     "side": "left"
+    },
+    {
+     "hash": "d2a07dd2d121002f77fd8e371ecaa9a867837071f1e6c2cd776e2b9fa21a8d01",
+     "side": "left"
+    },
+    {
+     "hash": "33092d398720aea1bbcc60920710aea10ae05949f173fd79b1920489471c3079",
+     "side": "right"
+    },
+    {
+     "hash": "68c554e4dce812d99be16e8efedd33a8f0a8b3b18d0db90f0aa83e4ac058a576",
+     "side": "right"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 14.05,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -26.72,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 9.86,
+    "realized_pct": -29.82,
+    "ticker": "LUNR"
+   },
+   "leaf": {
+    "anchor_price": "14.0500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-18.8000",
+    "p5": "-37.7000",
+    "p50": "-3.1000",
+    "p75": "15.7000",
+    "p95": "50.6000",
+    "prob_positive": "45.2000",
+    "ticker": "LUNR"
+   },
+   "leaf_hash": "e750c86b69a9f64d5fc7123543dcfd2d060ee1085fe597b475d1920543ad6047",
+   "merkle_proof": [
+    {
+     "hash": "e77127145da46ecf4b6d109cc9bff27536a1b11a0a88b2f9e59e1e14afeb3383",
+     "side": "right"
+    },
+    {
+     "hash": "00bed15c9e00a1ec1d983226ffdb9abf3ec2a0e672c5bc6faefc29d9256c8631",
+     "side": "right"
+    },
+    {
+     "hash": "bbd03840463dbc85940f0f6d04596002100f588963dcd7d484dcf0ec9902d5b9",
+     "side": "left"
+    },
+    {
+     "hash": "9859a6addc586755feea6a646b9ddde7f6bd1c83c9e3e977d6e1b142353bfad6",
+     "side": "right"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 725.93,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -16.82,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 606.73,
+    "realized_pct": -16.42,
+    "ticker": "META"
+   },
+   "leaf": {
+    "anchor_price": "725.9300",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.9000",
+    "p5": "-22.4000",
+    "p50": "0.4000",
+    "p75": "10.8000",
+    "p95": "35.2000",
+    "prob_positive": "51.2000",
+    "ticker": "META"
+   },
+   "leaf_hash": "67948b923ff11ce35a4e4c3267d4b594cc8f9e99a60eaee3f2f4312831cf001e",
+   "merkle_proof": [
+    {
+     "hash": "6833a6d7bfcd3992e51f8d0be29b0ccc15691bcc4564d685fccd8c76862c332c",
+     "side": "right"
+    },
+    {
+     "hash": "c75c20ae8fd00c09ac32b7d4558ae90b2a584a95ee70a97bc7423353c6da0d20",
+     "side": "right"
+    },
+    {
+     "hash": "ad7276e131414d88297478305ddaaa28a817d90ad82783a1e620ba59acebfd83",
+     "side": "right"
+    },
+    {
+     "hash": "131939bed3e0288cf3667cc379217e5757087a324480efbf7a4fd5898f2d1704",
+     "side": "left"
+    },
+    {
+     "hash": "e3e079c913bbfcb0f6dfb3d9723e6310c74b2b100e93124497a1a80b635d01f1",
+     "side": "right"
+    },
+    {
+     "hash": "dd8fd599d3df8b613915e2a061a4c415350f10588a46268b4d0fbf6548b32c81",
+     "side": "left"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 18.65,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -25.82,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 13.07,
+    "realized_pct": -29.92,
+    "ticker": "MRAM"
+   },
+   "leaf": {
+    "anchor_price": "18.6500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-21.1000",
+    "p5": "-42.0000",
+    "p50": "-4.1000",
+    "p75": "16.5000",
+    "p95": "58.5000",
+    "prob_positive": "44.2000",
+    "ticker": "MRAM"
+   },
+   "leaf_hash": "4b18d87818f3110f2b3d399b76a902f7e02d4908aea2415ff8293a72c1dbc1b7",
+   "merkle_proof": [
+    {
+     "hash": "4b3ddb38ded7f8dfb2fb7e399e1e657ca8b4e3a6f7f78bbea569dade7a8a022b",
+     "side": "right"
+    },
+    {
+     "hash": "ddbd9fd6e989ec3a5fd101e1b7f7d8d86416674399a108361dc15f1481eb783e",
+     "side": "right"
+    },
+    {
+     "hash": "2a5b6a06f3a29a56eafc6eca4e2406f8680b9636ec8e4f3fd0ff98cc8c32d250",
+     "side": "left"
+    },
+    {
+     "hash": "63461f9e7097b679379c94cb55a2fc23e0326a2fa27da19f8273d092d987d279",
+     "side": "left"
+    },
+    {
+     "hash": "8bd8a149644342cdb3d9b414d023fa7b9b70e049298dacf767d15bda98764003",
+     "side": "left"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 268.0216,
+    "anchor_drift_pct": -0.02,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -36.35,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 171.41,
+    "realized_pct": -36.05,
+    "ticker": "MRVL"
+   },
+   "leaf": {
+    "anchor_price": "268.0800",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.0000",
+    "p5": "-25.9000",
+    "p50": "0.3000",
+    "p75": "13.1000",
+    "p95": "42.3000",
+    "prob_positive": "50.7000",
+    "ticker": "MRVL"
+   },
+   "leaf_hash": "14b5e17415ce81bbb77353d307bd6469025231400eb1d90b6d4389ce464381fc",
+   "merkle_proof": [
+    {
+     "hash": "13a6d2254ee841ccb114c176e022ca3bd78ffa23c3e599b4e444c1fbde3cea2f",
+     "side": "left"
+    },
+    {
+     "hash": "d2fa92df76cf7c0d94ada2255a87ea69d7aa7d513b08f08da2e31cbcef225d66",
+     "side": "left"
+    },
+    {
+     "hash": "866c2e14f8d4c7d3b5c55b2a3b9f648750b3a79ebe99f1be5f5af48780948b53",
+     "side": "left"
+    },
+    {
+     "hash": "c4ae86884685e30445d8991ad66f473469804f0d64e6b5a750869e23c4b82227",
+     "side": "right"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 512.8,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -2.01,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 507.12,
+    "realized_pct": -1.11,
+    "ticker": "MSFT"
+   },
+   "leaf": {
+    "anchor_price": "512.8000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-4.2000",
+    "p5": "-11.7000",
+    "p50": "0.9000",
+    "p75": "6.2000",
+    "p95": "15.2000",
+    "prob_positive": "54.6000",
+    "ticker": "MSFT"
+   },
+   "leaf_hash": "da064bc292578b27f243a4bf843755e483cbb992c256d355f3222209c1697a12",
+   "merkle_proof": [
+    {
+     "hash": "d9a3b99d603d729a3a2499fd6e79303b4ceefb01e684f8fa17b778a9a9a32ada",
+     "side": "left"
+    },
+    {
+     "hash": "a991d0393ce3bce4aa3ab6bf4a51bfa19cba7c7f3d5d63f1caafefed05678de8",
+     "side": "right"
+    },
+    {
+     "hash": "7a31673ecf0c1a3a61ece5bb19cf67b7cc02face97b3c5347aabaa27fd2d78f7",
+     "side": "left"
+    },
+    {
+     "hash": "2e36c1a0e34e0d236fe4150a9f79d36ef31d05cbff2f7b2436bcce3252d1b109",
+     "side": "left"
+    },
+    {
+     "hash": "d312c69b21842e6f49f1108bb1944233d90fc563a0c16ee9e36b32c04bea0747",
+     "side": "left"
+    },
+    {
+     "hash": "a9b4ba8510d59e67568cf736bb3319cf9036509fd3aeff3177fb3d43a2771f2c",
+     "side": "right"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 1097.21,
+    "anchor_drift_pct": -0.02,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -25.63,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 833.59,
+    "realized_pct": -24.03,
+    "ticker": "MU"
+   },
+   "leaf": {
+    "anchor_price": "1097.3900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.1000",
+    "p5": "-23.3000",
+    "p50": "1.6000",
+    "p75": "13.7000",
+    "p95": "40.7000",
+    "prob_positive": "53.8000",
+    "ticker": "MU"
+   },
+   "leaf_hash": "384e1c8f2674970d734bffc1fab7cac580b03b86a2ffc413125e430c7425454d",
+   "merkle_proof": [
+    {
+     "hash": "35aa6c55c3fa9169ada0e82508b30cc026b9d830f4e1e259d41ed0dc940bc578",
+     "side": "left"
+    },
+    {
+     "hash": "57cd2ec45efca39d70de1ff28cf8bcdf0303388700168c0627bea892a99ce67d",
+     "side": "right"
+    },
+    {
+     "hash": "ac7a8911f7e01e63a01e22df3461e9c8af10cc12614ba3094d71d1bc0f59679f",
+     "side": "right"
+    },
+    {
+     "hash": "b85815b8294ebd53885f091beeffedb379fd36795dd3d426fcc8e14563d6bc43",
+     "side": "right"
+    },
+    {
+     "hash": "66908fa097a9a52a02c2b04fc0ded2269d7244f086e15fb4835877940147382a",
+     "side": "right"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 232.28,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -37.13,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 141.39,
+    "realized_pct": -39.13,
+    "ticker": "NBIS"
+   },
+   "leaf": {
+    "anchor_price": "232.2800",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-15.3000",
+    "p5": "-32.4000",
+    "p50": "-2.0000",
+    "p75": "13.5000",
+    "p95": "42.3000",
+    "prob_positive": "46.4000",
+    "ticker": "NBIS"
+   },
+   "leaf_hash": "31463066c252e43c36ffbe9e32561bc71241ba1921abaf06720926324786b813",
+   "merkle_proof": [
+    {
+     "hash": "3076a520934c6e8045583c5e84695128d39d2c7031481c3284b42c4b8595011a",
+     "side": "left"
+    },
+    {
+     "hash": "bbf162cc9e3440e30dc84de0d25d614e0c70e6da847df265c84a074a3d2e9b6e",
+     "side": "left"
+    },
+    {
+     "hash": "0b908c988745f8aa9408408488a7a575e92867952bbfea9be28d4eb4f7c215f9",
+     "side": "right"
+    },
+    {
+     "hash": "016d14afab4e36f6648c285ad905e48def399bad751b933d42bb42349257e165",
+     "side": "right"
+    },
+    {
+     "hash": "85fefea63cc18cd956a619ece37e3fabdeb2c872ba086bed562d0f499935b27c",
+     "side": "left"
+    },
+    {
+     "hash": "605ba9b50d56ff968aff53fe30970277717a4b3143c38f4e9ec51cb6619913b1",
+     "side": "right"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 351.0,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -24.35,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 265.17,
+    "realized_pct": -24.45,
+    "ticker": "NET"
+   },
+   "leaf": {
+    "anchor_price": "351.0000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.5000",
+    "p5": "-22.8000",
+    "p50": "-0.1000",
+    "p75": "10.3000",
+    "p95": "29.3000",
+    "prob_positive": "49.8000",
+    "ticker": "NET"
+   },
+   "leaf_hash": "a680030cb43b0149a05c2c77742cbffe05a239088cda738bf1b72fb459c7f7c1",
+   "merkle_proof": [
+    {
+     "hash": "a6c2ac362641f94e07fe4fe54e5fff89e6307f041000a0130fb37113cb1ca78c",
+     "side": "right"
+    },
+    {
+     "hash": "cfe72a7406b77889985d3f491f92786ba06d69956e62b14b344b9146291c1e9f",
+     "side": "right"
+    },
+    {
+     "hash": "5fc226a26443273fa49f85a31888e255a791cebb4dd7c7432a0764a2553c3175",
+     "side": "right"
+    },
+    {
+     "hash": "d8a14ef3cedf426d7380a2ce9d4aad61b71903f0558f8d01996e6984d27f15ff",
+     "side": "right"
+    },
+    {
+     "hash": "8238f8ba9e7a97c6f4062c265ba289a077c9b6da6182ff3fa10e984fb40c0c04",
+     "side": "left"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 137.76,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -23.15,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 106.01,
+    "realized_pct": -23.05,
+    "ticker": "NOW"
+   },
+   "leaf": {
+    "anchor_price": "137.7600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.2000",
+    "p5": "-20.0000",
+    "p50": "0.1000",
+    "p75": "9.3000",
+    "p95": "25.3000",
+    "prob_positive": "50.4000",
+    "ticker": "NOW"
+   },
+   "leaf_hash": "f3b1b3e2e321ec1c150d046f3d408bb2227360e5422e32124ce978c863fb7c31",
+   "merkle_proof": [
+    {
+     "hash": "f6f259fa04da57d50f08604ca1da54a3afd7330bb443ec28ffa507c91bb01a2d",
+     "side": "right"
+    },
+    {
+     "hash": "488074d224769882575f00554d0b10f0cfc149f59fb272be10ba4a8a109b299f",
+     "side": "left"
+    },
+    {
+     "hash": "7649c66c663f5fe0678be17c252bb6ceaebd3368be425d50a42e688facff3e13",
+     "side": "left"
+    },
+    {
+     "hash": "5cd81d80ce6aeebf7d3eb7efa0db947573fd4abe4de1bff328f1aa310d44b95a",
+     "side": "right"
+    },
+    {
+     "hash": "43bcd484f987b59b290870602ffaed625a120ebd8736c637d1b3a4499426f866",
+     "side": "left"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 230.86,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -14.28,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 202.06,
+    "realized_pct": -12.48,
+    "ticker": "NVDA"
+   },
+   "leaf": {
+    "anchor_price": "230.8600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-3.5000",
+    "p5": "-11.1000",
+    "p50": "1.8000",
+    "p75": "7.6000",
+    "p95": "19.2000",
+    "prob_positive": "59.0000",
+    "ticker": "NVDA"
+   },
+   "leaf_hash": "64e1c1bd7522ad4400a81290a8cff866f00fa1ac5290266a081071e10c14bea6",
+   "merkle_proof": [
+    {
+     "hash": "64097cfa23a0b3846ac579ab1d1380713db36146f1adead04ea2a0bde15946b5",
+     "side": "left"
+    },
+    {
+     "hash": "b01ec3b255a80ea9233c986eaeea7e205d6860cfcff356637645beb711797fa0",
+     "side": "right"
+    },
+    {
+     "hash": "fd8d407730e9571572862ba84dfd5659e81641020beb3e110fdb970a72467aff",
+     "side": "left"
+    },
+    {
+     "hash": "74eb8b4926c82d6fc7c10041dd1a5883a51226722fe434d85a29e0d3fbdc2d75",
+     "side": "right"
+    },
+    {
+     "hash": "e3e079c913bbfcb0f6dfb3d9723e6310c74b2b100e93124497a1a80b635d01f1",
+     "side": "right"
+    },
+    {
+     "hash": "dd8fd599d3df8b613915e2a061a4c415350f10588a46268b4d0fbf6548b32c81",
+     "side": "left"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 12.12,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -31.27,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 7.93,
+    "realized_pct": -34.57,
+    "ticker": "NVTS"
+   },
+   "leaf": {
+    "anchor_price": "12.1200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-19.7000",
+    "p5": "-39.6000",
+    "p50": "-3.3000",
+    "p75": "16.3000",
+    "p95": "54.6000",
+    "prob_positive": "45.1000",
+    "ticker": "NVTS"
+   },
+   "leaf_hash": "34b0a7483576fc4b8fe999e659866948d4517daa26903160990cd42576a8de76",
+   "merkle_proof": [
+    {
+     "hash": "34c347425c9ce480ce240941089aec20d75ee8ef1a12ef75ff2761e8bd0e2c9e",
+     "side": "right"
+    },
+    {
+     "hash": "79789fd15b6a5116b0dcf1915e2f6bd6d7f2fbb64293cac43a03f133ec10a97e",
+     "side": "right"
+    },
+    {
+     "hash": "178e339e28f80e61ef430bffeba8469648c450177cc927c99879bc9eda2aeb1e",
+     "side": "left"
+    },
+    {
+     "hash": "bf769d978e94b9a0793863f202813a3fda477a30cfe512e5c3ac6f7f2d3cda3d",
+     "side": "left"
+    },
+    {
+     "hash": "85fefea63cc18cd956a619ece37e3fabdeb2c872ba086bed562d0f499935b27c",
+     "side": "left"
+    },
+    {
+     "hash": "605ba9b50d56ff968aff53fe30970277717a4b3143c38f4e9ec51cb6619913b1",
+     "side": "right"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 36.14,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -34.52,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 23.52,
+    "realized_pct": -34.92,
+    "ticker": "OKLO"
+   },
+   "leaf": {
+    "anchor_price": "36.1400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.5000",
+    "p5": "-29.9000",
+    "p50": "-0.4000",
+    "p75": "14.8000",
+    "p95": "49.7000",
+    "prob_positive": "49.2000",
+    "ticker": "OKLO"
+   },
+   "leaf_hash": "0d9d272c27b16aee3217fc22724e66696d904359b7be7a8605c9e51833a18ba2",
+   "merkle_proof": [
+    {
+     "hash": "0dca93a6da0874f62f2988cc2e97638dab1b4864ed674efa6b0e95452c54ecf2",
+     "side": "right"
+    },
+    {
+     "hash": "659cea07145b5ed816db79c3c7388f5c27d774337feba0ac7e8fd10f5cd90477",
+     "side": "right"
+    },
+    {
+     "hash": "61de43c3340e761ff5eccdb412ff2cc71efe2b10bb959ef28117ccf2fa1955f3",
+     "side": "right"
+    },
+    {
+     "hash": "2ae2f14b26bfb27b993b432a1aba6e2485589c39b478e9d9e548ce012817bec2",
+     "side": "left"
+    },
+    {
+     "hash": "0257e4d7e119a1fa6ca21adadecc2212f29d33d464a7f471c402348cf11eb4bf",
+     "side": "left"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 7.12,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -17.54,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 5.75,
+    "realized_pct": -19.24,
+    "ticker": "ONDS"
+   },
+   "leaf": {
+    "anchor_price": "7.1200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.5000",
+    "p5": "-30.7000",
+    "p50": "-1.7000",
+    "p75": "13.0000",
+    "p95": "39.5000",
+    "prob_positive": "46.7000",
+    "ticker": "ONDS"
+   },
+   "leaf_hash": "eaee6c4842dc4809088bda28f0dd5ef4ec0733ed5cac9320ac7e1a37c1f634da",
+   "merkle_proof": [
+    {
+     "hash": "ebe0605860cfb9f1a115751b9c517c02e97acfb281f6ceade47b62e9b661028b",
+     "side": "right"
+    },
+    {
+     "hash": "7b21226eb6fe2af32b2ee16ec486578cb8bb4f319653860eeb31ca74b73484b5",
+     "side": "right"
+    },
+    {
+     "hash": "d2c4201672afebc38de56d6366fde21b2a650f34f625c0aca485ad722b4b8e43",
+     "side": "left"
+    },
+    {
+     "hash": "a21aec1624d8446f98c18ada81e282340661832a7214587577fb88be4f67b055",
+     "side": "left"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 137.5835,
+    "anchor_drift_pct": -0.35,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -13.15,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 119.22,
+    "realized_pct": -13.35,
+    "ticker": "ORCL"
+   },
+   "leaf": {
+    "anchor_price": "138.0700",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.4000",
+    "p5": "-21.9000",
+    "p50": "-0.2000",
+    "p75": "9.9000",
+    "p95": "27.5000",
+    "prob_positive": "49.4000",
+    "ticker": "ORCL"
+   },
+   "leaf_hash": "3e3a35206869dd9637e0b6bbd3bdec613f3fbe7d17b710c652115c7706d0273a",
+   "merkle_proof": [
+    {
+     "hash": "3db7fd0e04fc27311e4873ecb8999b682c215399841c820f0c5d4615d69b12a6",
+     "side": "left"
+    },
+    {
+     "hash": "371957864039f1f1bde468fa1fe326a8f84d54117d841e544770d756696b2eaa",
+     "side": "left"
+    },
+    {
+     "hash": "7b33991afcde8bff32aad8865b2da8a7d547ad10c28925d251244a9695a9076a",
+     "side": "right"
+    },
+    {
+     "hash": "da7fef33c46f02ff3f88b03a0e87a716794d3d2dd2155e9117796d419df1a620",
+     "side": "left"
+    },
+    {
+     "hash": "66908fa097a9a52a02c2b04fc0ded2269d7244f086e15fb4835877940147382a",
+     "side": "right"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 396.25,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -11.04,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 351.72,
+    "realized_pct": -11.24,
+    "ticker": "PANW"
+   },
+   "leaf": {
+    "anchor_price": "396.2500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.5000",
+    "p5": "-22.3000",
+    "p50": "-0.2000",
+    "p75": "10.0000",
+    "p95": "28.2000",
+    "prob_positive": "49.5000",
+    "ticker": "PANW"
+   },
+   "leaf_hash": "52848273cca42cc63b942a2af887055221be6d39c5e639b76ff885f0e67d1c3d",
+   "merkle_proof": [
+    {
+     "hash": "52b903340886b251a677b4e8c31b2e16beb1af959029c17fa5f44d3abaf3af5c",
+     "side": "right"
+    },
+    {
+     "hash": "3f1993286e02847508f24c153cf448c765e3c4cd6c6afe634a5c0235d5b71362",
+     "side": "left"
+    },
+    {
+     "hash": "a9d862e3ed5142b62aa431ea8e9ed86456a80ab58d7f5bce97f2e2c1a349f086",
+     "side": "left"
+    },
+    {
+     "hash": "31e396558a9ca23a8f7120d61403449694f6e96063f992b0a79f373efd1182e5",
+     "side": "right"
+    },
+    {
+     "hash": "8a6bc2322e8c3160fd2c97cadb9b89409e7cb8ad6f7766d67d6e84616119f803",
+     "side": "right"
+    },
+    {
+     "hash": "3b25eaa5b44c42ea61bcc2245dc97762ad8968dc994218800706a034f8aaa95a",
+     "side": "right"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 13.32,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 1.05,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 13.34,
+    "realized_pct": 0.15,
+    "ticker": "PATH"
+   },
+   "leaf": {
+    "anchor_price": "13.3200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.9000",
+    "p5": "-25.0000",
+    "p50": "-0.9000",
+    "p75": "10.3000",
+    "p95": "31.0000",
+    "prob_positive": "47.8000",
+    "ticker": "PATH"
+   },
+   "leaf_hash": "a1a492e5f3b59d4b25da4153b94e43185832b87e5d474d696bdbd34112289f26",
+   "merkle_proof": [
+    {
+     "hash": "a14ebd3ce5731e261a10724dc6eb41f603dc5a45f86b488ac6d72fce14bffce1",
+     "side": "left"
+    },
+    {
+     "hash": "09f6b74ebf06796bce32c6882dd486f1575fad07e0b0ad645534539a61082e5e",
+     "side": "right"
+    },
+    {
+     "hash": "c33204a2e9939515a06676ed7cb3d36b7b6490989de9c473ac624f4854fd1248",
+     "side": "right"
+    },
+    {
+     "hash": "d2ebad7690760418b4794e104ccf971e352190bcbc4d149f308fe79e55a08b09",
+     "side": "left"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 190.04,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -6.96,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 178.34,
+    "realized_pct": -6.16,
+    "ticker": "PLTR"
+   },
+   "leaf": {
+    "anchor_price": "190.0400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.8000",
+    "p5": "-17.7000",
+    "p50": "0.8000",
+    "p75": "9.1000",
+    "p95": "27.5000",
+    "prob_positive": "52.8000",
+    "ticker": "PLTR"
+   },
+   "leaf_hash": "426e9967504a7aeafdb4049eda482e4b9b5042974dfaa8d04dfc11df63ed4ca5",
+   "merkle_proof": [
+    {
+     "hash": "4243416333187f4746de62f76a42b32f138c90758e5334a2d38e127e12ebad2f",
+     "side": "left"
+    },
+    {
+     "hash": "3385e9431bf08e6acf48cc38e4a7fdf446a286e4245508961178e2f5002e933d",
+     "side": "left"
+    },
+    {
+     "hash": "b05a59e7fd57b8f73e4088c7ab214d9f12ef80d6870ba30185879307bea8b87c",
+     "side": "left"
+    },
+    {
+     "hash": "da7fef33c46f02ff3f88b03a0e87a716794d3d2dd2155e9117796d419df1a620",
+     "side": "left"
+    },
+    {
+     "hash": "66908fa097a9a52a02c2b04fc0ded2269d7244f086e15fb4835877940147382a",
+     "side": "right"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 662.6,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -6.35,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 621.18,
+    "realized_pct": -6.25,
+    "ticker": "PWR"
+   },
+   "leaf": {
+    "anchor_price": "662.6000",
+    "asof": "2026-10-02",
+    "domain_severity": "green",
+    "horizon": "1m",
+    "in_domain": "true",
+    "p25": "-5.6000",
+    "p5": "-14.4000",
+    "p50": "0.1000",
+    "p75": "6.3000",
+    "p95": "17.1000",
+    "prob_positive": "50.6000",
+    "ticker": "PWR"
+   },
+   "leaf_hash": "3eb8599cc5cd05d8ab5711e545d22dbde120f5278129fc28e43550071b066017",
+   "merkle_proof": [
+    {
+     "hash": "3f2e678ca4fcc35d07a8a5917300d01b45a1bafbfd2bcd8108010b29e8f20857",
+     "side": "right"
+    },
+    {
+     "hash": "40160972d681cc71f0e90a91baa3e49ea68d4aea1115de9c8bb5ecd889fb2506",
+     "side": "right"
+    },
+    {
+     "hash": "b05a59e7fd57b8f73e4088c7ab214d9f12ef80d6870ba30185879307bea8b87c",
+     "side": "left"
+    },
+    {
+     "hash": "da7fef33c46f02ff3f88b03a0e87a716794d3d2dd2155e9117796d419df1a620",
+     "side": "left"
+    },
+    {
+     "hash": "66908fa097a9a52a02c2b04fc0ded2269d7244f086e15fb4835877940147382a",
+     "side": "right"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 16.56,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -37.27,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 10.09,
+    "realized_pct": -39.07,
+    "ticker": "QBTS"
+   },
+   "leaf": {
+    "anchor_price": "16.5600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.5000",
+    "p5": "-30.9000",
+    "p50": "-1.8000",
+    "p75": "12.9000",
+    "p95": "39.7000",
+    "prob_positive": "46.5000",
+    "ticker": "QBTS"
+   },
+   "leaf_hash": "16016fac2b84b5018a14a34830dc88b3146593f5b63555025c3972007d376cb0",
+   "merkle_proof": [
+    {
+     "hash": "169276cb7a9bb7fd06dfff1b42cb10cd786c1cc7e3c3801c8f31b5e80cca6277",
+     "side": "right"
+    },
+    {
+     "hash": "956e861d29d7d15bf763479b2434aaa3f6890de3e74a5cba329f2fe9b447bf78",
+     "side": "left"
+    },
+    {
+     "hash": "04ada2d6416dee8d7813c3d0c4fb9d0224be0c6f221cac2ecba825d432daacf2",
+     "side": "right"
+    },
+    {
+     "hash": "3f9542fffc3c86aa1fb7f7bfb91a63da00344dd3e539a79648ae6a5185961802",
+     "side": "left"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 182.09,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -10.19,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 162.08,
+    "realized_pct": -10.99,
+    "ticker": "QCOM"
+   },
+   "leaf": {
+    "anchor_price": "182.0900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.6000",
+    "p5": "-24.3000",
+    "p50": "-0.8000",
+    "p75": "10.0000",
+    "p95": "29.9000",
+    "prob_positive": "47.8000",
+    "ticker": "QCOM"
+   },
+   "leaf_hash": "0b57b4072aa15556854921be9b9d9092997309001245f7108220c1de2c524c35",
+   "merkle_proof": [
+    {
+     "hash": "0b82e0482dbbaec3e4bc6196a0eaf2189adfcb6dcdd313e097c9290f2c6b9eb9",
+     "side": "right"
+    },
+    {
+     "hash": "22388c336bbf37a15395bed850b84b7afd2b5987e7aad36b027742a8415055c2",
+     "side": "left"
+    },
+    {
+     "hash": "a7d94d53d0d550449055f26e2770660113b8346ab24039800fa6ed9cca203188",
+     "side": "right"
+    },
+    {
+     "hash": "cd98b7437a13c507a4265c555b442b154ae6ea0e14c21a6f49930d2d1e8ca6e8",
+     "side": "right"
+    },
+    {
+     "hash": "0257e4d7e119a1fa6ca21adadecc2212f29d33d464a7f471c402348cf11eb4bf",
+     "side": "left"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 742.03,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.61,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 681.09,
+    "realized_pct": -8.21,
+    "ticker": "QQQ"
+   },
+   "leaf": {
+    "anchor_price": "742.0300",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-2.7000",
+    "p5": "-7.3000",
+    "p50": "0.4000",
+    "p75": "3.6000",
+    "p95": "8.7000",
+    "prob_positive": "53.3000",
+    "ticker": "QQQ"
+   },
+   "leaf_hash": "838957a058316f4a69c7220a9fb5e70c6d7ab62254f9f7a4a7059f144606f2b5",
+   "merkle_proof": [
+    {
+     "hash": "83a679b0ce25911ca9f55eb1c91cafcad3f63aeca80c4a241589b8f56ad421e7",
+     "side": "right"
+    },
+    {
+     "hash": "82c889bf31a8f2c239d09d50bb3bda75dedfb63780198f4be65b855789b4a995",
+     "side": "right"
+    },
+    {
+     "hash": "5b90870b9cacb63fd28fd457f486d0e0af6715377ab3803501d1f0409d54542c",
+     "side": "left"
+    },
+    {
+     "hash": "6c09e95f115b98c840f12c0ca8cdfcfdba4fe6d0ca58a0c2b5ea71c44ddb47bf",
+     "side": "left"
+    },
+    {
+     "hash": "1c618ecbd6fdf6178e42ec37afc4096ea4722869a996cff5119920ea7453f3cb",
+     "side": "left"
+    },
+    {
+     "hash": "c1ea86ab9bc164998515babd8bfa41dc94b4591adad84474b945bd36f42531c1",
+     "side": "right"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 15.62,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -30.49,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 10.67,
+    "realized_pct": -31.69,
+    "ticker": "RGTI"
+   },
+   "leaf": {
+    "anchor_price": "15.6200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.8000",
+    "p5": "-29.9000",
+    "p50": "-1.2000",
+    "p75": "13.4000",
+    "p95": "47.0000",
+    "prob_positive": "47.6000",
+    "ticker": "RGTI"
+   },
+   "leaf_hash": "ebe0605860cfb9f1a115751b9c517c02e97acfb281f6ceade47b62e9b661028b",
+   "merkle_proof": [
+    {
+     "hash": "eaee6c4842dc4809088bda28f0dd5ef4ec0733ed5cac9320ac7e1a37c1f634da",
+     "side": "left"
+    },
+    {
+     "hash": "7b21226eb6fe2af32b2ee16ec486578cb8bb4f319653860eeb31ca74b73484b5",
+     "side": "right"
+    },
+    {
+     "hash": "d2c4201672afebc38de56d6366fde21b2a650f34f625c0aca485ad722b4b8e43",
+     "side": "left"
+    },
+    {
+     "hash": "a21aec1624d8446f98c18ada81e282340661832a7214587577fb88be4f67b055",
+     "side": "left"
+    },
+    {
+     "hash": "d012e7ee849ca7f56cc26bf91ddbfce4a9cdae5a8cd9d89f4d2b023c4507e953",
+     "side": "left"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 70.46,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -25.7,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 52.07,
+    "realized_pct": -26.1,
+    "ticker": "RKLB"
+   },
+   "leaf": {
+    "anchor_price": "70.4600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-14.9000",
+    "p5": "-32.6000",
+    "p50": "-0.4000",
+    "p75": "16.5000",
+    "p95": "56.3000",
+    "prob_positive": "49.3000",
+    "ticker": "RKLB"
+   },
+   "leaf_hash": "3db7fd0e04fc27311e4873ecb8999b682c215399841c820f0c5d4615d69b12a6",
+   "merkle_proof": [
+    {
+     "hash": "3e3a35206869dd9637e0b6bbd3bdec613f3fbe7d17b710c652115c7706d0273a",
+     "side": "right"
+    },
+    {
+     "hash": "371957864039f1f1bde468fa1fe326a8f84d54117d841e544770d756696b2eaa",
+     "side": "left"
+    },
+    {
+     "hash": "7b33991afcde8bff32aad8865b2da8a7d547ad10c28925d251244a9695a9076a",
+     "side": "right"
+    },
+    {
+     "hash": "da7fef33c46f02ff3f88b03a0e87a716794d3d2dd2155e9117796d419df1a620",
+     "side": "left"
+    },
+    {
+     "hash": "66908fa097a9a52a02c2b04fc0ded2269d7244f086e15fb4835877940147382a",
+     "side": "right"
+    },
+    {
+     "hash": "4a00aa3e6a252bd63008271181078fa311131873927719be4f8aaa500d102f7a",
+     "side": "left"
+    },
+    {
+     "hash": "3210873a733aadbbade0ab1ff3947737599f26a71bbc024546bddc3d30622ed6",
+     "side": "left"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 3.86,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -26.89,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 2.355,
+    "realized_pct": -38.99,
+    "ticker": "RXT"
+   },
+   "leaf": {
+    "anchor_price": "3.8600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-35.9000",
+    "p5": "-61.7000",
+    "p50": "-12.1000",
+    "p75": "20.5000",
+    "p95": "101.5000",
+    "prob_positive": "38.8000",
+    "ticker": "RXT"
+   },
+   "leaf_hash": "f8952f659a58a68d22df18bd61286c2b591bc4c9eed178b4165440948aa312ea",
+   "merkle_proof": [
+    {
+     "hash": "f7357ba5a7d6c6825ce054f48281819d41305bc1b96ab79fb768ac2f6bee3214",
+     "side": "left"
+    },
+    {
+     "hash": "9557ebff292e656539a436a663cba01bbe42cd0d9106578b1ccf4a4774c0fe92",
+     "side": "right"
+    },
+    {
+     "hash": "d455cc09dbb126ffff26a84cce417ad520324edad8bc700aa484018b6bc6f730",
+     "side": "right"
+    },
+    {
+     "hash": "208775336b20fdf1730e6a20bdbf39c745ca40c2b70abd2df696b425f68e2698",
+     "side": "left"
+    },
+    {
+     "hash": "43bcd484f987b59b290870602ffaed625a120ebd8736c637d1b3a4499426f866",
+     "side": "left"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 4.75,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -46.06,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 2.51,
+    "realized_pct": -47.16,
+    "ticker": "SERV"
+   },
+   "leaf": {
+    "anchor_price": "4.7500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-12.0000",
+    "p5": "-26.7000",
+    "p50": "-1.1000",
+    "p75": "11.2000",
+    "p95": "33.4000",
+    "prob_positive": "47.4000",
+    "ticker": "SERV"
+   },
+   "leaf_hash": "063846cb517c86378dc99d06ab727ad0031171fdb5435a76338415a7919209bb",
+   "merkle_proof": [
+    {
+     "hash": "06235b8357ec14f78d6e9173063b434fdbd6ace2f129888e3860dff7cedfd935",
+     "side": "left"
+    },
+    {
+     "hash": "86a719cc9b95ba3139fe42f8bca0c776a8143fefcb84a8c784950938b0effd14",
+     "side": "right"
+    },
+    {
+     "hash": "7517fd52a30b799865e7f76c00fb4b22483fe2a95c4a3ff8517472956e63ad81",
+     "side": "right"
+    },
+    {
+     "hash": "f588f5ff5aa659eb102ab20a1c22b734eef2abb1674e77c3d3b079def58abcb5",
+     "side": "left"
+    },
+    {
+     "hash": "cc8376ca2732a8dc3c460b090e92255e3d9566db6876c654b8d5d19f9a699a93",
+     "side": "right"
+    },
+    {
+     "hash": "ffe4534f8230cb2a81113118deed820b8e577af38145d8b0f69381bc96803088",
+     "side": "right"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 41.92,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -25.99,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 30.44,
+    "realized_pct": -27.39,
+    "ticker": "SMCI"
+   },
+   "leaf": {
+    "anchor_price": "41.9200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.0000",
+    "p5": "-29.1000",
+    "p50": "-1.4000",
+    "p75": "11.9000",
+    "p95": "44.3000",
+    "prob_positive": "47.1000",
+    "ticker": "SMCI"
+   },
+   "leaf_hash": "8f9ca32fb1afbf889d36118da718072d3d390399342207a7ab09a4736df57d1d",
+   "merkle_proof": [
+    {
+     "hash": "8ee967de93717e66d345e744451b1364e4a04954e11a71182b489605e1f8a783",
+     "side": "left"
+    },
+    {
+     "hash": "6785a2b6ea7225ebfa5b70a34df592aaa0ca93521c1cd0d963f5a5fd9fd91578",
+     "side": "right"
+    },
+    {
+     "hash": "320e89fb6af601b3f5b85b8733daf89abfd00a1ea1fff2ad6d8c63000e3d9dde",
+     "side": "right"
+    },
+    {
+     "hash": "771d2b03aae92fdb25c2640a30a8fa3dfb11cec0e13f15c8617efe6c801045ee",
+     "side": "right"
+    },
+    {
+     "hash": "809ed0da53086aad4fb05ade424166ead4dab4bb2d8aa6a6490f433a4aa95b6b",
+     "side": "left"
+    },
+    {
+     "hash": "3cc8b03dd496e807d7879606c7832755ed22f57081f9faef048b22533601b3d4",
+     "side": "left"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 617.81,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -17.92,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 508.31,
+    "realized_pct": -17.72,
+    "ticker": "SMH"
+   },
+   "leaf": {
+    "anchor_price": "617.8100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-5.6000",
+    "p5": "-13.8000",
+    "p50": "0.2000",
+    "p75": "6.4000",
+    "p95": "16.5000",
+    "prob_positive": "50.9000",
+    "ticker": "SMH"
+   },
+   "leaf_hash": "18c67e96ece21f9eed03cd1410862af869600ccb0973d318afda14a03df47bd9",
+   "merkle_proof": [
+    {
+     "hash": "17806c290b842ea3d8e9a5786aeebd5ff2ceb9e24e2da10d1be109c8d5f4eda4",
+     "side": "left"
+    },
+    {
+     "hash": "2ec711fe0864e0d57e48c1ec163391738e09389e59e05dae932887b56f38065c",
+     "side": "right"
+    },
+    {
+     "hash": "f880d29884b8332b8e7967f08713c288697faac4d35dd9e9119ce2ee9886600d",
+     "side": "left"
+    },
+    {
+     "hash": "3f9542fffc3c86aa1fb7f7bfb91a63da00344dd3e539a79648ae6a5185961802",
+     "side": "left"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 1787.69,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -37.36,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 1075.08,
+    "realized_pct": -39.86,
+    "ticker": "SNDK"
+   },
+   "leaf": {
+    "anchor_price": "1787.6899",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-17.2000",
+    "p5": "-34.9000",
+    "p50": "-2.5000",
+    "p75": "14.9000",
+    "p95": "46.1000",
+    "prob_positive": "46.0000",
+    "ticker": "SNDK"
+   },
+   "leaf_hash": "87eb19adced965826f8f5af0c02f7557e3cb9169b2f2cbab18fea0e5a9020101",
+   "merkle_proof": [
+    {
+     "hash": "8827a0fc4a3a2600672d20615bb8762bbe01df33950f340f9c21dc934647b0e4",
+     "side": "right"
+    },
+    {
+     "hash": "5700617d8b82b902b972d95f794721e1ba1a5ba0a44872b9959b1bf68109b2b2",
+     "side": "left"
+    },
+    {
+     "hash": "24244d1124248ea1fae75a500dbadda8b5cae07eb356aed895ae3117bf5f1848",
+     "side": "left"
+    },
+    {
+     "hash": "bfad070c68352481b2fd47a46ed5cf5bfb894ae893109f091ee9bdc76acc7e0a",
+     "side": "right"
+    },
+    {
+     "hash": "c9ed7ee3d093d9c2a17e6371cf2e4561a1a6d5c115a5adbbe3161243eb34cf5c",
+     "side": "right"
+    },
+    {
+     "hash": "3cc8b03dd496e807d7879606c7832755ed22f57081f9faef048b22533601b3d4",
+     "side": "left"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 341.99,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -14.8,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 290.68,
+    "realized_pct": -15.0,
+    "ticker": "SNOW"
+   },
+   "leaf": {
+    "anchor_price": "341.9900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.1000",
+    "p5": "-21.8000",
+    "p50": "-0.2000",
+    "p75": "9.6000",
+    "p95": "27.4000",
+    "prob_positive": "49.5000",
+    "ticker": "SNOW"
+   },
+   "leaf_hash": "9bb988a065915ef0ab4455d22dc87f200f25182183d45dbc3b6d46f0e80f1ae6",
+   "merkle_proof": [
+    {
+     "hash": "9ca11e5947b87a49c5f3bcf5e2ffb86178949754c0cba6d1bb3f21020ea5ca4f",
+     "side": "right"
+    },
+    {
+     "hash": "f5d90b95853d813abe10bb2712a24de9d8128a8d0e3feb50296d650f1fc19e2c",
+     "side": "right"
+    },
+    {
+     "hash": "851dda51868d2c862d56df9fdd0a7e76b96dfdcbe4de6ce5f8d4fb85c2cb14f5",
+     "side": "right"
+    },
+    {
+     "hash": "5d9fef809cf9052f3e821abf84fbe6d40f922f200a725410d28c9bfea9c4b534",
+     "side": "right"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 490.54,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -4.79,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 466.08,
+    "realized_pct": -4.99,
+    "ticker": "SNPS"
+   },
+   "leaf": {
+    "anchor_price": "490.5400",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-8.0000",
+    "p5": "-19.0000",
+    "p50": "-0.2000",
+    "p75": "8.2000",
+    "p95": "22.9000",
+    "prob_positive": "49.1000",
+    "ticker": "SNPS"
+   },
+   "leaf_hash": "aafc90397438809e658b492e791d2871420f23cce30fe5f2c16fa42e9e91e6df",
+   "merkle_proof": [
+    {
+     "hash": "aacfd34ec752ff00f53c65027396d3bb6f5268c7ae5d0a00af714193250d1fca",
+     "side": "left"
+    },
+    {
+     "hash": "8e10b10c21e37c91a382f245dee794e4d52c9196b946045069b12b01387c4150",
+     "side": "left"
+    },
+    {
+     "hash": "f130d97e272675ee5ee10830e441cad841a37b1c6df4911bc97e5dad3cbdb1e7",
+     "side": "right"
+    },
+    {
+     "hash": "97f30118e1ce0abb09cf5552547e8c305b4ba6a149b6ab81bc5da29eed7f14f3",
+     "side": "left"
+    },
+    {
+     "hash": "8238f8ba9e7a97c6f4062c265ba289a077c9b6da6182ff3fa10e984fb40c0c04",
+     "side": "left"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 6.05,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -31.9,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 4.09,
+    "realized_pct": -32.4,
+    "ticker": "SOUN"
+   },
+   "leaf": {
+    "anchor_price": "6.0500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.8000",
+    "p5": "-22.2000",
+    "p50": "-0.5000",
+    "p75": "9.7000",
+    "p95": "27.2000",
+    "prob_positive": "48.6000",
+    "ticker": "SOUN"
+   },
+   "leaf_hash": "1390139a47676cd27e05fd92a21661131de80a9251f374a4e32c23f0deb19c25",
+   "merkle_proof": [
+    {
+     "hash": "13a5948658df7b63cdb06932371b1137e07b1cabe6303582068832a7f719bcf2",
+     "side": "right"
+    },
+    {
+     "hash": "96369059ec6848241288d999dd0fdf8b4426856076bca64317f2140b1cb1dd4e",
+     "side": "right"
+    },
+    {
+     "hash": "866c2e14f8d4c7d3b5c55b2a3b9f648750b3a79ebe99f1be5f5af48780948b53",
+     "side": "left"
+    },
+    {
+     "hash": "c4ae86884685e30445d8991ad66f473469804f0d64e6b5a750869e23c4b82227",
+     "side": "right"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 153.69,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -51.14,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 68.17,
+    "realized_pct": -55.64,
+    "ticker": "SOXL"
+   },
+   "leaf": {
+    "anchor_price": "153.6900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-22.8000",
+    "p5": "-43.8000",
+    "p50": "-4.5000",
+    "p75": "18.1000",
+    "p95": "62.0000",
+    "prob_positive": "44.2000",
+    "ticker": "SOXL"
+   },
+   "leaf_hash": "c1a2db2fc9f1bbfdd2f61d9deb3efbe50dc073cddbf8d6b398aebc80e142b6b1",
+   "merkle_proof": [
+    {
+     "hash": "c1ecf976b1375b59de7bc70c995c0b193e43644183b7690595e7e4683f869ed6",
+     "side": "right"
+    },
+    {
+     "hash": "9fea594892e3845118ae9fcf706bb5232dd1f56a4bb3d30003c4685bdb3ec2df",
+     "side": "right"
+    },
+    {
+     "hash": "e9c943b22019d74bd54b96a2eb1ebf9343ecb7d2dcfbd6e813d1f50d60c9744e",
+     "side": "right"
+    },
+    {
+     "hash": "ba94c90f3d8b1f8a578af9addc7ebce614c4f3ccf6b524ef76e543afc0a112e2",
+     "side": "right"
+    },
+    {
+     "hash": "e224e530893d1129ea3d8739d6b1dd4ae1cff1d06f893564d04e82a854aa3c38",
+     "side": "right"
+    },
+    {
+     "hash": "a9b4ba8510d59e67568cf736bb3319cf9036509fd3aeff3177fb3d43a2771f2c",
+     "side": "right"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 763.99,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -1.96,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 752.1,
+    "realized_pct": -1.56,
+    "ticker": "SPY"
+   },
+   "leaf": {
+    "anchor_price": "763.9900",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-1.6000",
+    "p5": "-4.6000",
+    "p50": "0.4000",
+    "p75": "2.4000",
+    "p95": "5.6000",
+    "prob_positive": "54.6000",
+    "ticker": "SPY"
+   },
+   "leaf_hash": "cb64de2f483891b63c13b0069851241f0a26285af5bd846d5523773786c709c0",
+   "merkle_proof": [
+    {
+     "hash": "cb4314f6e69ddebd2fa1c7383a25251aa03f2979008778a8ba02cca919541bd5",
+     "side": "left"
+    },
+    {
+     "hash": "9f2590c9f6b4424af25f3e03ecb281d536592ad9fc32724354f38aa0e145a6a7",
+     "side": "left"
+    },
+    {
+     "hash": "5f41e045397b058183ffb3514d3862efcdc585581a18fb3cdf5f52cdd24d1233",
+     "side": "left"
+    },
+    {
+     "hash": "573432d33e4b768471858615ac46c6b152bbe3512cf2d13bccda153183d70a8b",
+     "side": "left"
+    },
+    {
+     "hash": "e224e530893d1129ea3d8739d6b1dd4ae1cff1d06f893564d04e82a854aa3c38",
+     "side": "right"
+    },
+    {
+     "hash": "a9b4ba8510d59e67568cf736bb3319cf9036509fd3aeff3177fb3d43a2771f2c",
+     "side": "right"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 945.57,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -36.21,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 593.76,
+    "realized_pct": -37.21,
+    "ticker": "STX"
+   },
+   "leaf": {
+    "anchor_price": "945.5700",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.8000",
+    "p5": "-23.6000",
+    "p50": "-1.0000",
+    "p75": "9.8000",
+    "p95": "28.1000",
+    "prob_positive": "47.3000",
+    "ticker": "STX"
+   },
+   "leaf_hash": "275afd43e189d75d9f3c62285963e34690fb1887e619775c36a8b12dff980765",
+   "merkle_proof": [
+    {
+     "hash": "26b3f34ee6c2804a21d5681b24fe633c31342c1b8c7a022a4bfa4ce564307630",
+     "side": "left"
+    },
+    {
+     "hash": "dc136482d3bb34c3311a0463ffe0321b6ffafe4caba5a9e93c2ef6af8205b747",
+     "side": "left"
+    },
+    {
+     "hash": "8b95b267ee1cd1fa4cf57c305ebe34d40f29e8e9195f62782adc96123e1c33d1",
+     "side": "left"
+    },
+    {
+     "hash": "6e8ced80ddad2b03252fcdbb4282b94b98b566158c0a98e5a04b0bc8b9a561c5",
+     "side": "left"
+    },
+    {
+     "hash": "4b311e7c2c60f6efa78b3616270aa562f780e2c5fd3aa52dd83a6d110f4b0f32",
+     "side": "left"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 43.17,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -12.96,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 37.23,
+    "realized_pct": -13.76,
+    "ticker": "SYM"
+   },
+   "leaf": {
+    "anchor_price": "43.1700",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-10.6000",
+    "p5": "-24.5000",
+    "p50": "-0.8000",
+    "p75": "10.1000",
+    "p95": "30.3000",
+    "prob_positive": "47.7000",
+    "ticker": "SYM"
+   },
+   "leaf_hash": "7a149e81c538063ba6f19968f31f57c28c72d22864086b1cc34cb51b63d97de0",
+   "merkle_proof": [
+    {
+     "hash": "7a35dde642faf2c01ea8f5032dc5aa6c1b541bdc3a6879d8a6080bdae4157c52",
+     "side": "right"
+    },
+    {
+     "hash": "e2ece655135f9dfc137e5aba2f0daf76553e1095fe419dabf023f60b1b3a9ba8",
+     "side": "right"
+    },
+    {
+     "hash": "e1ebc3ba008546b3f8da6e14f7212f60c2692c7ef41c662ba51a7625758dabcb",
+     "side": "left"
+    },
+    {
+     "hash": "d64992db746c615060f9af0c601d80948d4dafd44ad609b2958eb06c4b29f711",
+     "side": "left"
+    },
+    {
+     "hash": "e4ec6c2e1329ee1adedaaba255d4130ac01fc2d9af6e51f8d71ff5474fcd8b5e",
+     "side": "right"
+    },
+    {
+     "hash": "c1ea86ab9bc164998515babd8bfa41dc94b4591adad84474b945bd36f42531c1",
+     "side": "right"
+    },
+    {
+     "hash": "ab27c0f2c311b985e131e5678c6717aa41ece8acda75dc5011ae8064e9d963ff",
+     "side": "left"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 15.422,
+    "anchor_drift_pct": 0.08,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": 0.43,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 15.396,
+    "realized_pct": -0.17,
+    "ticker": "TKAMY"
+   },
+   "leaf": {
+    "anchor_price": "15.4100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-9.9000",
+    "p5": "-22.7000",
+    "p50": "-0.6000",
+    "p75": "9.6000",
+    "p95": "27.8000",
+    "prob_positive": "48.2000",
+    "ticker": "TKAMY"
+   },
+   "leaf_hash": "b2ebfff47fd14293504ed3ea44381867d9e365ecec90059b24bfa93b9072da3d",
+   "merkle_proof": [
+    {
+     "hash": "b36fdf97195b9d4b307e153581c04d463da8a871618cd3b32f379d7f5de167fb",
+     "side": "right"
+    },
+    {
+     "hash": "5ea30cec4fd9fc61b72939e6a89a2549ee9cbc4a58fdc577fe8c26a026d118f3",
+     "side": "right"
+    },
+    {
+     "hash": "227994b350a0a3548d826006b19b64850741c036265629e2d0b0dd2a63a285ee",
+     "side": "right"
+    },
+    {
+     "hash": "63f623543268c53baaf155f4af33ea3ba0962d16df745a88a9ba6f3b85d42a2b",
+     "side": "left"
+    },
+    {
+     "hash": "b9f7da65525f07713e65c5eba2ed60a4db50980bf916d6e5ec40b69f701689f6",
+     "side": "right"
+    },
+    {
+     "hash": "b000da9ab683d594b456e292edf787773e38a142188f189b6f855b9eb3ed4561",
+     "side": "left"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 241.3,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -34.13,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 155.32,
+    "realized_pct": -35.63,
+    "ticker": "TSEM"
+   },
+   "leaf": {
+    "anchor_price": "241.3000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-13.7000",
+    "p5": "-29.7000",
+    "p50": "-1.5000",
+    "p75": "12.4000",
+    "p95": "37.9000",
+    "prob_positive": "46.8000",
+    "ticker": "TSEM"
+   },
+   "leaf_hash": "6c0c4d9523f2b287cf66d60b30dceedde37bb2b2c54f3aa56d9eb11a9bbc67d4",
+   "merkle_proof": [
+    {
+     "hash": "6bcd76211bae11d123f0193e78ac5b5eee1df5334ed3ebc385cfbd1711b80969",
+     "side": "left"
+    },
+    {
+     "hash": "fc3c25a7b6a2b0e8b4267449ab43cdae9bce383a0bd500d936a8f55fb68be8cd",
+     "side": "right"
+    },
+    {
+     "hash": "8c69ea275c6824e30f0f48ca4903b9bdf93d94a9cf05aecc90aea96305b40f6a",
+     "side": "right"
+    },
+    {
+     "hash": "55a8f23a991cb3afee18058648425c600ff99f710ed44c1285fb521e02112323",
+     "side": "right"
+    },
+    {
+     "hash": "94e34667ad7ef9832293d7c155c081cb721ef2ffc8e49e6d967cbf5a8795319a",
+     "side": "left"
+    },
+    {
+     "hash": "dd8fd599d3df8b613915e2a061a4c415350f10588a46268b4d0fbf6548b32c81",
+     "side": "left"
+    },
+    {
+     "hash": "4f2d382d75a9d62179c08bf3218cb427f78c8b4bb9585458a2652737fbcc2ec8",
+     "side": "right"
+    },
+    {
+     "hash": "9b516293bbb4a4da7cadd549bfd685b2fc7285a9371ef3cf85b1f751584be246",
+     "side": "left"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 354.11,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 13.54,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 403.82,
+    "realized_pct": 14.04,
+    "ticker": "TSLA"
+   },
+   "leaf": {
+    "anchor_price": "354.1100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-5.5000",
+    "p5": "-14.0000",
+    "p50": "0.5000",
+    "p75": "6.9000",
+    "p95": "17.5000",
+    "prob_positive": "52.4000",
+    "ticker": "TSLA"
+   },
+   "leaf_hash": "17806c290b842ea3d8e9a5786aeebd5ff2ceb9e24e2da10d1be109c8d5f4eda4",
+   "merkle_proof": [
+    {
+     "hash": "18c67e96ece21f9eed03cd1410862af869600ccb0973d318afda14a03df47bd9",
+     "side": "right"
+    },
+    {
+     "hash": "2ec711fe0864e0d57e48c1ec163391738e09389e59e05dae932887b56f38065c",
+     "side": "right"
+    },
+    {
+     "hash": "f880d29884b8332b8e7967f08713c288697faac4d35dd9e9119ce2ee9886600d",
+     "side": "left"
+    },
+    {
+     "hash": "3f9542fffc3c86aa1fb7f7bfb91a63da00344dd3e539a79648ae6a5185961802",
+     "side": "left"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 459.2,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -13.79,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 398.63,
+    "realized_pct": -13.19,
+    "ticker": "TSM"
+   },
+   "leaf": {
+    "anchor_price": "459.2000",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-4.7000",
+    "p5": "-12.3000",
+    "p50": "0.6000",
+    "p75": "6.1000",
+    "p95": "15.3000",
+    "prob_positive": "52.7000",
+    "ticker": "TSM"
+   },
+   "leaf_hash": "dc13bad95a4027b2d08e352c2957dedc68a94393222571653fcd1e47e90e3f09",
+   "merkle_proof": [
+    {
+     "hash": "dcda6ad9dfd936e1f7d6bb96cf17420e7cdd27ea05da171cbe27e13a1fe4e419",
+     "side": "right"
+    },
+    {
+     "hash": "09c8060a1c3f572dcea13ad1340139bca148825196b138da2738cd0fac729b21",
+     "side": "left"
+    },
+    {
+     "hash": "9708f4e79164b1f51c2929bf9ef61f11be7c33c0e70169292b46293cddce186c",
+     "side": "right"
+    },
+    {
+     "hash": "33092d398720aea1bbcc60920710aea10ae05949f173fd79b1920489471c3079",
+     "side": "right"
+    },
+    {
+     "hash": "68c554e4dce812d99be16e8efedd33a8f0a8b3b18d0db90f0aa83e4ac058a576",
+     "side": "right"
+    },
+    {
+     "hash": "6f067041dc5d4fe80733f2d19145c3a36434c9a328e4a4fc987ba1c37d18811c",
+     "side": "left"
+    },
+    {
+     "hash": "08631f9dba80bd453df79b733aee2f2f02f2404508d97caa92606970ded23ab2",
+     "side": "left"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 279.8958,
+    "anchor_drift_pct": -0.5,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": false,
+    "below_p75": false,
+    "below_p95": true,
+    "bias_vs_p50": 8.0,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 302.02,
+    "realized_pct": 7.9,
+    "ticker": "TXN"
+   },
+   "leaf": {
+    "anchor_price": "281.3100",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.5000",
+    "p5": "-16.0000",
+    "p50": "-0.1000",
+    "p75": "6.8000",
+    "p95": "18.8000",
+    "prob_positive": "49.7000",
+    "ticker": "TXN"
+   },
+   "leaf_hash": "a22f3531828ae435009202767c6ac6d477b7662f24bb48c71dcf9a023fcb8980",
+   "merkle_proof": [
+    {
+     "hash": "a35486054e39d6154bef8ecd0677ff220a83973b24bdb524b05bcabd55f2762e",
+     "side": "right"
+    },
+    {
+     "hash": "15059d5463af82357dad54d09504cbd322e826fbaa8f3d176770ce2baeabe93f",
+     "side": "left"
+    },
+    {
+     "hash": "c33204a2e9939515a06676ed7cb3d36b7b6490989de9c473ac624f4854fd1248",
+     "side": "right"
+    },
+    {
+     "hash": "d2ebad7690760418b4794e104ccf971e352190bcbc4d149f308fe79e55a08b09",
+     "side": "left"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 246.12,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -8.89,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 224.24,
+    "realized_pct": -8.89,
+    "ticker": "VRT"
+   },
+   "leaf": {
+    "anchor_price": "246.1200",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-7.9000",
+    "p5": "-19.1000",
+    "p50": "0.0000",
+    "p75": "8.7000",
+    "p95": "23.8000",
+    "prob_positive": "50.2000",
+    "ticker": "VRT"
+   },
+   "leaf_hash": "9ca11e5947b87a49c5f3bcf5e2ffb86178949754c0cba6d1bb3f21020ea5ca4f",
+   "merkle_proof": [
+    {
+     "hash": "9bb988a065915ef0ab4455d22dc87f200f25182183d45dbc3b6d46f0e80f1ae6",
+     "side": "left"
+    },
+    {
+     "hash": "f5d90b95853d813abe10bb2712a24de9d8128a8d0e3feb50296d650f1fc19e2c",
+     "side": "right"
+    },
+    {
+     "hash": "851dda51868d2c862d56df9fdd0a7e76b96dfdcbe4de6ce5f8d4fb85c2cb14f5",
+     "side": "right"
+    },
+    {
+     "hash": "5d9fef809cf9052f3e821abf84fbe6d40f922f200a725410d28c9bfea9c4b534",
+     "side": "right"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 139.75,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": false,
+    "below_p5": false,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -3.78,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": true,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 134.61,
+    "realized_pct": -3.68,
+    "ticker": "VST"
+   },
+   "leaf": {
+    "anchor_price": "139.7500",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-6.4000",
+    "p5": "-15.3000",
+    "p50": "0.1000",
+    "p75": "7.0000",
+    "p95": "18.3000",
+    "prob_positive": "50.4000",
+    "ticker": "VST"
+   },
+   "leaf_hash": "13a6d2254ee841ccb114c176e022ca3bd78ffa23c3e599b4e444c1fbde3cea2f",
+   "merkle_proof": [
+    {
+     "hash": "14b5e17415ce81bbb77353d307bd6469025231400eb1d90b6d4389ce464381fc",
+     "side": "right"
+    },
+    {
+     "hash": "d2fa92df76cf7c0d94ada2255a87ea69d7aa7d513b08f08da2e31cbcef225d66",
+     "side": "left"
+    },
+    {
+     "hash": "866c2e14f8d4c7d3b5c55b2a3b9f648750b3a79ebe99f1be5f5af48780948b53",
+     "side": "left"
+    },
+    {
+     "hash": "c4ae86884685e30445d8991ad66f473469804f0d64e6b5a750869e23c4b82227",
+     "side": "right"
+    },
+    {
+     "hash": "8c9bd1e61d29664c5d6d37ba17b2b44f64bb2d7c9261073889aecb88f0b9aeeb",
+     "side": "right"
+    },
+    {
+     "hash": "2e1ab7651cab92aebba9648bcfff028ea7f3f283164cf59a7982b3f270c3aace",
+     "side": "left"
+    },
+    {
+     "hash": "f472aa40671381e29f6b31ddcdfc1276e3774ead8318c08262d4c2cb1ae9ec57",
+     "side": "right"
+    },
+    {
+     "hash": "e1f7e7467153de70b6206b435a10c7e2865590eb9dafde252a986211c4e81003",
+     "side": "right"
+    },
+    {
+     "hash": "26bb1a10a988f4a0e98c53bf313122439f1a668d60a3470374fa203d39cb287a",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "grade": {
+    "anchor_bar_price": 462.56,
+    "anchor_drift_pct": 0.0,
+    "asof": "2026-10-02",
+    "below_p25": true,
+    "below_p5": true,
+    "below_p50": true,
+    "below_p75": true,
+    "below_p95": true,
+    "bias_vs_p50": -25.8,
+    "grade_status": "graded",
+    "horizon": "1m",
+    "in_band": false,
+    "maturity_date": "2026-11-02",
+    "price_at_maturity": 338.59,
+    "realized_pct": -26.8,
+    "ticker": "WDC"
+   },
+   "leaf": {
+    "anchor_price": "462.5600",
+    "asof": "2026-10-02",
+    "domain_severity": "red",
+    "horizon": "1m",
+    "in_domain": "false",
+    "p25": "-11.0000",
+    "p5": "-24.2000",
+    "p50": "-1.0000",
+    "p75": "10.1000",
+    "p95": "29.2000",
+    "prob_positive": "47.4000",
+    "ticker": "WDC"
+   },
+   "leaf_hash": "9d720e4aa15de19acb6f7537da6e297440e9ed773e11004a5de3a9d3bab87542",
+   "merkle_proof": [
+    {
+     "hash": "9da33d6e31ec52d4b019b5d711e06c6861467e7e3a5ee6b965be05bca79c5415",
+     "side": "right"
+    },
+    {
+     "hash": "cfee03158ba2c5842d6ce021b357cf86b44efd32414fa6612edf0dc21b635e86",
+     "side": "left"
+    },
+    {
+     "hash": "851dda51868d2c862d56df9fdd0a7e76b96dfdcbe4de6ce5f8d4fb85c2cb14f5",
+     "side": "right"
+    },
+    {
+     "hash": "5d9fef809cf9052f3e821abf84fbe6d40f922f200a725410d28c9bfea9c4b534",
+     "side": "right"
+    },
+    {
+     "hash": "b310809632f0ea49ccbad045b5b2434ba7e22a8bbfda8bcb31437d90f700bca0",
+     "side": "right"
+    },
+    {
+     "hash": "1b4c3804700b1625a5e784bacae237dee20e6a7c2c028e1f34d0c135d1914f64",
+     "side": "right"
+    },
+    {
+     "hash": "82d248fce52ad976f7b7676ff437df647e0fae70b2c61fd6e1dc73882b9ade0d",
+     "side": "right"
+    },
+    {
+     "hash": "379e9c88e78e890594a092354bff0d860af0111a22abbb915572ea84510edc5d",
+     "side": "right"
+    },
+    {
+     "hash": "25899ad466133a41c53e3c56e5685cdb4560ab00737ede083cff65589faa4567",
+     "side": "left"
+    }
+   ]
+  }
+ ],
+ "rollup": {
+  "caveat": "one cohort = ONE market draw; the names are cross-correlated, so n_effective is far below n_graded. Judge calibration across cohorts, not within one.",
+  "coverage_p5_p95": {
+   "in_band": 46,
+   "n": 80,
+   "nominal_pct": 90.0,
+   "pct": 57.5,
+   "wilson_95_ci_pct": [
+    46.6,
+    67.7
+   ]
+  },
+  "median_bias_vs_p50_pp": -18.88,
+  "n_graded": 80,
+  "n_revealed": 80,
+  "n_unresolved": 0,
+  "rank_histogram": {
+   "at_or_above_p95": {
+    "count": 0,
+    "nominal_pct": 5.0,
+    "pct": 0.0
+   },
+   "below_p5": {
+    "count": 34,
+    "nominal_pct": 5.0,
+    "pct": 42.5
+   },
+   "p25_p50": {
+    "count": 12,
+    "nominal_pct": 25.0,
+    "pct": 15.0
+   },
+   "p50_p75": {
+    "count": 6,
+    "nominal_pct": 25.0,
+    "pct": 7.5
+   },
+   "p5_p25": {
+    "count": 25,
+    "nominal_pct": 20.0,
+    "pct": 31.2
+   },
+   "p75_p95": {
+    "count": 3,
+    "nominal_pct": 20.0,
+    "pct": 3.8
+   }
+  }
+ },
+ "schema": "sigma-public-reveal-1"
+}
