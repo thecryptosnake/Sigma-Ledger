@@ -1,7 +1,7 @@
 Sigma Risk Intelligence -- Market-State regime-call commitment
 feed:               market_state
 constants_version:  ms-2
-asof:               2026-11-15
+asof:               2026-11-16
 n_rows:             25
 tip_sha256:         884c4a37a8b97ed16d5a73012cc180b17cea1aab1d2565fb88ddef0d632d57a4
 
