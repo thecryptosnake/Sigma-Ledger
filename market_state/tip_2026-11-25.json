@@ -1,0 +1,16 @@
+{
+ "anchor": {
+  "method": "opentimestamps-bitcoin",
+  "note": "run ots stamp on MARKET_STATE_TIP.txt",
+  "ots_file": null,
+  "status": "unanchored"
+ },
+ "artifact_sha256": "060f2e85681e887f04d4ee0ef0f6735c3c5c22553c78d71baa6006a1aefc63e0",
+ "asof": "2026-11-25",
+ "constants_version": "ms-2",
+ "feed": "market_state",
+ "n_rows": 32,
+ "schema": "sigma-market-state-tip-1",
+ "tip_sha256": "895097f5e540c068dec1ef45212069a3a8591f76ce2c3f2ec63ee14ae52510e2",
+ "written_at_utc": "2026-11-25T01:30:08+00:00"
+}
